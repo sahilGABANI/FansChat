@@ -1,0 +1,443 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation"-->
+    <string name="channel_id" translatable="false">fanschat_channel_id</string>
+    <string name="channel_name" translatable="false">General notifications</string>
+    <string name="notification_channel_id" translatable="false">default</string>
+
+    <!--Screen titles-->
+    <string name="wall">Wall</string>
+    <string name="news">News</string>
+    <string name="rumours">Web Rumors</string>
+    <string name="social">Social</string>
+    <string name="stats">Stats</string>
+    <string name="shop">Official Store</string>
+    <string name="chat">Chat</string>
+    <string name="video_chat">Video Chat</string>
+    <string name="radio">Club Radio</string>
+    <string name="tv">Club TV</string>
+    <string name="tickets">Tickets</string>
+    <string name="store">Official Store</string>
+    <string name="quiz">Quiz</string>
+    <string name="fantasy">Fantasy</string>
+    <string name="calendar">Calendar</string>
+
+    <string-array name="menu_navigation">
+        <item>@string/wall</item>
+        <item>@string/chat</item>
+        <item>@string/news</item>
+        <item>@string/social</item>
+        <item>@string/stats</item>
+        <item>@string/rumours</item>
+        <item>@string/radio</item>
+        <item>@string/tickets</item>
+        <item>@string/shop</item>
+        <item>@string/tv</item>
+        <item>@string/video_chat</item>
+        <item>@string/calendar</item>
+    </string-array>
+
+    <!-- Login & Register -->
+    <string name="slogan">Bringing fans together</string>
+    <string name="access_full">To access full features…</string>
+    <string name="access_full_mtn">Join us now to access VIP events and exclusive access too…</string>
+    <string name="join_sign_in">Join Now / Sign In</string>
+    <string name="sign_in">Sign In</string>
+    <string name="join">Join Now</string>
+    <string name="login_facebook">Login with <b>Facebook</b></string>
+    <string name="or">or</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="first_name">First name</string>
+    <string name="last_name">Last name</string>
+    <string name="nickname">Nickname</string>
+    <string name="phone">Phone</string>
+    <string name="error">Error</string>
+    <string name="login_failed">Login failed</string>
+    <string name="registration_failed">Registration error</string>
+    <string name="forgot_your_password">Forgot your password?</string>
+    <string name="password_reset">Reset Password</string>
+    <string name="reset_check_email">Please check your email for password reset options.</string>
+    <string name="email_enter_valid">Please enter a valid email address!</string>
+    <string name="policy_prompt"><![CDATA[By signing up, you agree to the <b>Privacy Policy.</b>]]></string>
+    <string name="required_email">Please fill in your email.</string>
+    <string name="required_password">Please fill in your password.</string>
+    <string name="required_first_name">Please fill in your first name.</string>
+    <string name="required_last_name">Please fill in your last name.</string>
+    <string name="required_nickname">Please fill in your nickname.</string>
+    <string name="required_phone">Please fill in your phone number.</string>
+    <string name="required_credentials">Please enter valid credentials</string>
+    <string name="password_try_again">Please re-enter your password and try again</string>
+    <string name="login_slider_chat">You can chat with friends, create groups and even connect with your favourite players!</string>
+    <string name="logout_from_app">This will log you out of the app!</string>
+    <string name="reset_app">This action will reload the application.</string>
+    <string name="error_username_taken">Registration error - email is already registered, please login instead.</string>
+    <string name="facebook_error">Your public profile could not be received. Please try again!</string>
+
+    <!--Dialogs-->
+    <string name="ok">OK</string>
+    <string name="allow">Allow</string>
+    <string name="deny">Deny</string>
+    <string name="warning">Warning</string>
+    <string name="uploading">Uploading…</string>
+    <string name="no_connection">No Connection</string>
+    <string name="internet_needed">You need to be connected to the internet to do this</string>
+    <string name="waiting_for_internet">Waiting for active internet connection…</string>
+
+    <!--Profile-->
+    <string name="go_to_profile">Go to Profile ></string>
+    <string name="profile">Profile</string>
+    <string name="contact_info">Contact info</string>
+    <string name="choose_your_language">Choose your language</string>
+    <string name="chosen_language">Chosen language</string>
+    <string name="location">Location</string>
+    <string name="subscribed_since">Subscribed since</string>
+    <string name="auto_translation">Automatic translation</string>
+    <string name="notify_wall">Wall notifications</string>
+    <string name="notify_news">News notifications</string>
+    <string name="notify_rumours">Rumors notifications</string>
+    <string name="notify_social">Social notifications</string>
+    <string name="edit_profile">Edit Your Profile</string>
+    <string name="edit_photo">Edit Photo</string>
+    <string name="done">Done</string>
+    <string name="caps_level">Caps level</string>
+    <string name="days_using">Days using SSK</string>
+    <string name="wall_posts">Wall posts</string>
+    <string name="videos_watched">Videos watched</string>
+    <string name="matches_home">Matches (home)</string>
+    <string name="matches_away">Matches (away)</string>
+    <string name="likes_received">Likes received</string>
+    <string name="comments_made">Comments made</string>
+    <string name="language">Language</string>
+    <string name="you_have">You have</string>
+    <string name="caps">Caps</string>
+    <string name="language_current">English</string>
+    <string-array name="languages" translatable="false">
+        <item>বাংলা</item>
+        <item>汉语</item>
+        <item>English</item>
+        <item>Français</item>
+        <item>Deutsch</item>
+        <item>Bahasa Indonesia</item>
+        <item>Italiano</item>
+        <item>Polski</item>
+        <item>Português</item>
+        <item>Русский</item>
+        <item>Español</item>
+        <item>العَرَبِيَّة</item>
+    </string-array>
+
+    <!--Friends-->
+    <string name="friend_profile">Friend Profile</string>
+    <string name="friend_requests">Friend Requests</string>
+    <string name="follows_you">Follows you</string>
+    <string name="user_profile">User Profile</string>
+    <string name="friends_title">Your Friends</string>
+    <string name="friends_search">Search your friends</string>
+    <string name="search_for_friends">Search for friends</string>
+    <string name="offline">Offline</string>
+    <string name="friend_request_pending">Friend Request Pending</string>
+    <string name="enter_friend_name_invite">Enter friend\'s email address to invite.</string>
+    <string name="remove_friend">Unfriend</string>
+    <string name="friend_request_send">Send Friend Request</string>
+    <string name="friend_unfollow">Unfollow</string>
+    <string name="friend_follow">Follow</string>
+    <string name="posts">Pinned</string>
+    <string name="comments">Comments</string>
+    <string name="friends">Friends</string>
+    <string name="following">Following</string>
+    <string name="followers">Followers</string>
+    <string name="report">Report</string>
+    <string name="cancel">Cancel</string>
+    <string name="member_info">Member info</string>
+    <string name="requested_on">Requested </string>
+    <string name="you">You</string>
+    <string name="add_friend">Add a friend</string>
+    <string name="invite_friend">Invite a friend</string>
+    <string name="add_friend_hint">Enter your friend\'s name, email or phone number in the search field.</string>
+    <string name="save">Save</string>
+    <string name="invite">Invite</string>
+    <string name="follow_more">Follow More</string>
+    <string name="friends_following_you">Friends following you:</string>
+    <string name="find">Find</string>
+    <string name="requests">Requests</string>
+    <string name="official_accounts">Official Accounts</string>
+    <string name="no_results">No results</string>
+    <string name="user">User</string>
+    <string name="more">More</string>
+    <string name="friend_you_and">Friend you and </string>
+    <string name="have_in_common"> have in common</string>
+
+    <!--Chat-->
+    <string name="members">Members</string>
+    <string name="leave">Leave</string>
+    <string name="are_you_sure">Are you sure?</string>
+    <string name="chat_confirm_leave">Leave this chat?</string>
+    <string name="chat_confirm_delete">This will permanently delete this chat; are you sure?</string>
+    <string name="photo_or_video">Take photo or record video?</string>
+    <string name="chat_image">Image</string>
+    <string name="add_attachment">Add attachment</string>
+    <string name="from_gallery">From gallery</string>
+    <string name="take_photo">Take photo</string>
+    <string name="from_camera">From camera</string>
+    <string name="record_audio">Record audio</string>
+    <string name="record_video">Record video</string>
+    <string name="chat_hold">Hold down to record</string>
+    <string name="chat_recording_stop">Recording stopped</string>
+    <string name="no_message_text">No one has started chatting yet! Why not be the first?</string>
+    <string name="chat_public">This chat is public</string>
+    <string name="chat_private">This chat is private</string>
+    <string name="chat_create">Create Chat</string>
+    <string name="chat_edit">Edit Chat</string>
+    <string name="chat_join">Join Chat</string>
+    <string name="single_user_is_typing">%1$s! is typing…</string>
+    <string name="multiple_users_are_typing">Multiple users are typing…</string>
+    <string name="alerts_on">Alerts-ON</string>
+    <string name="alerts_off">Alerts-OFF</string>
+    <string name="chat_with_friends_login">Chat with friends</string>
+    <string name="authorize_description">You need to sign in\nin order to use all features\nof the app</string>
+    <string name="friends_in_chat">Friends in Chat</string>
+    <string name="friend_in_chat">1 Friend in Chat</string>
+    <string name="chats">Chats</string>
+    <string name="chats_public">Public chats</string>
+    <string name="search">Search</string>
+    <string name="message_hint">Enter your message here…</string>
+    <string name="chat_friends_add">Add friends to %s</string>
+    <string name="chat_name">Chat name</string>
+    <string name="chat_give_name">Enter a name for your chat</string>
+    <string name="chat_rename">Rename your chat</string>
+    <string name="add_friends_to_chat">Add friends to chat</string>
+    <string name="friend_chats">Public Chats your friends are in</string>
+    <string name="is_in"> is in: </string>
+
+    <!--Video chat-->
+    <string name="video_chat_promo_1">Win the match with your <font color="#c3ff01">friends</font></string>
+    <string name="video_chat_promo_2">Video chat allows you to call up to 3 friends for a group video chat, so you can experience the action with the people you love wherever you are!</string>
+    <string name="call_start">Start Call</string>
+    <string name="call_starting">Starting New Call</string>
+    <string name="call_add_member">Add To Call</string>
+    <string name="accept_call">Accept the call?</string>
+    <string name="call_receive">Receiving a call from</string>
+    <string name="video_chat_max">Sorry, you can only video call with a maximum of 3 friends, and this call is already full!</string>
+    <string name="video_chats">Video chats</string>
+    <string name="friends_in_video_chat">Friends in Video Chat</string>
+    <string name="friend_in_video_chat">1 Friend in Video Chat</string>
+    <string name="no_users_selected">No users selected!</string>
+    <string name="no_users_selected_message">You haven\'t selected anyone to call!</string>
+    <string name="select_friends_to_call">Select friends to call</string>
+
+    <!--Next match-->
+    <string name="match_next">Next match</string>
+    <string name="vs">vs</string>
+    <string name="day">%1$d Day</string>
+    <string name="days">%1$d Days</string>
+    <string name="hour">%1$d Hour</string>
+    <string name="hours">%1$d Hours</string>
+    <string name="min">%1$d Min</string>
+    <string name="mins">%1$d Mins</string>
+    <string name="sec">%1$d Sec</string>
+    <string name="secs">%1$d Secs</string>
+    <string name="live">Live</string>
+
+    <!--Posts & News-->
+    <string name="post_create">Create New Post</string>
+    <string name="post_title_hint">Enter your post\'s title</string>
+    <string name="post_body_hint">Start writing your post…</string>
+    <string name="post_create_tip_header">To create a new post:</string>
+    <string name="post_create_tip_body"><![CDATA[<b>1.</b> Choose an image from your media library or take a new image by selecting one of the two icons in the image area at the top (optional)<br/><b>2.</b> Create a title by selecting the title and typing.<br/><b>3.</b> Create content by selecting the content text and typing.]]></string>
+    <string name="pin_title">Post this to your wall?</string>
+    <string name="pin_confirm">Would you like to post this on your wall?</string>
+    <string name="pin_message_hint">Enter a message with your shared post…</string>
+    <string name="comment_hint">Enter your comment here…</string>
+    <string name="read_more">Read more &gt;</string>
+    <string name="read_less">Read less &lt;</string>
+    <string name="edit">Edit</string>
+    <string name="delete">Delete</string>
+    <string name="translate">Translate</string>
+    <string name="share">Share</string>
+    <string name="post">Post</string>
+    <string name="back">Back</string>
+    <string name="translated">Translated</string>
+    <string name="translated_from">Translated from</string>
+
+    <!--Purchases-->
+    <string name="rewards_received">Rewards and items received from Gym Bags</string>
+    <string name="bonus_gym_bag">+ Bonus gym bag</string>
+    <string name="bundles">Bundles</string>
+    <string name="wallet">Wallet</string>
+    <string name="stash">Stash</string>
+    <string name="your_statement">Your Statement</string>
+
+    <!--Stats-->
+    <string name="fixtures">Fixtures</string>
+    <string name="results">Results</string>
+    <string name="tables">Tables</string>
+
+    <!--Placeholder-->
+    <string name="lorem_ipsum" translatable="false">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</string>
+    <string name="menu" translatable="false">Menu</string>
+    <string name="name">Name</string>
+    <string name="all_times_in_local_time">All times in Local time</string>
+
+    <string name="terms_n_privacy">Terms &amp; Privacy</string>
+    <string name="url_policy" translatable="false">http://balfanschat.dctest.com.au/sporting-privacy-page/</string>
+    <string name="unnamed_chat">\'Unnamed Chat\'</string>
+    <string name="search_public_chats">Search public chats</string>
+    <string name="create">Create</string>
+    <string name="alert_on">Alert-ON</string>
+    <string name="last_chat">Last chat</string>
+    <string name="join_group">Join Group</string>
+    <string name="you_will_join_chat">Are you want to join this chat?</string>
+    <string name="you_are_already_in_grp">You are already in group</string>
+    <string name="select_users">You need to select at least one person to create/edit chat</string>
+    <string name="no_user_added">No users added to chat</string>
+    <string name="select_chat_img">Select Chat Image</string>
+    <string name="select_image">You need to select chat image to create/edit chat</string>
+    <string name="pick_photo">Pick photo</string>
+    <string name="pick_video">Pick video</string>
+    <string name="cant_play">Can\'t play this file</string>
+    <string name="cant_play_video">Can\'t play this video</string>
+    <string name="you_will_leave_chat">Are you sure you want to leave this chat?</string>
+    <string name="you_will_delete_chat">Are you sure you want to delete this chat?</string>
+    <string name="a_stats_post">A Stats post</string>
+    <string name="failed_to_create_directory">failed to create directory</string>
+    <string name="blank_first_name">You must enter your first name!</string>
+    <string name="blank_last_name">You must enter your last name!</string>
+    <string name="blank_nick_name">You must enter your nickname!</string>
+    <string name="blank_email">You must enter your email!</string>
+    <string name="blank_phone">You must enter your phone!</string>
+    <string name="blank_password">You must enter your password!</string>
+    <string name="blank_firstname">You must enter your firstname!</string>
+    <string name="blank_lastname">You must enter your lastname!</string>
+
+    <string name="invalid_first_name">Please enter a valid first name!</string>
+    <string name="invalid_last_name">Please enter a valid last name!</string>
+    <string name="invalid_nick_name">Please enter a valid nickname!</string>
+    <string name="invalid_email">Please enter a valid email!</string>
+    <string name="invalid_phone">Please enter a valid phone. It should be 8 to 15 digits long!</string>
+    <string name="invalid_password">Please enter a valid password. It should be minimum 6 characters long!</string>
+    <string name="new_friend_request">New Friend Request</string>
+    <string name="accepted_friend_request">Accepted Friend Request</string>
+    <string name="new_follower">New Follower</string>
+    <string name="unfollowed">Un-Followed</string>
+    <string name="unfriended">Un-Friend</string>
+
+    <string name="mine_friend">Friend of mine</string>
+
+    <string name="register">Register</string>
+    <string name="login_space">Log in</string>
+    <string name="login">Login</string>
+    <string name="sign_up">Sign up</string>
+    <string name="sign_up_with_facebook">Sign up with Facebook</string>
+    <string name="login_facebook_b">Login with Facebook</string>
+    <string name="Cancel">Cancel</string>
+    <string name="Okay">Okay</string>
+    <string name="butn_done">Done</string>
+    <string name="failed_to_crop_image">Failed to crop image</string>
+    <string name="this_file_no_longer_exist">This file is no longer exist</string>
+
+    <string name="camera_permission_is_needed_to_take_pictures">Camera permission is needed to take pictures</string>
+    <string name="see_all">See all</string>
+    <string name="watch_now">Watch now</string>
+    <string name="socials">Socials</string>
+    <string name="streaming">Streaming</string>
+    <string name="cancel_post">You want to cancel this post?</string>
+    <string name="no_videos_found">No Videos Found</string>
+    <string name="trimming_progress">Trimming your video…</string>
+    <string name="short_seconds">sec</string>
+    <string name="no_feed_post_available">No feed post available</string>
+    <string name="no_data">No data found</string>
+    <string name="old_password">Old Password</string>
+    <string name="new_password">New Password</string>
+    <string name="title_posts">Posts</string>
+    <string name="enter_chat_name">Enter chat name</string>
+    <string name="you_need_to_enter_chat_name">You need to enter chat name</string>
+    <string name="club_tv">Club TV</string>
+    <string name="you_want_to_remove_this_user">Are you sure you want to remove friend?</string>
+    <string name="you_want_to_send_friend_request">Are you sure you want to send friend request?</string>
+    <string name="you_want_to_accept_friend_request">Are you sure you want to accept friend request?</string>
+    <string name="you_want_to_decline_friend_request">Are you sure you want to decline friend request?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="decline_friend_request">Decline Friend request</string>
+    <string name="remove_user">Remove User</string>
+    <string name="delete_chat">Delete Chat</string>
+    <string name="leave_chat">Leave Chat</string>
+    <string name="report_user">Report User</string>
+    <string name="you_want_to_report_user">Are you sure you want to report this user?</string>
+    <string name="delete_post">Delete post</string>
+    <string name="reported_post">Post reported successfully</string>
+    <string name="undo_translate">Undo Translate</string>
+    <string name="enter_title">Please enter title</string>
+    <string name="enter_report_message">Please enter report message</string>
+    <string name="report_message">Report message</string>
+
+    <!--Notifications-->
+
+    <string name="title_post_created">Friend Posted</string>
+    <string name="desc_post_created">%s has created a new Post</string>
+    <string name="title_post_updated">Friend edited Post</string>
+    <string name="desc_post_updated">%s has edited Post</string>
+    <string name="title_new_comment">Comment Received</string>
+    <string name="desc_new_comment">%s has commented on your post</string>
+    <string name="desc_new_comment_owner">%s has commented on their post</string>
+    <string name="desc_new_comment_friend">%s has commented on your friend\'s post</string>
+    <string name="title_comment_updated">Comment Edited</string>
+    <string name="desc_comment_updated">%s has edited a comment on your post</string>
+    <string name="desc_comment_updated_owner">%s has edited a comment on their post</string>
+    <string name="desc_comment_updated_friend">%s has edited a comment on your friend\'s post</string>
+    <string name="title_like_post">Like Received</string>
+
+    <string name="desc_like_post">%s has Liked your post</string>
+    <string name="desc_like_post_owner">%s has Liked their post</string>
+    <string name="desc_like_post_friend">%s has Liked your friend\'s post</string>
+
+    <string name="title_club_post_created">New post in %s</string><!--New post in News-->
+    <string name="desc_club_post_created">%s has added a new Post: %s</string><!--MTN has added a new Post: XYZ-->
+
+    <string name="title_club_post_updated">Post edited in %s</string><!--Post edited in News-->
+    <string name="desc_club_post_updated">%s has edited Post: %s</string><!--MTN has edited Post: XYZ-->
+
+    <string name="title_new_club_comment">Friend commented on a %s post</string><!--Friend commented on a News post-->
+    <string name="desc_new_club_comment">%s has left a comment on: %s</string><!--Janak has left a comment on: XYZ -->
+
+    <string name="title_club_comment_updated">Friend edited comment on a %s post</string><!--Friend edited comment on a News post-->
+    <string name="desc_club_comment_updated">%s has edited a comment on: %s</string><!--Janak has edited a comment on: XYZ -->
+
+    <string name="title_like_club_post">Friend has Liked a %s post</string><!--Friend has Liked a News post-->
+    <string name="desc_like_club_post">%s has Liked: %s</string><!--Janak has Liked: XYZ-->
+
+    <string name="accept_friend_request">Friend Request Accepted</string>
+    <string name="received_friend_request">New Friend Request</string>
+    <string name="message_received">Message Received</string>
+    <string name="new_msg_msg">%s sent a message</string>
+    <string name="new_media_msg_msg">%s sent a media</string>
+    <string name="friend_request_msg">%s has sent you a friend request</string>
+    <string name="friend_request_accepted_msg">%s has accepted your friend request</string>
+
+
+    <!--Notifications End-->
+
+    <string name="report_post">Report Post</string>
+    <string name="write_complaint">Please write your complaint</string>
+    <string name="wrong_email_or_password_please_try_again">Wrong email or password. Please try again</string>
+    <string name="notifications">Notifications</string>
+    <string name="try_to_upload_file_again">Try to upload file again </string>
+    <string name="failed_to_upload">Failed to upload file</string>
+    <string name="no_friends">No friends yet</string>
+    <string name="audio">🔊 Audio</string>
+    <string name="points">X FC Points</string>
+    <string name="post_no_longer_available">This post is no longer available.</string>
+    <string name="no_notifications">No notifications yet</string>
+    <string name="no_friend_request">You have no friend requests pending</string>
+    <string name="share_using">Share using…</string>
+    <string name="facebook">Facebook</string>
+    <string name="other_services">Other services</string>
+    <string name="login_cancelled">Login Cancelled</string>
+    <string name="post_not_found">Post is no longer available.</string>
+    <string name="compressing_video">Compressing your video…</string>
+    <string name="notification_unmuted">%s unmuted successfully.</string>
+    <string name="notification_muted">%s muted successfully.</string>
+    <string name="accept">Accept</string>
+
+</resources>

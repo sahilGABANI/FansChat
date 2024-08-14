@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="@layout/fragment_chat">
+
+    <!-- tools:visible=true -->
+    <LinearLayout
+        android:id="@+id/attachmentContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#878787"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@id/rlFooter"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/attachment"
+                android:layout_width="100dp"
+                android:layout_height="80dp"
+                android:scaleType="centerCrop"
+                tools:src="@drawable/placeholder" />
+
+            <ImageButton
+                android:id="@+id/playAttachment"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:scaleType="centerInside"
+                android:src="@drawable/play_button_icon"
+                android:visibility="gone"
+                tools:visibility="visible" />
+
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/audio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:text="@string/audio"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:visibility="gone"
+            tools:visibility="visible" />
+
+        <ImageButton
+            android:id="@+id/removeAttachment"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/ic_close" />
+
+        <androidx.legacy.widget.Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <FrameLayout
+            android:layout_width="@dimen/_36sdp"
+            android:layout_height="@dimen/_36sdp">
+
+            <ImageButton
+                android:id="@+id/submit"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/btn_send"
+                app:tint="@color/white" />
+
+            <ProgressBar
+                android:id="@+id/showProgressBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_8sdp"
+                android:visibility="gone" />
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlFooter"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/standard_button_height"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageButton
+            android:id="@+id/attach"
+            android:layout_width="@dimen/standard_button_height"
+            android:layout_height="match_parent"
+            android:background="@color/gray"
+            android:padding="8dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_add_white_24dp"
+            app:tint="@color/black" />
+
+        <RelativeLayout
+            android:id="@+id/linInput"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toStartOf="@+id/menu"
+            android:layout_toEndOf="@+id/attach"
+            android:animateLayoutChanges="true">
+
+            <LinearLayout
+                android:id="@+id/linMedia"
+                android:layout_width="144dp"
+                android:layout_height="wrap_content"
+                android:background="@color/gray"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/ibMic"
+                    android:layout_width="@dimen/standard_button_height"
+                    android:layout_height="@dimen/standard_button_height"
+                    android:background="@color/gray"
+                    android:src="@drawable/ic_mic_chat"
+                    app:tint="@color/black" />
+
+                <ImageView
+                    android:id="@+id/ibCamera"
+                    android:layout_width="@dimen/standard_button_height"
+                    android:layout_height="@dimen/standard_button_height"
+                    android:background="@color/gray"
+                    android:padding="6dp"
+                    android:src="@drawable/ic_camera_chat"
+                    app:tint="@color/black" />
+
+                <ImageView
+                    android:id="@+id/ibGallery"
+                    android:layout_width="@dimen/standard_button_height"
+                    android:layout_height="@dimen/standard_button_height"
+                    android:background="@color/gray"
+                    android:padding="8dp"
+                    android:src="@drawable/ic_gallery_chat"
+                    app:tint="@color/black" />
+
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/input"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="1dp"
+                android:layout_toStartOf="@+id/ivSendMessage"
+                android:layout_toEndOf="@+id/linMedia"
+                android:background="@color/gray"
+                android:hint="@string/message_hint"
+                android:imeOptions="actionSend"
+                android:inputType="textCapSentences"
+                android:maxLines="1"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:textColorHint="#4d000000" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivSendMessage"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:background="@color/gray"
+                android:padding="10dp"
+                android:src="@drawable/outline_send_24"
+                app:tint="@color/md_grey600" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/linActions"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toStartOf="@+id/menu"
+            android:background="@color/gray"
+            android:clickable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:id="@+id/linGlobalMenu"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clickable="true"
+                android:gravity="center"
+                android:paddingStart="@dimen/_8sdp"
+                android:paddingEnd="@dimen/_8sdp">
+
+                <TextView
+                    android:id="@+id/tvCreate"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_18sdp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_btn_black"
+                    android:gravity="center"
+                    android:text="@string/create"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_size_12" />
+
+                <TextView
+                    android:id="@+id/tvEdit"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_18sdp"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_btn_black"
+                    android:gravity="center"
+                    android:text="@string/edit"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_size_12" />
+
+                <TextView
+                    android:id="@+id/tvLeave"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_18sdp"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_btn_black"
+                    android:gravity="center"
+                    android:text="@string/leave"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_size_12"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/tvSearch"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_18sdp"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_btn_black"
+                    android:gravity="center"
+                    android:text="@string/search"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_size_12" />
+
+
+                <TextView
+                    android:id="@+id/tvAlert"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_18sdp"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_btn_black"
+                    android:gravity="center"
+                    android:text="@string/alerts_on"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_size_12" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linMsgMenu"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clickable="true"
+                android:gravity="center">
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="2.35" />
+
+                <TextView
+                    android:id="@+id/tvEditMsg"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_18sdp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_btn_black"
+                    android:gravity="center"
+                    android:text="@string/edit"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_size_12" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight=".10" />
+
+                <TextView
+                    android:id="@+id/tvDeleteMsg"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_18sdp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_btn_black"
+                    android:gravity="center"
+                    android:text="@string/delete"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_size_12" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight=".15" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/menu"
+            android:layout_width="@dimen/standard_button_height"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="1dp"
+            android:background="@color/gray"
+            android:src="@drawable/ic_more_horiz_black_24dp" />
+
+
+    </RelativeLayout>
+
+    <!--  <View
+          android:layout_width="match_parent"
+          android:layout_height="1dp"
+          android:background="#30000000" />-->
+
+</merge>

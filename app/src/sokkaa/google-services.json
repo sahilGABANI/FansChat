@@ -1,0 +1,93 @@
+{
+  "project_info": {
+    "project_number": "81959673353",
+    "firebase_url": "https://sportssidekickdev.firebaseio.com",
+    "project_id": "sportssidekickdev",
+    "storage_bucket": "sportssidekickdev.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:81959673353:android:ef4aca81064a188a",
+        "android_client_info": {
+          "package_name": "com.fanschat.sokkaa"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "81959673353-jvbd9g0or8taccdsti0eg45enkbpnp1c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAVYoyvyouNeFJBvlLG9yQMfIuQ3EaNadY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:81959673353:android:289387bea0b5d744",
+        "android_client_info": {
+          "package_name": "com.fanschat.sporting"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "81959673353-l6orn1r9i3ah6kte70nr6mnqkuc00p0f.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.fanschat.sporting",
+            "certificate_hash": "e871498c91272909347678b2987dbc478b793714"
+          }
+        },
+        {
+          "client_id": "81959673353-jvbd9g0or8taccdsti0eg45enkbpnp1c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAVYoyvyouNeFJBvlLG9yQMfIuQ3EaNadY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "81959673353-jvbd9g0or8taccdsti0eg45enkbpnp1c.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "81959673353-clhlu8gts2rif80dn0593b5orjm2bie2.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.sidekick.SportsSideKick"
+              }
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

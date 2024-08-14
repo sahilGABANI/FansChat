@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/linContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <include layout="@layout/shared_post_bar" />
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/nestedScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:id="@+id/linRoot"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+                <FrameLayout
+                    android:id="@+id/frame"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorPrimary">
+
+                    <ImageView
+                        android:id="@+id/image"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:background="@drawable/placeholder_flex"
+                        android:minHeight="@dimen/_170sdp" />
+                    <!--                        android:adjustViewBounds="true"
+                    -->
+                    <FrameLayout
+                        android:id="@+id/flVideo"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_170sdp"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:visibility="gone">
+
+                        <com.google.android.exoplayer2.ui.StyledPlayerView
+                            android:id="@+id/video_view"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            app:resize_mode="fit"
+                            app:shutter_background_color="@android:color/transparent"
+                            app:surface_type="texture_view"
+                            app:use_controller="false" />
+
+                        <LinearLayout
+                            android:id="@+id/llClickable"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:orientation="vertical" />
+
+                        <RelativeLayout
+                            android:id="@+id/flController"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <androidx.appcompat.widget.AppCompatImageView
+                                android:id="@+id/ivPlayPause"
+                                android:layout_width="@dimen/_36sdp"
+                                android:layout_height="@dimen/_36sdp"
+                                android:layout_centerInParent="true"
+                                android:background="@drawable/transparent_black_circle"
+                                android:padding="@dimen/_3sdp"
+                                android:src="@drawable/ic_play"
+                                app:tint="@android:color/white" />
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="true"
+                                android:layout_marginStart="@dimen/_7sdp"
+                                android:layout_marginBottom="@dimen/_5sdp"
+                                android:layout_toStartOf="@+id/ivFullScreen"
+                                android:background="@drawable/shape_rounded_corners"
+                                android:gravity="center_vertical"
+                                android:paddingStart="@dimen/_7sdp"
+                                android:paddingEnd="@dimen/_7sdp">
+
+                                <TextView
+                                    android:id="@+id/tvExoCurrentDuration"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:text="00:00"
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/_8sdp" />
+
+                                <androidx.appcompat.widget.AppCompatSeekBar
+                                    android:id="@+id/seekbar"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/_18sdp"
+                                    android:layout_centerVertical="true"
+                                    android:layout_toStartOf="@id/tvExoTotalDuration"
+                                    android:layout_toEndOf="@id/tvExoCurrentDuration"
+                                    android:backgroundTint="@color/white_translucent"
+                                    android:progressBackgroundTint="@color/white_translucent"
+                                    android:progressTint="@color/white"
+                                    android:thumbTint="@color/white" />
+
+                                <TextView
+                                    android:id="@+id/tvExoTotalDuration"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_centerVertical="true"
+                                    android:text="00:00"
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/_8sdp" />
+                            </RelativeLayout>
+
+                            <ImageButton
+                                android:id="@+id/ivFullScreen"
+                                style="@style/Widget.AppCompat.Button.Borderless"
+                                android:layout_width="@dimen/_26sdp"
+                                android:layout_height="@dimen/_26sdp"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentBottom="true"
+                                android:layout_marginStart="@dimen/_7sdp"
+                                android:layout_marginEnd="@dimen/_7sdp"
+                                android:layout_marginBottom="@dimen/_5sdp"
+                                android:background="@drawable/transparent_black_circle"
+                                android:padding="@dimen/_2sdp"
+                                android:src="@drawable/ic_fullscreen" />
+
+                            <base.views.verticalseekbar.VerticalSeekBarWrapper
+                                android:layout_width="wrap_content"
+                                android:layout_height="150dp"
+                                android:layout_alignParentEnd="true"
+                                android:layout_marginEnd="@dimen/_12sdp">
+
+                                <base.views.verticalseekbar.VerticalSeekBar
+                                    android:id="@+id/volumeSeekBar"
+                                    android:layout_width="0dp"
+                                    android:layout_height="0dp"
+                                    android:progress="0"
+                                    android:progressDrawable="@drawable/selector_progress_bar"
+                                    android:splitTrack="false"
+                                    android:thumb="@null"
+                                    app:seekBarRotation="CW270" />
+                            </base.views.verticalseekbar.VerticalSeekBarWrapper>
+                        </RelativeLayout>
+
+                        <ProgressBar
+                            android:id="@+id/progressBar"
+                            android:layout_width="@dimen/_30sdp"
+                            android:layout_height="@dimen/_30sdp"
+                            android:layout_gravity="center"
+                            android:visibility="gone" />
+
+
+                    </FrameLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linEditMedia"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:foregroundGravity="center"
+                        android:gravity="center"
+                        android:visibility="gone">
+
+                        <ImageButton
+                            android:id="@+id/imageButton"
+                            style="@style/Widget.AppCompat.Button.Borderless"
+                            android:layout_width="@dimen/width_60"
+                            android:layout_height="@dimen/width_60"
+                            android:layout_marginEnd="16dp"
+                            android:background="@drawable/black_circle"
+                            android:foreground="?selectableItemBackgroundBorderless"
+                            android:padding="0dp"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/chat_button_image"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toStartOf="@+id/progressBar"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:tint="@color/white" />
+
+                        <ImageButton
+                            android:id="@+id/videoButton"
+                            style="@style/Widget.AppCompat.Button.Borderless"
+                            android:layout_width="@dimen/width_60"
+                            android:layout_height="@dimen/width_60"
+                            android:layout_marginStart="16dp"
+                            android:background="@drawable/black_circle"
+                            android:foreground="?selectableItemBackgroundBorderless"
+                            android:padding="14dp"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/ic_video"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toEndOf="@+id/progressBar"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:tint="@color/white" />
+
+                    </LinearLayout>
+
+                    <ImageButton
+                        android:id="@+id/backButtonMain"
+                        style="@style/Widget.AppCompat.Button.Borderless"
+                        android:layout_width="@dimen/_28sdp"
+                        android:layout_height="@dimen/_28sdp"
+                        android:layout_margin="@dimen/_7sdp"
+                        android:background="@drawable/transparent_black_circle"
+                        android:padding="@dimen/_2sdp"
+                        android:rotationY="@integer/view_rotation"
+                        android:src="@drawable/ic_keyboard_arrow_left_white_24dp" />
+
+                </FrameLayout>
+
+                <LinearLayout
+                    android:id="@+id/linExtra"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <include
+                        android:id="@+id/detail_action_bar"
+                        layout="@layout/detail_action_bar" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/padding_12"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:gravity="center_vertical">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/avatar"
+                            android:layout_width="@dimen/width_30"
+                            android:layout_height="@dimen/width_30"
+                            android:src="@drawable/avatar_placeholder" />
+
+                        <TextView
+                            android:id="@+id/tvNameDate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginStart="@dimen/_8sdp"
+                            android:ellipsize="end"
+                            android:fontFamily="@font/titillium_semibold"
+                            android:gravity="center_vertical|start"
+                            android:singleLine="true"
+                            android:textSize="@dimen/_10sdp"
+                            android:visibility="visible"
+                            tools:text="Karen Smith" />
+
+                    </LinearLayout>
+
+                    <EditText
+                        android:id="@+id/title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:autoLink="all"
+                        android:background="@null"
+                        android:cursorVisible="false"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:imeOptions="actionSend"
+                        android:inputType="textMultiLine|textNoSuggestions"
+                        android:lineSpacingMultiplier="0.9"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/_14sdp"
+                        android:textStyle="bold"
+                        tools:text="Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium" />
+
+                    <EditText
+                        android:id="@+id/body"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:autoLink="all"
+                        android:background="@null"
+                        android:cursorVisible="false"
+                        android:ellipsize="end"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:imeOptions="actionSend"
+                        android:inputType="textMultiLine|textNoSuggestions"
+                        android:lineSpacingMultiplier="0.9"
+                        android:maxLines="3"
+                        android:paddingTop="0dp"
+                        android:paddingBottom="0dp"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_11sdp"
+                        android:textStyle="normal"
+                        tools:text="@string/lorem_ipsum" />
+
+                    <include
+                        android:id="@+id/post_actions"
+                        layout="@layout/post_actions" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/list"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:clipToPadding="false"
+                        android:nestedScrollingEnabled="false"
+                        android:paddingBottom="@dimen/_16sdp"
+                        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                        tools:itemCount="1"
+                        tools:listitem="@layout/item_comment" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+        <include
+            android:id="@+id/include_post_container"
+            layout="@layout/include_input_field"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed" />
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBarPage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" />
+</FrameLayout>

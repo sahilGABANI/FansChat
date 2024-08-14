@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?selectableItemBackgroundBorderless"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="8dp"
+    app:layout_anchorGravity="center_horizontal"
+    tools:ignore="UseCompoundDrawables">
+
+    <RelativeLayout
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:animateLayoutChanges="true">
+
+        <ImageView
+            android:id="@+id/avatar"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            tools:src="@drawable/avatar_placeholder" />
+
+        <ImageView
+            android:id="@+id/ivChecked"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/background_chat_header_selected"
+            android:padding="2dp"
+            android:src="@drawable/ic_done"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:lineSpacingMultiplier="0.8"
+        android:maxLines="1"
+        android:paddingTop="4dp"
+        android:singleLine="true"
+        android:textColor="@color/black"
+        android:textSize="@dimen/font_size_10"
+        tools:text="Test User With Long Name" />
+
+</LinearLayout>

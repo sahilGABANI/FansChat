@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--Screen titles-->
+    <string name="wall">جدار</string>
+    <string name="news">الأخبار</string>
+    <string name="rumours">إشاعات الويب</string>
+    <string name="social">سوشل</string>
+    <string name="stats">إحصائيات</string>
+    <string name="shop">تسوق</string>
+    <string name="chat">محادثة</string>
+    <string name="video_chat">محادثة فيديو</string>
+    <string name="radio">قنوات البودكاست</string>
+    <string name="tv">تلفاز النادي</string>
+    <string name="tickets">ٹکٹیں</string>
+    <string name="store">المتجر</string>
+    <string name="quiz">أحجية</string>
+    <string name="fantasy">مضاربة</string>
+
+    <string-array name="menu_navigation">
+        <item>@string/wall</item>
+        <item>@string/chat</item>
+        <item>@string/news</item>
+        <item>@string/social</item>
+        <item>@string/stats</item>
+        <item>@string/rumours</item>
+        <item>@string/radio</item>
+        <item>@string/tickets</item>
+        <item>@string/shop</item>
+        <item>@string/tv</item>
+        <item>@string/video_chat</item>
+        <item>@string/calendar</item>
+    </string-array>
+
+    <!-- Login & Register -->
+    <string name="slogan">تجمع الجمهور معاً</string>
+    <string name="access_full">للحصول على كافة الميزات…</string>
+    <string name="join_sign_in">الانضمام الآن / تسجيل الدخول</string>
+    <string name="sign_in">تسجيل الدخول</string>
+    <string name="join">الانضمام الآن</string>
+    <string name="login_facebook">تسجيل الدخول باستخدام فيسبوك</string>
+    <string name="or">أو</string>
+    <string name="email">البريد الالكتروني</string>
+    <string name="password">كلمة السر</string>
+    <string name="first_name">الاسم الأول</string>
+    <string name="last_name">الاسم الأخير</string>
+    <string name="nickname">الاسم المستعار</string>
+    <string name="phone">هاتف</string>
+    <string name="error">خطأ</string>
+    <string name="login_failed">فشل تسجيل الدخول!</string>
+    <string name="registration_failed">فشل التسجيل</string>
+    <string name="forgot_your_password">نسيت كلمة السر؟</string>
+    <string name="password_reset">إعادة ضبط كلمة السر</string>
+    <string name="reset_check_email">الرجاء تفقد بريدك الالكتروني لخيارات إعادة ضبط كلمة السر.</string>
+    <string name="email_enter_valid">الرجاء إدخال بريد الكتروني صالح.</string>
+    <string name="policy_prompt">بقيامك بالتسجيل، توافق على ما تطرحه FansChat\n<font color="#FFFFFF">من شروط للاستخدام</font> و <font color="#FFFFFF">سياسة الخصوصية.</font></string>
+    <string name="required_email">عليك إدخال البريد الالكتروني!</string>
+    <string name="required_password">عليك إدخال كلمة سر</string>
+    <string name="required_first_name">عليك إدخال اسمك الأول!</string>
+    <string name="required_last_name">عليك إدخال اسمك الأخير!</string>
+    <string name="required_nickname">عليك اختيار اسم مستعار!</string>
+    <string name="required_phone">عليك إدخال رقم هاتفك!</string>
+    <string name="required_credentials">معلومات ناقصة</string>
+    <string name="password_try_again">الرجاء إعادة إدخال كلمة السر والمحاولة مجدداً.</string>
+    <string name="login_slider_chat">يمكنك التحدث مع أصدقائك، وإنشاء المجموعات، وحتى التواصل مع لاعبيك المفضلين!</string>
+    <string name="logout_from_app">ستسجل خروجك من التطبيق؟</string>
+    <string name="reset_app">ستقوم بإعادة تشغيل التطبيق بهذا الفعل.</string>
+    <string name="error_username_taken">خطأ في التسجيل - تم أخذ اسم المستخدم من قبل، يرجى تحديد اسم مستخدم مختلف.</string>
+    <string name="facebook_error">لم يتم تلقي ملفك العام. الرجاء المحاولة مجدداً!</string>
+
+    <!--Dialogs-->
+    <string name="ok">حسناً</string>
+    <string name="allow">السماح</string>
+    <string name="deny">أنكر</string>
+    <string name="warning">تحذير</string>
+    <string name="uploading">تحميل…</string>
+    <string name="no_connection">لا اتصال</string>
+    <string name="internet_needed">عليك أن تكون متصلاً بالانترنت لتقوم بهذا</string>
+    <string name="waiting_for_internet">في انتظار اتصال إنترنت نشط…</string>
+
+    <!--Profile-->
+    <string name="go_to_profile">انتقل إلى الملف الشخصي></string>
+    <string name="profile">ملفك الشخصي</string>
+    <string name="contact_info">بيانات التواصل</string>
+    <string name="choose_your_language">اختر لغتك</string>
+    <string name="chosen_language">اختر اللغة</string>
+    <string name="location">الموقع</string>
+    <string name="subscribed_since">مسجل منذ</string>
+    <string name="auto_translation">الترجمة الآلية</string>
+    <string name="notify_wall">إشعارات الحائط</string>
+    <string name="notify_news">خبروں کی اطلاعات کو فعال کریں</string>
+    <string name="notify_rumours">افواہوں کی اطلاعات کو فعال کریں</string>
+    <string name="notify_social">خصوصی اطلاعات کو فعال کریں</string>
+    <string name="edit_profile">تعديل ملفك</string>
+    <string name="edit_photo">تعديل الصورة</string>
+    <string name="done">تم</string>
+    <string name="caps_level">مستوى الـCaps</string>
+    <string name="days_using">الأيام منذ بدء استخدام اللعبة</string>
+    <string name="wall_posts">منشورات الحائط</string>
+    <string name="videos_watched">الفيديوهات المشاهدة</string>
+    <string name="matches_home">المباريات الملعوبة (أرض اللاعب)</string>
+    <string name="matches_away">المباريات الملعوبة (أرض الخصم)</string>
+    <string name="likes_received">الإعجابات المتلقاة</string>
+    <string name="comments_made">التعليقات المكتوبة</string>
+    <string name="language">اللغة</string>
+    <string name="you_have">لديك</string>
+    <string name="caps">Caps</string>
+    <string name="language_current">العَرَبِيَّة</string>
+
+    <!--Friends-->
+    <string name="friend_profile">معلومات الصديق</string>
+    <string name="friend_requests">طلبات الصداقة</string>
+    <string name="follows_you">يتابعك</string>
+    <string name="user_profile">ملف المستخدم</string>
+    <string name="friends_title">أصدقاؤك</string>
+    <string name="friends_search">البحث في أصدقائك</string>
+    <string name="offline">غير متصل</string>
+    <string name="friend_request_pending">طلب الصداقة بالانتظار</string>
+    <string name="enter_friend_name_invite">أدخل بريد الصديق الالكتروني لدعوته.</string>
+    <string name="remove_friend">الغاء الصداقه</string>
+    <string name="friend_request_send">إرسال طلب صداقة؟</string>
+    <string name="friend_unfollow">إيقاف متابعة صديق</string>
+    <string name="friend_follow">متابعة صديق</string>
+    <string name="posts">دبس</string>
+    <string name="comments">تعليقات</string>
+    <string name="friends">الأصدقاء</string>
+    <string name="following">متابع</string>
+    <string name="followers">المتابعون</string>
+    <string name="report">التبليغ عن انتهاك</string>
+    <string name="cancel">إلغاء</string>
+    <string name="member_info">معلومات العضو</string>
+    <string name="requested_on">طلب على</string>
+    <string name="you">أنت</string>
+    <string name="add_friend">إضافة صديق</string>
+    <string name="invite_friend">دعوة صديق</string>
+    <string name="add_friend_hint">أدخل اسم صديقك، أو بريده أو رقم هاتفه في خانة البحث.</string>
+    <string name="save">حفظ</string>
+    <string name="invite">دعوة</string>
+    <string name="follow_more">متابعة المزيد</string>
+    <string name="friends_following_you">الأصدقاء المتابعون لك:</string>
+    <string name="find">إيجاد</string>
+    <string name="requests">طلبات</string>
+    <string name="official_accounts">حسابات رسمية</string>
+    <string name="no_results">لا نتائج</string>
+    <string name="user">المستخدم</string>
+    <string name="more">المزيد</string>
+    <string name="friend_you_and">الأصدقاء، وأنت، و </string>
+    <string name="have_in_common"> تشتركون بـ:</string>
+
+    <!--Chat-->
+    <string name="members">أفراد</string>
+    <string name="leave">الخروج من المحادثة</string>
+    <string name="are_you_sure">هل أنت متأكد؟</string>
+    <string name="chat_confirm_leave">الخروج من المحادثة؟</string>
+    <string name="chat_confirm_delete">سيتم حذف المحادثة بشكل دائم، هل أنت متأكد؟</string>
+    <string name="photo_or_video">هل تريد التقاط صورة أو تسجيل فيديو؟</string>
+    <string name="chat_image">صورة</string>
+    <string name="from_gallery">اختر من المكتبة</string>
+    <string name="from_camera">استخدام الكاميرا</string>
+    <string name="record_video">تسجيل الفيديو</string>
+    <string name="chat_hold">اضغط باستمرار للتسجيل</string>
+    <string name="chat_recording_stop">توقف التسجيل</string>
+    <string name="no_message_text">لم يبدأ الحديث أحد بعد! لم لا تكون أولهم؟</string>
+    <string name="chat_public">هذه المحادثة علنية</string>
+    <string name="chat_private">هذه المحادثة خاصة</string>
+    <string name="chat_create">إنشاء محادثة جديدة</string>
+    <string name="chat_join">الانضمام للمحادثة</string>
+    <string name="single_user_is_typing">%1$s! الصورة! يكتب…</string>
+    <string name="multiple_users_are_typing">يجري العديد من المستخدمين الكتابة…</string>
+    <string name="alerts_on">إشعارات المحادثة فعالة</string>
+    <string name="alerts_off">إشعارات المحادثة مطفأة</string>
+    <string name="chat_with_friends_login">الدردشة مع الأصدقاء.</string>
+    <string name="friends_in_chat">الأصدقاء في الدردشة</string>
+    <string name="friend_in_chat">1 صديق في الدردشة</string>
+    <string name="chats">المحادثات</string>
+    <string name="chats_public">المحادثات العلنية</string>
+    <string name="search">البحث في المحادثات العلنية</string>
+    <string name="message_hint">أدخل رسالتك هنا…</string>
+    <string name="chat_friends_add">%s ضف أصدقاء إلى </string>
+    <string name="chat_name">اسم المحادثة</string>
+    <string name="chat_give_name">قم بتسمية محادثتك</string>
+    <string name="chat_rename">إعادة تسمية المحادثة</string>
+    <string name="add_friends_to_chat">إضافة أصدقاء إلى المحادثة</string>
+    <string name="friend_chats">الدردشات العامة أصدقائك في</string>
+    <string name="is_in"> في: </string>
+
+    <!--Video chat-->
+    <string name="video_chat_promo_1">فوز المباراة مع أصدقائك</string>
+    <string name="video_chat_promo_2">دردشة الفيديو يسمح لك لاستدعاء ما يصل إلى 3 أصدقاء لدردشة الفيديو الجماعية، حتى تتمكن من تجربة العمل مع الناس تحب أينما كنت!</string>
+    <string name="call_start">بدء الاتصال</string>
+    <string name="call_starting">بدء اتصال جديد</string>
+    <string name="call_add_member">إضافة للاتصال</string>
+    <string name="accept_call">الإجابة على الاتصال؟</string>
+    <string name="call_receive">تتلقى اتصالاً من</string>
+    <string name="video_chat_max">عذراً، يمكنك الاتصال بالفيديو بـ 3 أشخاص كحد أقصى، وهذه المحادثة ممتلئة مسبقاً!</string>
+    <string name="video_chats">محادثات الفيديو</string>
+    <string name="friends_in_video_chat">الأصدقاء في دردشة الفيديو</string>
+    <string name="friend_in_video_chat">1 صديق في دردشة الفيديو</string>
+    <string name="no_users_selected">لم يتم تحديد مستخدمين!</string>
+    <string name="no_users_selected_message">لم تختر أي شخص للاتصال به!</string>
+    <string name="select_friends_to_call">اختر الأصدقاء للاتصال</string>
+
+    <!--Next match-->
+    <string name="match_next">المباراة القادمة</string>
+    <string name="vs">ضد</string>
+    <string name="day">%1$d يوم</string>
+    <string name="days">%1$d أيام</string>
+    <string name="hour">%1$d ساعة</string>
+    <string name="hours">%1$d ساعات</string>
+    <string name="min">%1$d دقيقة</string>
+    <string name="mins">%1$d دقائق</string>
+    <string name="sec">%1$d ثانية</string>
+    <string name="secs">%1$d ثواني</string>
+    <string name="live">مباشر</string>
+
+    <!--Posts & News-->
+    <string name="post_create">إنشاء مشاركة جديدة</string>
+    <string name="post_title_hint">انقر هنا لإدخال عنوان المشاركة</string>
+    <string name="post_body_hint">انقر هنا لبدء كتابة مشاركتك…</string>
+    <string name="post_create_tip_header">لإنشاء مشاركة جديدة:</string>
+    <string name="post_create_tip_body"><![CDATA[<b>1.</b> اختر صورة من مكتبة الوسائط أو التقط صورة جديدة عن طريق تحديد أحد الرمزين في منطقة الصورة في الجزء العلوي (اختياري) <br/> <b>2.</b> إنشاء عنوانا عن طريق تحديد العنوان والكتابة. <br/> <b>3.</b> إنشاء محتوى عن طريق تحديد نص المحتوى والكتابة.]]></string>
+    <string name="pin_title">النشر على حائطك؟</string>
+    <string name="pin_confirm">هل ترغب بنشر هذا على حائطك؟?</string>
+    <string name="pin_message_hint">أدخل رسالة مع مشاركتك المشتركة…</string>
+    <string name="comment_hint">أدخل تعليقك هنا…</string>
+    <string name="read_more">اقرأ المزيد &gt;</string>
+    <string name="read_less">قراءة أقل &lt;</string>
+    <string name="edit">تعديل</string>
+    <string name="delete">حذف</string>
+    <string name="translate">پوسٹ کا ترجمہ کریں</string>
+    <string name="share">مشاركة</string>
+    <string name="post">بريد</string>
+    <string name="back">الى الخلف</string>
+    <string name="translated">ترجمہ شدہ از</string>
+    <string name="translated_from">ترجمہ شدہ</string>
+
+    <!--Purchases-->
+    <string name="rewards_received">الجوائز والعناصر المتلقاة من حقائب الجيم</string>
+    <string name="bonus_gym_bag">+ مكافأة حقيبة الصالة الرياضية</string>
+    <string name="bundles">حزم</string>
+    <string name="wallet">محفظة نقود</string>
+    <string name="stash">خزنتك</string>
+    <string name="your_statement">تصريحك</string>
+    <string name="search_for_friends">البحث عن أصدقاء</string>
+    <string name="add_attachment">إضافة مرفق</string>
+    <string name="take_photo">تصوير</string>
+    <string name="record_audio">تسجيل صوتي</string>
+    <string name="chat_edit">تحرير الدردشة</string>
+    <string name="authorize_description">تحتاج إلى تسجيل الدخول n\ من أجل استخدام جميع ميزات التطبيق</string>
+    <string name="fixtures">تركيبات</string>
+    <string name="results">نتائج</string>
+    <string name="tables">الجداول</string>
+    <string name="name">اسم</string>
+    <string name="all_times_in_local_time">جميع الأوقات بالتوقيت المحلي</string>
+    <string name="terms_n_privacy">الشروط والخصوصية</string>
+    <string name="unnamed_chat">\"دردشة بدون اسم\"</string>
+    <string name="search_public_chats">بحث في الدردشات العامة</string>
+    <string name="create">يخلق</string>
+    <string name="alert_on">تنبيه- ON</string>
+    <string name="last_chat">آخر محادثة</string>
+    <string name="join_group">إنضم للمجموعة</string>
+    <string name="you_will_join_chat">هل تريد الانضمام إلى هذه الدردشة؟</string>
+    <string name="you_are_already_in_grp">أنت بالفعل في المجموعة</string>
+    <string name="select_users">تحتاج إلى تحديد شخص واحد على الأقل لإنشاء / تعديل الدردشة</string>
+    <string name="no_user_added">لم يتم إضافة مستخدمين إلى الدردشة</string>
+    <string name="select_chat_img">حدد صورة الدردشة</string>
+    <string name="select_image">تحتاج إلى تحديد صورة الدردشة لإنشاء / تعديل الدردشة</string>
+    <string name="pick_photo">اختيار صورة</string>
+    <string name="pick_video">اختر الفيديو</string>
+    <string name="cant_play">لا يمكن تشغيل هذا الملف</string>
+    <string name="cant_play_video">لا يمكن تشغيل هذا الفيديو</string>
+    <string name="you_will_leave_chat">هل أنت متأكد أنك تريد مغادرة هذه الدردشة؟</string>
+    <string name="you_will_delete_chat">هل أنت متأكد أنك تريد حذف هذه الدردشة؟</string>
+    <string name="a_stats_post">مشاركة احصائيات</string>
+    <string name="failed_to_create_directory">فشل في إنشاء الدليل</string>
+    <string name="blank_first_name">يجب عليك إدخال اسمك الأول!</string>
+    <string name="blank_last_name">يجب عليك إدخال اسمك الأخير!</string>
+    <string name="blank_nick_name">يجب عليك إدخال اسم الشهرة الخاص بك!</string>
+    <string name="blank_email">يجب عليك إدخال بريدك الإلكتروني!</string>
+    <string name="blank_phone">يجب عليك إدخال هاتفك!</string>
+    <string name="blank_password">يجب عليك إدخال كلمة المرور الخاصة بك!</string>
+    <string name="blank_firstname">يجب عليك إدخال الاسم الأول الخاص بك!</string>
+    <string name="blank_lastname">يجب عليك إدخال اسمك الأخير!</string>
+    <string name="invalid_first_name">الرجاء إدخال اسم أول صالح!</string>
+    <string name="invalid_last_name">رجاء قم بإدخال الاسم الاخير بشكل صحيح!</string>
+    <string name="invalid_nick_name">الرجاء إدخال اسم مستعار صالح!</string>
+    <string name="invalid_email">يرجى إدخال البريد الإلكتروني الصحيح!</string>
+    <string name="invalid_phone">الرجاء إدخال الهاتف صالح. يجب أن يكون طوله من 8 إلى 15 رقمًا!</string>
+    <string name="invalid_password">الرجاء إدخال كلمة السر الصحيحة. يجب أن يكون الحد الأدنى 6 أحرف!</string>
+    <string name="new_friend_request">طلب صديق جديد</string>
+    <string name="accepted_friend_request">قبول طلب الصداقة</string>
+    <string name="new_follower">متابع جديد</string>
+    <string name="unfollowed">غير متبع</string>
+    <string name="unfriended">الغاء الصداقه</string>
+    <string name="mine_friend">صديقي</string>
+    <string name="register">يسجل</string>
+    <string name="login_space">تسجيل الدخول</string>
+    <string name="login">تسجيل الدخول</string>
+    <string name="sign_up">اشتراك</string>
+    <string name="sign_up_with_facebook">اشترك عبر حساب فايسبوك</string>
+    <string name="login_facebook_b">تسجيل الدخول باستخدام الفيسبوك</string>
+    <string name="Cancel">يلغي</string>
+    <string name="Okay">تمام</string>
+    <string name="butn_done">فعله</string>
+    <string name="failed_to_crop_image">فشل اقتصاص الصورة</string>
+    <string name="this_file_no_longer_exist">هذا الملف لم يعد موجودا</string>
+    <string name="camera_permission_is_needed_to_take_pictures">مطلوب إذن الكاميرا لالتقاط الصور</string>
+    <string name="see_all">اظهار الكل</string>
+    <string name="watch_now">شاهد الآن</string>
+    <string name="socials">الاجتماعية</string>
+    <string name="streaming">تدفق</string>
+    <string name="cancel_post">تريد إلغاء هذا المنشور؟</string>
+    <string name="no_videos_found">لا توجد فيديوهات</string>
+    <string name="trimming_progress">اقتطاع الفيديو الخاص بك …</string>
+    <string name="short_seconds">ثانيا</string>
+    <string name="no_feed_post_available">لا توجد تغذية آخر متاحة</string>
+    <string name="no_data">لاتوجد بيانات</string>
+    <string name="old_password">كلمة سر قديمة</string>
+    <string name="new_password">كلمة السر الجديدة</string>
+    <string name="title_posts">دعامات</string>
+    <string name="enter_chat_name">أدخل اسم الدردشة</string>
+    <string name="you_need_to_enter_chat_name">تحتاج إلى إدخال اسم الدردشة</string>
+    <string name="club_tv">نادي التلفزيون</string>
+    <string name="you_want_to_remove_this_user">هل أنت متأكد أنك تريد إزالة الصديق؟</string>
+    <string name="you_want_to_send_friend_request">هل أنت متأكد أنك تريد إرسال طلب صداقة؟</string>
+    <string name="you_want_to_accept_friend_request">هل أنت متأكد أنك تريد قبول طلب الصداقة؟</string>
+    <string name="you_want_to_decline_friend_request">هل أنت متأكد أنك تريد رفض طلب الصداقة؟</string>
+    <string name="yes">نعم</string>
+    <string name="no">رقم</string>
+    <string name="decline_friend_request">رفض طلب الصداقة</string>
+    <string name="remove_user">إزالة المستخدم</string>
+    <string name="delete_chat">حذف الدردشة</string>
+    <string name="leave_chat">اترك الدردشة</string>
+    <string name="report_user">أبلغ عن مستخدم</string>
+    <string name="you_want_to_report_user">هل أنت متأكد أنك تريد الإبلاغ عن هذا المستخدم؟</string>
+    <string name="delete_post">حذف آخر</string>
+    <string name="reported_post">تم الإبلاغ عن المشاركة بنجاح</string>
+    <string name="undo_translate">تراجع عن الترجمة</string>
+    <string name="enter_title">الرجاء إدخال العنوان</string>
+    <string name="enter_report_message">الرجاء إدخال رسالة التقرير</string>
+    <string name="report_message">الإبلاغ عن رسالة</string>
+    <string name="report_post">تقرير آخر</string>
+    <string name="write_complaint">الرجاء كتابة شكواك</string>
+    <string name="wrong_email_or_password_please_try_again">بريد إلكتروني أو كلمة مرور خاطئة. حاول مرة اخرى</string>
+    <string name="notifications">إشعارات</string>
+    <string name="try_to_upload_file_again">حاول تحميل الملف مرة أخرى</string>
+    <string name="failed_to_upload">فشل تحميل الملف</string>
+    <string name="access_full_mtn">انضم إلينا الآن للوصول إلى أحداث VIP والوصول الحصري أيضًا …</string>
+    <string name="no_friends">ليس هناك أصدقاء حتى الآن</string>
+    <string name="audio">🔊 سمعي</string>
+    <string name="calendar">تقويم</string>
+    <string name="points">X نقاط FC</string>
+    <string name="post_no_longer_available">هذا المنشور لم يعد متاحا.</string>
+    <string name="no_notifications">لا إخطارات حتى الآن</string>
+    <string name="no_friend_request">ليس لديك طلبات صداقة معلقة</string>
+    <string name="share_using">مشاركة باستخدام …</string>
+    <string name="facebook">فيسبوك</string>
+    <string name="other_services">خدمات أخرى</string>
+    <string name="login_cancelled">تم إلغاء تسجيل الدخول</string>
+    <string name="post_not_found">المشاركة لم تعد متوفرة.</string>
+    <string name="compressing_video">جاري ضغط الفيديو الخاص بك …</string>
+    <string name="title_like_post">مثل وردت</string>
+    <string name="desc_like_post">%s اعجب بمنشورك</string>
+    <string name="title_post_created">تم نشر صديق</string>
+    <string name="title_post_updated">تم تحرير مشاركة صديق</string>
+    <string name="title_new_comment">تم استلام التعليق</string>
+    <string name="title_comment_updated">تم تحرير التعليق</string>
+    <string name="accept_friend_request">تم قبول طلب الصداقة</string>
+    <string name="received_friend_request">طلب صديق جديد</string>
+    <string name="message_received">وصلت الرساله</string>
+    <string name="new_msg_msg">%s أرسل رسالة</string>
+    <string name="new_media_msg_msg">%s أرسل وسائط</string>
+    <string name="desc_comment_updated">%s قام بتحرير تعليق على منشورك </string>
+    <string name="desc_new_comment">%s علق على منشورك</string>
+    <string name="desc_post_updated">%s قا بتحرير المشاركة</string>
+    <string name="desc_post_created">%s قام بإنشاء منشور جديد </string>
+    <string name="friend_request_accepted_msg">%s قبل طلب الصداقة الخاص بك</string>
+    <string name="friend_request_msg">%s أرسل إليك طلب صداقة</string>
+    <string name="notification_unmuted">%s تم إلغاء كتم صوت بنجاح.</string>
+    <string name="notification_muted">%s تم كتم صوت بنجاح.</string>
+    <string name="accept">قبول</string>
+    <string name="desc_like_club_post">%s نال إعجاب: %s</string>
+    <string name="title_like_club_post">%s صديق أعجبه منشور</string>
+    <string name="desc_club_comment_updated">%s قام بتحرير تعليق على :%s</string>
+    <string name="title_club_comment_updated">%s قام الصديق بتحرير تعليق على منشور</string>
+    <string name="desc_new_club_comment">%s ترك تعليقاً على: %s</string>
+    <string name="title_new_club_comment">%s علق صديق على منشور</string>
+    <string name="desc_club_post_updated">%s قام بتحرير النشرة: %s</string>
+    <string name="title_club_post_updated">%s تم تحرير المشاركة في</string>
+    <string name="desc_club_post_created">%s قام بإضافة منشور جديد: %s</string>
+    <string name="title_club_post_created">%s منشور جديد في</string>
+    <string name="desc_new_comment_owner">%s علق على منشوراتهم</string>
+    <string name="desc_comment_updated_owner">%s قام بتحرير تعليق على منشوراتهم</string>
+    <string name="desc_like_post_owner">%s اعجب بمنشوراتهم</string>
+    <string name="desc_new_comment_friend">%s علق على منشور صديقك</string>
+    <string name="desc_comment_updated_friend">%s قام بتحرير تعليق على منشور صديقك</string>
+    <string name="desc_like_post_friend">%s أبدى إعجابه بمنشور صديقك</string>
+
+
+</resources>

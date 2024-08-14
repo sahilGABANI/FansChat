@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.appbar.AppBarLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/appBarLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorToolbar"
+            android:padding="@dimen/_3sdp"
+            tools:showIn="@layout/activity_main">
+
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_centerVertical="true"
+                android:padding="@dimen/_2sdp"
+                android:src="@drawable/toolbar_icon" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/logo"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="-4dp"
+                android:layout_marginBottom="@dimen/_7sdp"
+                android:layout_toStartOf="@+id/notifications"
+                android:layout_toEndOf="@id/logo"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/ivCaption"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/toolbar_icon_height"
+                    android:layout_gravity="center_vertical"
+                    android:adjustViewBounds="true"
+                    android:gravity="center_vertical"
+                    android:src="@drawable/bal_text_logo"
+                    app:tint="@color/toolBarTint" />
+
+                <ImageView
+                    android:id="@+id/ivCaption2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/height_20"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="@dimen/_4sdp"
+                    android:adjustViewBounds="true"
+                    android:gravity="center_vertical"
+                    android:src="@drawable/mnt_logo" />
+            </LinearLayout>
+
+
+            <ImageButton
+                android:id="@+id/notifications"
+                style="@style/Base.Widget.AppCompat.Button.Borderless"
+                android:layout_width="@dimen/_34sdp"
+                android:layout_height="@dimen/_34sdp"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="-4dp"
+                android:layout_toStartOf="@id/showFriends"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/notif"
+                android:visibility="gone"
+                app:tint="@color/toolBarTint"
+                tools:visibility="visible" />
+
+            <ImageButton
+                android:id="@+id/showFriends"
+                style="@style/Base.Widget.AppCompat.Button.Borderless"
+                android:layout_width="@dimen/_34sdp"
+                android:layout_height="@dimen/_34sdp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="0dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ppl_icon"
+                app:tint="@color/toolBarTint" />
+
+            <ImageView
+                android:id="@+id/friendsBadge"
+                android:layout_width="@dimen/_7sdp"
+                android:layout_height="@dimen/_7sdp"
+                android:layout_alignTop="@+id/showFriends"
+                android:layout_alignEnd="@+id/showFriends"
+                android:layout_gravity="end"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_marginEnd="@dimen/_8sdp"
+                android:background="@drawable/notification_badge_dot"
+                android:visibility="gone"
+                tools:visibility="visible" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/toolbarCarousal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@color/bg_ticker"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:paddingTop="@dimen/_3sdp"
+            android:paddingBottom="@dimen/_3sdp"
+            android:singleLine="true"
+            android:text=""
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_size_11" />
+    </LinearLayout>
+
+</com.google.android.material.appbar.AppBarLayout>

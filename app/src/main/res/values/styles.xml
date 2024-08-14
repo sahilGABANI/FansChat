@@ -1,0 +1,169 @@
+<resources>
+
+    <style name="AppTheme" parent="Theme.Material3.Light.NoActionBar">
+
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">#090909</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textColorLink">@color/colorLink</item>
+
+        <item name="android:fontFamily">@font/titillium</item>
+        <item name="android:textAppearance">@style/Text</item>
+        <item name="buttonStyle">@style/Button</item>
+        <item name="imageButtonStyle">@style/ImageButton</item>
+        <item name="editTextStyle">@style/EditText</item>
+        <item name="android:alertDialogTheme">
+            @style/Base.Theme.MaterialComponents.Light.Dialog.Alert
+        </item>
+    </style>
+
+    <style name="Button" parent="Widget.AppCompat.Button">
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="ImageButton" parent="Widget.AppCompat.Button.Borderless">
+        <item name="android:scaleType">center</item>
+        <item name="android:padding">8dp</item>
+    </style>
+
+    <style name="EditText" parent="Widget.AppCompat.EditText">
+        <!--<item name="android:textStyle">bold</item>-->
+        <item name="android:inputType">textCapSentences|textMultiLine</item>
+        <item name="android:imeOptions">actionDone</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textColorHint">#b9000000</item>
+        <item name="android:paddingStart">12dp</item>
+        <item name="android:paddingEnd">12dp</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingBottom">8dp</item>
+    </style>
+
+    <style name="Text" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+
+    <style name="facebook_login_button_phone" parent="Widget.Material3.Button.ElevatedButton">
+        <item name="android:textSize">@dimen/font_size_12</item>
+        <item name="backgroundTint">@color/fb_button</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="fontFamily">@font/titillium_semibold</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+    </style>
+
+    <style name="edit_text_login_phone">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:paddingStart">15dp</item>
+        <item name="android:paddingEnd">15dp</item>
+        <item name="android:paddingTop">4dp</item>
+        <item name="android:paddingBottom">@dimen/padding_12</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:gravity">center</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:layout_marginBottom">5dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColorHint">@android:color/white</item>
+    </style>
+
+    <style name="RecyclerView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:clipToPadding">false</item>
+    </style>
+
+    <style name="RecyclerView.News">
+        <item name="android:paddingBottom">80dp</item>
+        <item name="android:scrollbars">vertical</item>
+    </style>
+
+    <style name="RecyclerView.Chat">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:paddingTop">40dp</item>
+        <item name="android:paddingBottom">32dp</item>
+    </style>
+
+    <style name="SideMenuRow">
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <style name="SideMenuButton" parent="ImageButton">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:paddingBottom">24dp</item>
+    </style>
+
+    <style name="SideMenuButtonLabel">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/_10sdp</item>
+        <item name="android:layout_marginTop">30dp</item>
+    </style>
+
+    <style name="SideMenuButtonLabelMtn" parent="SideMenuButtonLabel">
+        <item name="android:layout_marginTop">35dp</item>
+    </style>
+
+    <style name="SideMenuButtonContainer">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <style name="ProfileStatsLabel">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_marginEnd">12dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/_10sdp</item>
+    </style>
+
+    <style name="ProfileStatsValue">
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:text">0</item>
+        <item name="android:textSize">@dimen/_10sdp</item>
+    </style>
+
+    <style name="StatItemLeft">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:drawablePadding">6dp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:drawableEnd">@drawable/ic_ball</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="StatItemRight" parent="StatItemLeft">
+        <item name="android:drawableStart">@drawable/ic_ball</item>
+        <item name="android:drawableEnd">@null</item>
+    </style>
+
+    <style name="StatsTableHeaderLabel">
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="StatsTableEntryLabel">
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="RatingBar" parent="Theme.AppCompat">
+        <item name="colorControlNormal">@color/background_progress_color</item>
+        <item name="colorControlActivated">@color/duskYellow</item>
+    </style>
+
+    <style name="DialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/dialog_enter</item>
+        <item name="android:windowExitAnimation">@anim/dialog_exit</item>
+    </style>
+</resources>

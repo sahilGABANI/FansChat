@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout6"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/_5sdp"
+    android:layout_marginBottom="@dimen/_5sdp"
+    android:foreground="?selectableItemBackground"
+    android:translationZ="@dimen/_1sdp"
+    app:cardCornerRadius="0dp"
+    app:cardElevation="@dimen/_1sdp"
+    app:cardMaxElevation="@dimen/_1sdp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary">
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="@drawable/placeholder_flex"
+                android:minHeight="@dimen/_170sdp" />
+
+            <FrameLayout
+                android:id="@+id/flVideo"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_170sdp"
+                android:visibility="gone">
+
+                <!--
+                                <ImageView
+                                    android:id="@+id/ivThumbnail"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@color/colorPrimary"
+                                    android:scaleType="fitCenter"
+                                    android:src="@drawable/placeholder" />
+                -->
+
+                <com.google.android.exoplayer2.ui.StyledPlayerView
+                    android:id="@+id/video_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    app:resize_mode="fit"
+                    app:shutter_background_color="@android:color/transparent"
+                    app:surface_type="texture_view"
+                    app:use_controller="false" />
+
+                <LinearLayout
+                    android:id="@+id/llClickable"
+                    android:layout_width="@dimen/_60sdp"
+                    android:layout_height="@dimen/_60sdp"
+                    android:layout_gravity="center"
+                    android:orientation="vertical" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/ivPlayPause"
+                    android:layout_width="@dimen/_35sdp"
+                    android:layout_height="@dimen/_35sdp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/transparent_black_circle"
+                    android:padding="@dimen/_3sdp"
+                    android:src="@drawable/ic_play"
+                    app:tint="@android:color/white" />
+
+                <ProgressBar
+                    android:id="@+id/progressBar"
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_gravity="center"
+                    android:visibility="gone" />
+
+            </FrameLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:gravity="center_vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="12dp"
+                android:layout_toStartOf="@+id/likes_and_comments"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/avatar"
+                        android:layout_width="@dimen/width_26"
+                        android:layout_height="@dimen/width_26"
+                        android:src="@drawable/avatar_placeholder" />
+
+                    <TextView
+                        android:id="@+id/name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="12dp"
+                        android:ellipsize="end"
+                        android:gravity="center_vertical|start"
+                        android:singleLine="true"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/_10sdp"
+                        android:visibility="visible"
+                        tools:text="Karen Smith" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:gravity="center_vertical">
+
+                    <!--
+                                        <ImageView
+                                            android:id="@+id/socialIcon"
+                                            android:layout_width="@dimen/width_26"
+                                            android:layout_height="@dimen/height_26"
+                                            android:layout_marginEnd="12dp"
+                                            android:src="@drawable/avatar_placeholder"
+                                            android:visibility="visible" />
+                    -->
+
+                    <TextView
+                        android:id="@+id/title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:lineSpacingExtra="@dimen/_1sdp"
+                        android:lineSpacingMultiplier="0.8"
+                        android:maxLines="2"
+                        android:paddingEnd="12dp"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/_11sdp"
+                        android:textStyle="bold"
+                        tools:text="@string/lorem_ipsum" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/likes_and_comments"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:gravity="end"
+                android:orientation="vertical"
+                android:padding="@dimen/_6sdp">
+
+                <TextView
+                    android:id="@+id/date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/_9sdp"
+                    tools:text="Yesterday" />
+
+                <LinearLayout
+                    android:id="@+id/like"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/likedIcon"
+                            android:layout_width="@dimen/height_13"
+                            android:layout_height="@dimen/height_13"
+                            android:src="@drawable/ic_like_count"
+                            android:visibility="gone"
+                            app:tint="@color/colorAccent" />
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/likesIcon"
+                            android:layout_width="@dimen/height_13"
+                            android:layout_height="@dimen/height_13"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentTop="true"
+                            android:src="@drawable/ic_like_count"
+                            app:tint="@android:color/white" />
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/likesCount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="4dp"
+                        android:text="6901"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/_8sdp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/commentsContainer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/comments_icon"
+                        android:layout_width="@dimen/height_13"
+                        android:layout_height="@dimen/height_13"
+                        android:src="@drawable/ic_comments_count"
+                        app:tint="@android:color/white" />
+
+                    <TextView
+                        android:id="@+id/commentsCount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="4dp"
+                        android:text="204"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/_8sdp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/messageContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="6dp"
+            android:paddingBottom="6dp"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/sharedMessageAvatar"
+                android:layout_width="@dimen/height_26"
+                android:layout_height="@dimen/height_26"
+                android:layout_marginTop="4dp"
+                android:src="@drawable/avatar_placeholder" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="12dp"
+                android:layout_marginEnd="12dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/sharedUsername"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:lineSpacingMultiplier="0.8"
+                    android:maxLines="2"
+                    android:text="Check this out!"
+                    android:textSize="@dimen/_10sdp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/sharedMessage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:lineSpacingMultiplier="0.8"
+                    android:maxLines="2"
+                    android:text="Check this out!"
+                    android:textSize="@dimen/_10sdp"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

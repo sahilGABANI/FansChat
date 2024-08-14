@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--Screen titles-->
+    <string name="wall">墙</string>
+    <string name="news">新闻</string>
+    <string name="rumours">传言</string>
+    <string name="social">社会的</string>
+    <string name="stats">统计</string>
+    <string name="shop">商店</string>
+    <string name="chat">聊天</string>
+    <string name="video_chat">视频聊天</string>
+    <string name="radio">俱乐部电台</string>
+    <string name="tv">俱乐部电视</string>
+    <string name="tickets">门票</string>
+    <string name="store">商店</string>
+    <string name="quiz">迷题</string>
+    <string name="fantasy">幻想</string>
+
+    <string-array name="menu_navigation">
+        <item>@string/wall</item>
+        <item>@string/chat</item>
+        <item>@string/news</item>
+        <item>@string/social</item>
+        <item>@string/stats</item>
+        <item>@string/rumours</item>
+        <item>@string/radio</item>
+        <item>@string/tickets</item>
+        <item>@string/shop</item>
+        <item>@string/tv</item>
+        <item>@string/video_chat</item>
+        <item>@string/calendar</item>
+    </string-array>
+
+    <!-- Login & Register -->
+    <string name="slogan">将 球迷 聚起来</string>
+    <string name="access_full">要访问完整的功能…</string>
+    <string name="join_sign_in">立即加入 / 登录</string>
+    <string name="sign_in">登录</string>
+    <string name="join">立即加入</string>
+    <string name="login_facebook">用 Facebook 帐户登录</string>
+    <string name="or">或者</string>
+    <string name="email">电子邮件</string>
+    <string name="password">密码</string>
+    <string name="first_name">名字</string>
+    <string name="last_name">姓氏</string>
+    <string name="nickname">昵称</string>
+    <string name="phone">电话</string>
+    <string name="error">错误</string>
+    <string name="login_failed">登录失败！</string>
+    <string name="registration_failed">注册失败</string>
+    <string name="forgot_your_password">忘记密码？</string>
+    <string name="password_reset">重置密码</string>
+    <string name="reset_check_email">请查看您的电子邮件，以了解密码重置选项。</string>
+    <string name="email_enter_valid">请输入有效的电子邮件地址。</string>
+    <string name="policy_prompt">通过注册，您即同意 FansChat 的\n<font color="#FFFFFF">使用条款</font> 和 <font color="#FFFFFF">隐私政策。</font></string>
+    <string name="required_email">您必须输入电子邮件！</string>
+    <string name="required_password">您必须输入密码</string>
+    <string name="required_first_name">您必须输入自己的名字！</string>
+    <string name="required_last_name">您必须输入自己的姓氏！</string>
+    <string name="required_nickname">您必须输入昵称！</string>
+    <string name="required_phone">您必须输入电话号码！</string>
+    <string name="required_credentials">缺少的信息</string>
+    <string name="password_try_again">请重新输入您的密码，然后再试。</string>
+    <string name="login_slider_chat">你可以和朋友聊天，创建团体，甚至连接你最喜欢的玩家！</string>
+    <string name="logout_from_app">这将让您退出本应用？</string>
+    <string name="reset_app">此操作将重新加载应用程序。</string>
+    <string name="error_username_taken">注册错误 - 用户名已被占用，请选择其他用户名。</string>
+    <string name="facebook_error">无法收到您的公开个人资料。请再试一次！</string>
+
+    <!--Dialogs-->
+    <string name="ok">确定</string>
+    <string name="allow">允许</string>
+    <string name="deny">拒绝</string>
+    <string name="warning">警告</string>
+    <string name="uploading">上传中…</string>
+    <string name="no_connection">无连接</string>
+    <string name="internet_needed">您需要接入互联网，才能执行此功能</string>
+    <string name="waiting_for_internet">正在等待有效的网络连接…</string>
+
+    <!--Profile-->
+    <string name="go_to_profile">转到配置文件></string>
+    <string name="profile">您的个人资料</string>
+    <string name="contact_info">联系方式</string>
+    <string name="choose_your_language">选择您的语言</string>
+    <string name="chosen_language">已选语言</string>
+    <string name="location">地址</string>
+    <string name="subscribed_since">初次订阅时间：</string>
+    <string name="auto_translation">自动翻译</string>
+    <string name="notify_wall">公告墙通知</string>
+    <string name="notify_news">启用新闻通知</string>
+    <string name="notify_rumours">启用传闻通知</string>
+    <string name="notify_social">启用社交通知</string>
+    <string name="edit_profile">编辑您的个人资料</string>
+    <string name="edit_photo">编辑照片</string>
+    <string name="done">完成</string>
+    <string name="caps_level">出场级别</string>
+    <string name="days_using">使用 SSK 的天数</string>
+    <string name="wall_posts">墙贴</string>
+    <string name="videos_watched">已观看视频</string>
+    <string name="matches_home">参赛场次（主场）</string>
+    <string name="matches_away">参赛场次（客场）</string>
+    <string name="likes_received">收到的赞数</string>
+    <string name="comments_made">做出的评论数</string>
+    <string name="language">语言</string>
+    <string name="you_have">你拥有</string>
+    <string name="caps">出场次数</string>
+    <string name="language_current">汉语</string>
+
+    <!--Friends-->
+    <string name="friend_profile">好友信息</string>
+    <string name="friend_requests">交友请求</string>
+    <string name="follows_you">关注您</string>
+    <string name="user_profile">用户个人资料</string>
+    <string name="friends_title">您的朋友</string>
+    <string name="friends_search">搜索您的朋友</string>
+    <string name="offline">离线</string>
+    <string name="friend_request_pending">待定好友请求</string>
+    <string name="enter_friend_name_invite">输入好友的电子邮件地址，以进行邀请。</string>
+    <string name="remove_friend">取消关注</string>
+    <string name="friend_request_send">发送好友请求？</string>
+    <string name="friend_unfollow">取消关注好友</string>
+    <string name="friend_follow">关注好友</string>
+    <string name="posts">置顶</string>
+    <string name="comments">注释</string>
+    <string name="friends">好友</string>
+    <string name="following">关注</string>
+    <string name="followers">粉丝</string>
+    <string name="report">报告滥用情况</string>
+    <string name="cancel">取消</string>
+    <string name="member_info">会员信息</string>
+    <string name="requested_on">请求</string>
+    <string name="you">您</string>
+    <string name="add_friend">添加好友</string>
+    <string name="invite_friend">邀请好友</string>
+    <string name="add_friend_hint">在搜索字段中输入你朋友的姓名、电子邮件或电话号码。</string>
+    <string name="save">保存</string>
+    <string name="invite">邀请</string>
+    <string name="follow_more">关注更多人</string>
+    <string name="friends_following_you">关注您的好友：</string>
+    <string name="find">查找</string>
+    <string name="requests">请求</string>
+    <string name="official_accounts">官方帐户</string>
+    <string name="no_results">无结果</string>
+    <string name="user">用户</string>
+    <string name="more">更多</string>
+    <string name="friend_you_and">朋友和您 </string>
+    <string name="have_in_common"> 共同点：</string>
+
+    <!--Chat-->
+    <string name="members">会员</string>
+    <string name="leave">离开聊天</string>
+    <string name="are_you_sure">确定吗？</string>
+    <string name="chat_confirm_leave">离开此聊天？</string>
+    <string name="chat_confirm_delete">这将永久删除此聊天；您确定吗？</string>
+    <string name="photo_or_video">拍照或录制视频？</string>
+    <string name="chat_image">图片</string>
+    <string name="from_gallery">从图书馆挑选</string>
+    <string name="from_camera">使用相机</string>
+    <string name="record_video">录视频</string>
+    <string name="chat_hold">按住记录</string>
+    <string name="chat_recording_stop">录制停止</string>
+    <string name="no_message_text">还没人开始聊天！为何不率先创建？</string>
+    <string name="chat_public">聊天室已公开</string>
+    <string name="chat_private">聊天室未公开</string>
+    <string name="chat_create">创建新聊天</string>
+    <string name="chat_join">加入聊天</string>
+    <string name="single_user_is_typing">%1$s 在打字…</string>
+    <string name="multiple_users_are_typing">多个用户正在输入…</string>
+    <string name="alerts_on">聊天提示打开</string>
+    <string name="alerts_off">聊天提示打开</string>
+    <string name="chat_with_friends_login">跟朋友聊天。</string>
+    <string name="friends_in_chat">聊天中的朋友</string>
+    <string name="friend_in_chat">1位朋友在聊天</string>
+    <string name="chats">聊天</string>
+    <string name="chats_public">公共聊天室</string>
+    <string name="search">搜索公共聊天室</string>
+    <string name="message_hint">在此输入您的消息…</string>
+    <string name="chat_friends_add">将朋友添加到 %s</string>
+    <string name="chat_name">聊天室名称</string>
+    <string name="chat_give_name">给您的聊天室命名</string>
+    <string name="chat_rename">重命名聊天室</string>
+    <string name="add_friends_to_chat">将好友添加聊天室</string>
+    <string name="friend_chats">公众聊天你的朋友在</string>
+    <string name="is_in"> 位于： </string>
+
+    <!--Video chat-->
+    <string name="video_chat_promo_1">赢得与你的朋友的比赛</string>
+    <string name="video_chat_promo_2">视频聊天可以让你打电话给3个朋友进行一个群组的视频聊天，这样你就可以体验与你爱的人在任何地方的行动！</string>
+    <string name="call_start">开始呼叫</string>
+    <string name="call_starting">正在开始新呼叫</string>
+    <string name="call_add_member">添加到呼叫</string>
+    <string name="accept_call">要应答此呼叫吗？</string>
+    <string name="call_receive">接听以下呼叫：</string>
+    <string name="video_chat_max">对不起，您最多只能与 3 位朋友进行视频通话，因此呼叫已满员！</string>
+    <string name="video_chats">视频聊天</string>
+    <string name="friends_in_video_chat">视频聊天中的朋友</string>
+    <string name="friend_in_video_chat">1位视频聊天的朋友</string>
+    <string name="no_users_selected">未选择用户！</string>
+    <string name="no_users_selected_message">您还没有选择要呼叫的人！</string>
+    <string name="select_friends_to_call">选择要呼叫的朋友</string>
+
+    <!--Next match-->
+    <string name="match_next">下一场比赛</string>
+    <string name="vs">对决</string>
+    <string name="day">%1$d 天</string>
+    <string name="days">%1$d 天</string>
+    <string name="hour">%1$d 小时</string>
+    <string name="hours">%1$d 小时</string>
+    <string name="min">%1$d 分钟</string>
+    <string name="mins">%1$d 分钟</string>
+    <string name="sec">%1$d 秒</string>
+    <string name="secs">%1$d 秒</string>
+    <string name="live">实时</string>
+
+    <!--Posts & News-->
+    <string name="post_create">创建新帖子</string>
+    <string name="post_title_hint">点击这里输入你的帖子的标题</string>
+    <string name="post_body_hint">点击这里开始写你的帖子…</string>
+    <string name="post_create_tip_header">要创建一个新帖子：</string>
+    <string name="post_create_tip_body"><![CDATA[<b>1。</b>从媒体库中选择一张图像，或者通过选择顶部图像区域中的两个图标之一（可选）来拍摄新图像<br/> <b>2。</b>创建通过选择标题和输入标题。<br/> <b>3。</b>通过选择内容文字和输入来创建内容。]]></string>
+    <string name="pin_title">要发布到您的墙上吗？</string>
+    <string name="pin_confirm">要将此消息发布到您的墙上吗？</string>
+    <string name="pin_message_hint">输入您的共享帖子的消息…</string>
+    <string name="comment_hint">在这里输入你的评论…</string>
+    <string name="read_more">阅读更多＆gt;</string>
+    <string name="read_less">阅读更少＆lt;</string>
+    <string name="edit">编辑</string>
+    <string name="delete">删除</string>
+    <string name="translate">翻译</string>
+    <string name="share">分享</string>
+    <string name="post">岗位</string>
+    <string name="back">背部</string>
+    <string name="translated">已翻译</string>
+    <string name="translated_from">译自</string>
+
+    <!--Purchases-->
+    <string name="rewards_received">从 Gym Bags 处获得的奖励与物品</string>
+    <string name="bonus_gym_bag">+奖金健身包</string>
+    <string name="bundles">个捆绑包</string>
+    <string name="wallet">钱包</string>
+    <string name="stash">您的宝藏</string>
+    <string name="your_statement">您的声明</string>
+    <string name="search_for_friends">搜索好友</string>
+    <string name="add_attachment">添加附件</string>
+    <string name="take_photo">拍照</string>
+    <string name="record_audio">录制音频</string>
+    <string name="chat_edit">编辑聊天</string>
+    <string name="authorize_description">您需要登录\n才能使用应用程序的所有功能\n</string>
+    <string name="fixtures">夹具</string>
+    <string name="results">结果</string>
+    <string name="tables">表</string>
+    <string name="name">名称</string>
+    <string name="all_times_in_local_time">所有时间均为当地时间</string>
+    <string name="terms_n_privacy">条款和隐私</string>
+    <string name="unnamed_chat">\'无名聊天\'</string>
+    <string name="search_public_chats">搜索公共聊天</string>
+    <string name="create">创建</string>
+    <string name="alert_on">警报开启</string>
+    <string name="last_chat">上次聊天</string>
+    <string name="join_group">加入群</string>
+    <string name="you_will_join_chat">你想加入这个聊天吗？</string>
+    <string name="you_are_already_in_grp">你已经在群里了</string>
+    <string name="select_users">您需要至少选择一个人来创建/编辑聊天</string>
+    <string name="no_user_added">没有用户添加到聊天中</string>
+    <string name="select_chat_img">选择聊天图像</string>
+    <string name="select_image">您需要选择聊天图像来创建/编辑聊天</string>
+    <string name="pick_photo">选择照片</string>
+    <string name="pick_video">选择视频</string>
+    <string name="cant_play">无法播放此文件</string>
+    <string name="cant_play_video">无法播放此视频</string>
+    <string name="you_will_leave_chat">确定要退出此聊天吗？</string>
+    <string name="you_will_delete_chat">您确定要删除此聊天吗？</string>
+    <string name="a_stats_post">统计帖子</string>
+    <string name="failed_to_create_directory">创建目录失败</string>
+    <string name="blank_first_name">您必须输入您的名字！</string>
+    <string name="blank_last_name">您必须输入您的姓氏！</string>
+    <string name="blank_nick_name">您必须输入您的昵称！</string>
+    <string name="blank_email">您必须输入您的电子邮件！</string>
+    <string name="blank_phone">你必须输入你的手机！</string>
+    <string name="blank_password">您必须输入密码！</string>
+    <string name="blank_firstname">您必须输入您的名字！</string>
+    <string name="blank_lastname">您必须输入您的姓氏！</string>
+    <string name="invalid_first_name">请输入一个有效的名字！</string>
+    <string name="invalid_last_name">请输入有效的姓氏！</string>
+    <string name="invalid_nick_name">请输入有效的昵称！</string>
+    <string name="invalid_email">请输入有效电子邮件！</string>
+    <string name="invalid_phone">请输入有效电话号码。 它应该是 8 到 15 位数字！</string>
+    <string name="invalid_password">请输入有效密码。 它应该至少有 6 个字符长！</string>
+    <string name="new_friend_request">新朋友请求</string>
+    <string name="accepted_friend_request">接受好友请求</string>
+    <string name="new_follower">新追随者</string>
+    <string name="unfollowed">未关注</string>
+    <string name="unfriended">非朋友</string>
+
+    <string name="mine_friend">我的朋友</string>
+    <string name="register">登记</string>
+    <string name="login_space">登录</string>
+    <string name="login">登录</string>
+    <string name="sign_up">注册</string>
+    <string name="sign_up_with_facebook">使用 Facebook 注册</string>
+    <string name="login_facebook_b">使用 Facebook 登录</string>
+    <string name="Cancel">取消</string>
+    <string name="Okay">好的</string>
+    <string name="butn_done">完毕</string>
+    <string name="failed_to_crop_image">未能裁剪图像</string>
+    <string name="this_file_no_longer_exist">此文件已不存在</string>
+    <string name="camera_permission_is_needed_to_take_pictures">需要相机权限才能拍照</string>
+    <string name="see_all">看到所有</string>
+    <string name="watch_now">立即观看</string>
+    <string name="socials">社交</string>
+    <string name="streaming">流媒体</string>
+    <string name="cancel_post">你想取消这个帖子吗？</string>
+    <string name="no_videos_found">未找到视频</string>
+    <string name="trimming_progress">正在修剪您的视频…</string>
+    <string name="short_seconds">第二</string>
+    <string name="no_feed_post_available">没有可用的提要帖子</string>
+    <string name="no_data">没有找到数据</string>
+    <string name="old_password">旧密码</string>
+    <string name="new_password">新密码</string>
+    <string name="title_posts">帖子</string>
+    <string name="enter_chat_name">输入聊天名称</string>
+    <string name="you_need_to_enter_chat_name">您需要输入聊天名称</string>
+    <string name="club_tv">俱乐部电视</string>
+    <string name="you_want_to_remove_this_user">确定要删除好友吗？</string>
+    <string name="you_want_to_send_friend_request">您确定要发送好友请求吗？</string>
+    <string name="you_want_to_accept_friend_request">您确定要接受好友请求吗？</string>
+    <string name="you_want_to_decline_friend_request">您确定要拒绝好友请求吗？</string>
+    <string name="yes">是的</string>
+    <string name="no">不</string>
+    <string name="decline_friend_request">拒绝好友请求</string>
+    <string name="remove_user">删除用户</string>
+    <string name="delete_chat">删除聊天</string>
+    <string name="leave_chat">离开聊天</string>
+    <string name="report_user">报告用户</string>
+    <string name="you_want_to_report_user">您确定要举报此用户吗？</string>
+    <string name="delete_post">删除帖子</string>
+    <string name="reported_post">帖子举报成功</string>
+    <string name="undo_translate">撤消翻译</string>
+    <string name="enter_title">请输入标题</string>
+    <string name="enter_report_message">请输入举报信息</string>
+    <string name="report_message">举报讯息</string>
+    <string name="report_post">举报帖</string>
+    <string name="write_complaint">请写下您的投诉</string>
+    <string name="wrong_email_or_password_please_try_again">错误的邮件地址或密码。 请再试一次</string>
+    <string name="notifications">通知</string>
+    <string name="try_to_upload_file_again">再次尝试上传文件</string>
+    <string name="failed_to_upload">上传文件失败</string>
+
+    <string name="access_full_mtn">立即加入我们以访问 VIP 活动和独家访问权……</string>
+    <string name="audio">🔊 音频</string>
+    <string name="no_friends">还没有朋友</string>
+    <string name="calendar">日历</string>
+    <string name="points">X FC 积分</string>
+    <string name="post_no_longer_available">该帖子不再可用。</string>
+    <string name="no_notifications">还没有通知</string>
+    <string name="no_friend_request">您没有待处理的好友请求</string>
+    <string name="share_using">分享使用…</string>
+    <string name="facebook">Facebook</string>
+    <string name="other_services">其他服务</string>
+    <string name="login_cancelled">登录已取消</string>
+    <string name="post_not_found">帖子不再可用。</string>
+    <string name="compressing_video">正在压缩您的视频…</string>
+    <string name="title_like_post">喜欢收到</string>
+    <string name="desc_like_post">%s 喜欢了你的帖子</string>
+    <string name="title_post_created">朋友发布</string>
+    <string name="title_post_updated">朋友编辑的帖子</string>
+    <string name="title_new_comment">收到评论</string>
+    <string name="title_comment_updated">评论已编辑</string>
+    <string name="accept_friend_request">接受好友请求</string>
+    <string name="received_friend_request">新朋友请求</string>
+    <string name="message_received">收到消息</string>
+    <string name="new_msg_msg">%s 发送了一条消息</string>
+    <string name="new_media_msg_msg">%s 发送了一个媒体</string>
+    <string name="desc_comment_updated">%s 编辑了对您帖子的评论</string>
+    <string name="desc_new_comment">%s 评论了你的帖子</string>
+    <string name="desc_post_updated">%s 已编辑帖子</string>
+    <string name="desc_post_created">%s 创建了一个新帖子</string>
+    <string name="friend_request_msg">%s 已向您发送好友请求</string>
+    <string name="friend_request_accepted_msg">%s 已接受您的好友请求</string>
+    <string name="notification_unmuted">%s 已成功取消静音。</string>
+    <string name="notification_muted">%s 静音成功。</string>
+    <string name="accept">接受</string>
+    <string name="desc_like_club_post">%s 喜欢：%s</string>
+    <string name="title_like_club_post">朋友喜欢了 %s 个帖子</string>
+    <string name="desc_club_comment_updated">%s 编辑了关于: %s 的评论</string>
+    <string name="title_club_comment_updated">朋友编辑了对 %s 帖子的评论</string>
+    <string name="desc_new_club_comment">%s 发表了评论: %s</string>
+    <string name="title_new_club_comment">朋友对 %s 帖子发表了评论</string>
+    <string name="desc_club_post_updated">%s 已编辑帖子：%s</string>
+    <string name="title_club_post_updated">帖子在 %s 中编辑</string>
+    <string name="desc_club_post_created">%s 添加了一个新帖子：%s</string>
+    <string name="title_club_post_created">%s 中的新帖子</string>
+    <string name="desc_new_comment_owner">%s 评论了他们的帖子</string>
+    <string name="desc_comment_updated_owner">%s 编辑了对其帖子的评论</string>
+    <string name="desc_like_post_owner">%s 赞了他们的帖子</string>
+    <string name="desc_like_post_friend">%s 赞了你朋友的帖子</string>
+    <string name="desc_comment_updated_friend">%s 编辑了对您朋友帖子的评论</string>
+    <string name="desc_new_comment_friend">%s 评论了你朋友的帖子</string>
+
+</resources>

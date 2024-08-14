@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black">
+
+    <com.github.chrisbanes.photoview.PhotoView
+        android:id="@+id/photo_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <ImageButton
+        android:id="@+id/backButtonMain"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="@dimen/_28sdp"
+        android:layout_height="@dimen/_28sdp"
+        android:layout_margin="@dimen/_10sdp"
+        android:background="@drawable/transparent_black_circle"
+        android:padding="@dimen/_2sdp"
+        android:rotationY="@integer/view_rotation"
+        android:src="@drawable/ic_keyboard_arrow_left_white_24dp" />
+
+</RelativeLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linRoot"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorToolbar"
+    android:gravity="center_horizontal"
+    android:orientation="horizontal"
+    tools:showIn="@layout/fragment_web">
+
+    <ImageButton
+        android:id="@+id/previous"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:src="@drawable/ic_back"
+        app:tint="@color/enable_disable_button" />
+
+    <ImageButton
+        android:id="@+id/home"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:src="@drawable/ic_home"
+        app:tint="@color/enable_disable_button" />
+
+    <ImageButton
+        android:id="@+id/pinStat"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:src="@drawable/ic_pin"
+        android:visibility="gone"
+        app:tint="@color/enable_disable_button" />
+
+    <ImageButton
+        android:id="@+id/forward"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:src="@drawable/ic_forward"
+        app:tint="@color/enable_disable_button" />
+
+</LinearLayout>
+

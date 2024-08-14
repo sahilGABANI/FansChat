@@ -1,0 +1,134 @@
+{
+  "project_info": {
+    "project_number": "1039861584527",
+    "project_id": "fanschat-50438",
+    "storage_bucket": "fanschat-50438.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1039861584527:android:797dd5566646cddfce16fa",
+        "android_client_info": {
+          "package_name": "com.fanschat.bal"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1039861584527-semijtqf2guvlphli1320gd8ka4shdpb.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.fanschat.bal",
+            "certificate_hash": "f92a59dd086bbc64b69b3a035af46ada619aecaa"
+          }
+        },
+        {
+          "client_id": "1039861584527-cpc1m4ab9dcmq4o3lg7csu6dklqskuch.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCwfvegtalXa0FjIrgTKI10C1vXFwTN8mM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1039861584527-cpc1m4ab9dcmq4o3lg7csu6dklqskuch.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1039861584527-ed3dbsipq8721htb55vdq9mnm4giigqm.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.fanschat.mtn"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1039861584527:android:6e89003a11d0b2dbce16fa",
+        "android_client_info": {
+          "package_name": "com.fanschat.mtn"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1039861584527-r5qhin465esqsa2je6970dula6ns7v3h.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.fanschat.mtn",
+            "certificate_hash": "1f76e4482e8c695815eb09de2747bdaa6163114a"
+          }
+        },
+        {
+          "client_id": "1039861584527-cpc1m4ab9dcmq4o3lg7csu6dklqskuch.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCwfvegtalXa0FjIrgTKI10C1vXFwTN8mM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1039861584527-cpc1m4ab9dcmq4o3lg7csu6dklqskuch.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1039861584527-ed3dbsipq8721htb55vdq9mnm4giigqm.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.fanschat.mtn"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1039861584527:android:ba4d5bc8dfd89568ce16fa",
+        "android_client_info": {
+          "package_name": "com.fanschat.sporting"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1039861584527-cpc1m4ab9dcmq4o3lg7csu6dklqskuch.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCwfvegtalXa0FjIrgTKI10C1vXFwTN8mM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1039861584527-cpc1m4ab9dcmq4o3lg7csu6dklqskuch.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1039861584527-ed3dbsipq8721htb55vdq9mnm4giigqm.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.fanschat.mtn"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

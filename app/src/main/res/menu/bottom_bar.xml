@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/feed"
+        android:icon="@drawable/icon_menu_wall_big"
+        app:showAsAction="never"
+        android:title="@string/wall" />
+
+    <item
+        android:id="@+id/chat"
+        android:icon="@drawable/icon_menu_chat_big"
+        app:showAsAction="never"
+        android:title="@string/chat" />
+
+    <item
+        android:id="@+id/news"
+        android:icon="@drawable/icon_menu_news_big"
+        app:showAsAction="never"
+        android:title="@string/news" />
+
+    <item
+        android:id="@+id/social"
+        android:icon="@drawable/ic_social"
+        app:showAsAction="never"
+        android:title="@string/social" />
+
+    <item
+        android:id="@+id/menu"
+        android:icon="@drawable/drawer"
+        app:showAsAction="never"
+        android:title="@string/menu" />
+
+</menu>

@@ -1,0 +1,16 @@
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/header_videos" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/list"
+        style="@style/RecyclerView.News"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:listitem="@layout/item_news" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

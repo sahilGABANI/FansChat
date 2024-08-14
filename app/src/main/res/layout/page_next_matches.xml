@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nextMatchContainer"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="-4dp"
+    tools:layout_marginBottom="8dp">
+
+    <ImageButton
+        android:id="@+id/buttonSwipeLeft"
+        style="@style/Base.Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:layout_marginStart="-32dp"
+        android:clickable="false"
+        android:padding="24dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_swipe_left" />
+
+    <ImageButton
+        android:id="@+id/buttonSwipeRight"
+        style="@style/Base.Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="-32dp"
+        android:clickable="false"
+        android:padding="24dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_swipe_right" />
+
+    <TextView
+        android:id="@+id/topCaption"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:paddingTop="25dp"
+        android:paddingBottom="25dp"
+        android:shadowColor="@color/black"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:shadowRadius="2"
+        android:text="@string/wall"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/font_size_36"
+        android:textStyle="bold"
+        android:visibility="gone"
+        tools:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/wallTopInfoContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="8dp">
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="8dp"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"
+            tools:text="3 days - Thu 15 Feb"
+            tools:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/wall_top_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/date"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/nameFirst"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:maxLength="6"
+                android:maxLines="1"
+                android:paddingEnd="@dimen/padding_2"
+                android:textColor="#A7A7A7"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                tools:text="SCP"
+                tools:textColor="@color/colorPrimary" />
+
+            <ImageView
+                android:id="@+id/imageFirst"
+                android:layout_width="60dp"
+                android:layout_height="@dimen/height_70"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@id/nameFirst"
+                tools:src="@drawable/logo" />
+
+            <TextView
+                android:id="@+id/wall_team_vs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="sans-serif-light"
+                android:padding="@dimen/padding_8"
+                android:text="-"
+                android:textColor="@color/colorPrimary"
+                android:textSize="23sp"
+                tools:ignore="HardcodedText"
+                tools:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/imageSecond"
+                android:layout_width="60dp"
+                android:layout_height="@dimen/height_70"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@id/wall_team_vs"
+                tools:src="@drawable/logo" />
+
+            <TextView
+                android:id="@+id/nameSecond"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_weight="1"
+                android:gravity="start"
+                android:maxLength="6"
+                android:maxLines="1"
+                android:padding="@dimen/padding_8"
+                android:paddingStart="@dimen/padding_2"
+                android:textColor="#A7A7A7"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                tools:text="ASP"
+                tools:textColor="@color/colorPrimary" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/tickets"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_below="@id/wall_top_info"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="-12dp"
+            android:foreground="?selectableItemBackground"
+            android:lineSpacingMultiplier="0.8"
+            android:maxWidth="72dp"
+            android:minWidth="0dp"
+            android:paddingStart="10dp"
+            android:paddingTop="0dp"
+            android:paddingEnd="10dp"
+            android:paddingBottom="0dp"
+            android:text="@string/tickets"
+            android:textColor="@color/colorPrimary"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:visibility="gone"
+            tools:textStyle="bold"
+            tools:visibility="visible" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

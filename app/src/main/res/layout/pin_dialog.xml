@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="end"
+        android:orientation="vertical"
+        android:paddingTop="2dp">
+
+        <RelativeLayout
+            android:id="@+id/top_buttons_container"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/standard_button_height"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/backImageButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerInParent="true"
+                android:adjustViewBounds="true"
+                android:rotationY="@integer/view_rotation"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_keyboard_arrow_left_white_24dp"
+                app:tint="@color/colorPrimary" />
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerInParent="true">
+
+                <ProgressBar
+                    android:id="@+id/postProgressBar"
+                    style="?android:attr/progressBarStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:indeterminateTint="@color/yellow"
+                    android:indeterminateTintMode="src_atop"
+                    android:visibility="gone" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/publishAppCompatTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:padding="@dimen/_8sdp"
+                    android:text="@string/post"
+                    android:textAllCaps="false"
+                    android:textSize="@dimen/font_size_16"
+                    android:textStyle="bold" />
+            </FrameLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/feedPostLinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imageAppCompatImageView"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:scaleType="centerCrop"
+                android:src="@drawable/header" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:breakStrategy="high_quality"
+                android:ellipsize="end"
+                android:lineSpacingMultiplier="0.8"
+                android:maxLines="5"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:paddingBottom="12dp"
+                android:text="@string/lorem_ipsum"
+                android:textColor="@color/link_text_color"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:visibility="gone"
+                tools:ellipsize="none"
+                tools:targetApi="m" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/titleEditText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:background="@null"
+                android:hint="@string/post_title_hint"
+                android:inputType="textCapSentences"
+                android:paddingStart="@dimen/margin_15"
+                android:paddingEnd="@dimen/margin_15"
+                android:textColor="@color/black"
+                android:textColorHint="#7e000000"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/likes_and_comments"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="12dp"
+            android:gravity="end"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/margin_5">
+
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="Yesterday"
+                android:textColor="@android:color/black"
+                android:textSize="12sp" />
+
+            <LinearLayout
+                android:id="@+id/like"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/padding_8"
+                android:layout_marginTop="2dp"
+                android:gravity="center">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/likedIcon"
+                        android:layout_width="@dimen/width_15"
+                        android:layout_height="@dimen/height_15"
+                        android:src="@drawable/ic_like_count"
+                        android:visibility="gone"
+                        app:tint="@color/colorAccent" />
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/likesIcon"
+                        android:layout_width="@dimen/wall_item_icon_size"
+                        android:layout_height="@dimen/height_15"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:src="@drawable/ic_like_count"
+                        app:tint="@android:color/black" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/likesCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:text="6901"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/font_size_10" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/commentsContainer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/padding_10"
+                android:layout_marginTop="2dp"
+                android:gravity="center">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/comments_icon"
+                    android:layout_width="@dimen/width_15"
+                    android:layout_height="@dimen/width_15"
+                    android:layout_marginEnd="@dimen/margin_2"
+                    android:src="@drawable/ic_comments_count"
+                    app:tint="@android:color/black" />
+
+                <TextView
+                    android:id="@+id/commentsCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="204"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/font_size_10" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/input"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@null"
+            android:hint="@string/post_title_hint"
+            android:inputType="textCapSentences"
+            android:paddingStart="@dimen/margin_15"
+            android:paddingEnd="@dimen/margin_15"
+            android:textColor="@color/black"
+            android:textColorHint="#7e000000"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="8dp"
+        android:layout_height="230dp"
+        android:background="@color/green" />
+
+</FrameLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="green">#04B46B</color>
+    <color name="yellow">#ffef16</color>
+    <color name="red">#D01829</color>
+    <color name="black">#000000</color>
+    <color name="login_text_black">#000000</color>
+    <color name="white">#ffffff</color>
+    <color name="join">#fbb912</color>
+    <color name="bread_arrow">#ffffff</color>
+    <color name="fb_button">#FF395797</color>
+    <color name="link_text_color">#004E8F</color>
+    <color name="gray">#e9eaee</color>
+    <color name="yellow1">#FDFD54</color>
+    <color name="yellow1_80">#80FDFD54</color>
+    <color name="dark_gray">#404040</color>
+    <color name="dark_gray_1">#272727</color>
+    <color name="dark_gray_2">#bdbec1</color>
+    <color name="color_4273a2">#4373a3</color>
+    <color name="colorToolbarAlt">@color/black</color>
+    <color name="color_f3f3f3">#f3f3f3</color>
+    <color name="color_c2000000">#c2000000</color>
+    <color name="edit_text_background">#000000</color>
+    <color name="color_black_transparent">#2F000000</color>
+
+    <color name="bg_placeholder">#F2F2F2</color>
+
+    <color name="background_video_color">#2f3031</color>
+    <color name="background_progress_color">#B1B1B1</color>
+    <color name="progress_color">@color/colorPrimary</color>
+    <color name="line_color">#FF15FF00</color>
+    <color name="shadow_color">#FF000000</color>
+    <color name="line_button">#565758</color>
+    <color name="black_translucent">#75000000</color>
+    <color name="white_translucent">#CAC7C7</color>
+
+    <color name="bg_wall_streaming">#EBEBEB</color>
+    <color name="duskYellow">#FECD00</color>
+    <color name="offWhite">#EAEAEA</color>
+    <!--<color name="offWhite">#C5C5C5</color>-->
+
+    <color name="bg_wall_end">#1D1D27</color>
+    <color name="bg_wall_start">#0A4D68</color>
+
+    <color name="md_grey600">#757575</color>
+    <color name="btnColor">@color/black</color>
+    <color name="colorGray">#d2d4d7</color>
+</resources>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/linMain"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_80sdp"
+        android:foreground="?selectableItemBackgroundBorderless"
+        android:translationZ="@dimen/_2sdp"
+        app:cardCornerRadius="@dimen/_3sdp"
+        app:cardElevation="@dimen/_2sdp"
+        app:cardMaxElevation="@dimen/_2sdp">
+
+        <ImageView
+            android:id="@+id/ivImage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/placeholder" />
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_3sdp"
+        android:ellipsize="end"
+        android:fontFamily="@font/titillium_semibold"
+        android:maxLines="1"
+        android:text=""
+        android:textColor="@color/white"
+        android:textSize="@dimen/_9sdp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_2sdp"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="@dimen/_10sdp"
+            android:layout_height="@dimen/_10sdp"
+            android:src="@drawable/ic_eye_wall"
+            app:tint="@color/colorToolbar" />
+
+        <TextView
+            android:id="@+id/tvWatch"
+            android:layout_width="@dimen/_22sdp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_2sdp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="0"
+            android:textAllCaps="true"
+            android:textColor="@color/offWhite"
+            android:textSize="@dimen/_7sdp" />
+
+        <ImageView
+            android:layout_width="@dimen/_10sdp"
+            android:layout_height="@dimen/_10sdp"
+            android:layout_marginStart="@dimen/_6sdp"
+            android:src="@drawable/ic_like_wall"
+            app:tint="@color/colorToolbar" />
+
+        <TextView
+            android:id="@+id/tvLike"
+            android:layout_width="@dimen/_22sdp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_2sdp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="0"
+            android:textAllCaps="true"
+            android:textColor="@color/offWhite"
+            android:textSize="@dimen/_7sdp" />
+
+        <ImageView
+            android:layout_width="@dimen/_9sdp"
+            android:layout_height="@dimen/_9sdp"
+            android:layout_marginStart="@dimen/_6sdp"
+            android:src="@drawable/ic_comment_wall"
+            app:tint="@color/colorToolbar" />
+
+        <TextView
+            android:id="@+id/tvComment"
+            android:layout_width="@dimen/_22sdp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_2sdp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="0"
+            android:textAllCaps="true"
+            android:textColor="@color/offWhite"
+            android:textSize="@dimen/_7sdp" />
+
+
+    </LinearLayout>
+</LinearLayout>

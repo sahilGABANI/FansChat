@@ -1,0 +1,26 @@
+{
+  "fanschatan": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-fanschatandroid-fanschatan-152938-authRole",
+      "UnauthRoleArn": "arn:aws:iam::476482643090:role/amplify-fanschatandroid-fanschatan-152938-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::476482643090:role/amplify-fanschatandroid-fanschatan-152938-authRole",
+      "Region": "eu-central-1",
+      "DeploymentBucketName": "amplify-fanschatandroid-fanschatan-152938-deployment",
+      "UnauthRoleName": "amplify-fanschatandroid-fanschatan-152938-unauthRole",
+      "StackName": "amplify-fanschatandroid-fanschatan-152938",
+      "StackId": "arn:aws:cloudformation:eu-central-1:476482643090:stack/amplify-fanschatandroid-fanschatan-152938/c0638440-250e-11ec-a9be-024cb52385ec",
+      "AmplifyAppId": "d3gslizf5w08dc"
+    },
+    "categories": {
+      "auth": {
+        "fanschatandroid7f25ead0": {}
+      },
+      "storage": {
+        "fanschatandroid98232966": {
+          "bucketName": "fanschat1mtn1wamplify164446-dev",
+          "region": "eu-central-1"
+        }
+      }
+    }
+  }
+}

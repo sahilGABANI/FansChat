@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardMain"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/item_spacing_wall"
+    android:foreground="?selectableItemBackground"
+    android:translationZ="@dimen/_2sdp"
+    app:cardCornerRadius="0dp"
+    app:cardElevation="@dimen/_2sdp"
+    app:cardMaxElevation="@dimen/_2sdp">
+
+    <ImageView
+        android:id="@+id/ivImage"
+        android:layout_width="match_parent"
+        android:layout_height="152dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/header_blank" />
+
+    <FrameLayout
+        android:id="@+id/flVideo"
+        android:layout_width="match_parent"
+        android:layout_height="152dp"
+        android:background="@color/gray"
+        android:visibility="gone">
+
+        <com.google.android.exoplayer2.ui.StyledPlayerView
+            android:id="@+id/video_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:resize_mode="zoom"
+            app:shutter_background_color="@android:color/transparent"
+            app:use_controller="false" />
+
+        <LinearLayout
+            android:id="@+id/llClickable"
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="@dimen/_60sdp"
+            android:layout_gravity="center"
+            android:orientation="vertical" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivPlayPause"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_gravity="center"
+            android:background="@drawable/transparent_black_circle"
+            android:padding="@dimen/_3sdp"
+            android:src="@drawable/ic_play"
+            app:tint="@android:color/white" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_gravity="center"
+            android:visibility="gone" />
+
+    </FrameLayout>
+
+</androidx.cardview.widget.CardView>

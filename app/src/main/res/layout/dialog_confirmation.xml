@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:background="@color/yellow1" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_gray_dialog"
+        android:padding="@dimen/_2sdp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="@dimen/_5sdp">
+
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_13sdp"
+                android:layout_marginEnd="@dimen/_13sdp"
+                android:gravity="center"
+                android:padding="@dimen/_5sdp"
+                android:text="@string/are_you_sure"
+                android:textColor="@color/yellow1"
+                android:textSize="@dimen/font_size_16" />
+
+            <TextView
+                android:id="@+id/tvDesc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="@dimen/_5sdp"
+                android:text="@string/you_will_join_chat"
+                android:textColor="@color/yellow1"
+                android:textSize="@dimen/font_size_14" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/reportAppCompatEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_16sdp"
+                android:layout_marginEnd="@dimen/_16sdp"
+                android:backgroundTint="@color/yellow1_80"
+                android:hint="@string/report_message"
+                android:paddingStart="@dimen/_8sdp"
+                android:paddingTop="@dimen/_8sdp"
+                android:paddingEnd="@dimen/_8sdp"
+                android:paddingBottom="@dimen/_14sdp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/yellow1_80"
+                android:textSize="@dimen/_10sdp"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:orientation="horizontal">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/ivCancel"
+                    style="@style/Widget.Material3.Button.Icon"
+                    android:layout_width="@dimen/_58sdp"
+                    android:layout_height="@dimen/_34sdp"
+                    android:layout_marginEnd="@dimen/_15sdp"
+                    android:gravity="center"
+                    app:backgroundTint="@color/join"
+                    app:cornerRadius="@dimen/_16sdp"
+                    app:icon="@drawable/ic_cancel"
+                    app:iconGravity="textEnd"
+                    app:iconSize="@dimen/_16sdp"
+                    app:iconTint="@android:color/black" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/ivOkay"
+                    style="@style/Widget.Material3.Button.Icon"
+                    android:layout_width="@dimen/_58sdp"
+                    android:layout_height="@dimen/_34sdp"
+                    android:gravity="center"
+                    app:backgroundTint="@color/colorPrimary"
+                    app:cornerRadius="@dimen/_16sdp"
+                    app:icon="@drawable/ic_correct"
+                    app:iconGravity="textEnd"
+                    app:iconSize="@dimen/_16sdp"
+                    app:iconTint="@android:color/white" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/ivDismiss"
+            android:layout_width="@dimen/_22sdp"
+            android:layout_height="@dimen/_22sdp"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/ic_close" />
+    </RelativeLayout>
+</LinearLayout>

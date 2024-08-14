@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--Screen titles-->
+    <string name="wall">Dinding</string>
+    <string name="news">Berita</string>
+    <string name="rumours">Rumor</string>
+    <string name="social">Sosial</string>
+    <string name="stats">Statistik</string>
+    <string name="shop">Belanja</string>
+    <string name="chat">Obrolan</string>
+    <string name="video_chat">Obrolan Video</string>
+    <string name="radio">Radio Klub</string>
+    <string name="tv">TV Klub</string>
+    <string name="tickets">Tiket</string>
+    <string name="store">Toko</string>
+    <string name="quiz">Kuis</string>
+    <string name="fantasy">Fantasi</string>
+
+    <string-array name="menu_navigation">
+        <item>@string/wall</item>
+        <item>@string/chat</item>
+        <item>@string/news</item>
+        <item>@string/social</item>
+        <item>@string/stats</item>
+        <item>@string/rumours</item>
+        <item>@string/radio</item>
+        <item>@string/tickets</item>
+        <item>@string/shop</item>
+        <item>@string/tv</item>
+        <item>@string/video_chat</item>
+        <item>@string/calendar</item>
+    </string-array>
+
+    <!-- Login & Register -->
+    <string name="slogan">Membawa fans bersama-sama</string>
+    <string name="access_full">Untuk mengakses fitur lengkap…</string>
+    <string name="join_sign_in">Bergabung Sekarang / Masuk</string>
+    <string name="sign_in">Masuk</string>
+    <string name="join">Bergabung Sekarang</string>
+    <string name="login_facebook">Masuk dengan Facebook</string>
+    <string name="or">atau</string>
+    <string name="email">Surel</string>
+    <string name="password">Kata Sandi</string>
+    <string name="first_name">Nama depan</string>
+    <string name="last_name">Nama belakang</string>
+    <string name="nickname">Nama Panggilan</string>
+    <string name="phone">Telepon</string>
+    <string name="error">Galat</string>
+    <string name="login_failed">Gagal Masuk!</string>
+    <string name="registration_failed">Pendaftaran Gagal</string>
+    <string name="forgot_your_password">Lupa kata sandi Anda?</string>
+    <string name="password_reset">Setel Ulang Kata Sandi</string>
+    <string name="reset_check_email">Silakan periksa surel Anda untuk opsi setel ulang kata sandi.</string>
+    <string name="email_enter_valid">Silakan masukkan alamat surel yang valid</string>
+    <string name="policy_prompt">Dengan mendaftar Anda menyetujui\n<font color="#FFFFFF">Syarat dan Ketentuan Penggunaan FansChat</font> dan <font color="#FFFFFF">Kebijakan Privasi.</font></string>
+    <string name="required_email">Anda harus memasukkan surel!</string>
+    <string name="required_password">Anda harus memasukkan kata sandi</string>
+    <string name="required_first_name">Anda harus memasukkan nama depan!</string>
+    <string name="required_last_name">Anda harus memasukkan nama belakang Anda!</string>
+    <string name="required_nickname">Anda harus memasukkan nama panggilan!</string>
+    <string name="required_phone">Anda harus memasukkan nomor telepon!</string>
+    <string name="required_credentials">Informasi Tidak Ada</string>
+    <string name="password_try_again">Silakan masukkkan kembali kata sandi dan coba lagi.</string>
+    <string name="login_slider_chat">Anda bisa mengobrol dengan teman, membuat grup dan bahkan terhubung dengan pemain favorit Anda!</string>
+    <string name="logout_from_app">Ini akan mengeluarkan Anda dari aplikasi?</string>
+    <string name="reset_app">Tindakan ini akan memuat ulang aplikasinya.</string>
+    <string name="error_username_taken">Kesalahan registrasi - username sudah diambil, silahkan pilih username yang berbeda.</string>
+    <string name="facebook_error">Profil publik Anda tidak bisa diterima. Silakan coba lagi!</string>
+
+    <!--Dialogs-->
+    <string name="ok">OK</string>
+    <string name="allow">Mengizinkan</string>
+    <string name="deny">Menyangkal</string>
+    <string name="warning">PERINGATAN</string>
+    <string name="uploading">Mengunggah…</string>
+    <string name="no_connection">Tidak ada koneksi.</string>
+    <string name="internet_needed">Anda harus terhubung ke Internet untuk melakukan ini</string>
+    <string name="waiting_for_internet">Menunggu koneksi internet aktif…</string>
+
+    <!--Profile-->
+    <string name="go_to_profile">Buka Profil></string>
+    <string name="profile">Profil Anda</string>
+    <string name="contact_info">Informasi kontak</string>
+    <string name="choose_your_language">Pilih bahasa Anda</string>
+    <string name="chosen_language">Pilih Bahasa</string>
+    <string name="location">Lokasi</string>
+    <string name="subscribed_since">Berlangganan sejak</string>
+    <string name="auto_translation">Terjemahan otomatis</string>
+    <string name="notify_wall">Pemberitahuan Dinding</string>
+    <string name="notify_news">Aktifkan pemberitahuan berita</string>
+    <string name="notify_rumours">Aktifkan pemberitahuan rumor</string>
+    <string name="notify_social">Aktifkan pemberitahuan sosial</string>
+    <string name="edit_profile">Sunting profil anda</string>
+    <string name="edit_photo">Sunting Foto</string>
+    <string name="done">Selesai</string>
+    <string name="caps_level">Tingkat Caps</string>
+    <string name="days_using">Hari menggunakan SSK</string>
+    <string name="wall_posts">Kiriman Dinding</string>
+    <string name="videos_watched">Video Ditonton</string>
+    <string name="matches_home">Pertandingan dihadiri (kandang)</string>
+    <string name="matches_away">Pertandingan dihadiri (tandang)</string>
+    <string name="likes_received">Suka diterima</string>
+    <string name="comments_made">Komentar dibuat</string>
+    <string name="language">Bahasa</string>
+    <string name="you_have">Anda punya</string>
+    <string name="caps">Caps</string>
+    <string name="language_current">Bahasa Indonesia</string>
+
+    <!--Friends-->
+    <string name="friend_profile">Informasi Teman</string>
+    <string name="friend_requests">Permintaan teman</string>
+    <string name="follows_you">Mengikuti Anda</string>
+    <string name="user_profile">Profil Pengguna</string>
+    <string name="friends_title">Teman Anda</string>
+    <string name="friends_search">Cari teman Anda</string>
+    <string name="offline">Luar Jaringan</string>
+    <string name="friend_request_pending">Permintaan Pertemanan Ditunda</string>
+    <string name="enter_friend_name_invite">Masukkan alamat surel untuk mengundang</string>
+    <string name="remove_friend">Tidak bersahabat</string>
+    <string name="friend_request_send">Kirim Permintaan Pertemanan?</string>
+    <string name="friend_unfollow">Berhenti Mengikuti Teman</string>
+    <string name="friend_follow">Mengikuti Teman</string>
+    <string name="posts">Disematkan</string>
+    <string name="comments">Komentar</string>
+    <string name="friends">Teman</string>
+    <string name="following">Mengikuti</string>
+    <string name="followers">Pengikut</string>
+    <string name="report">Laporkan Penyalahgunaan</string>
+    <string name="cancel">Batalkan</string>
+    <string name="member_info">Info Anggota</string>
+    <string name="requested_on">Diminta di</string>
+    <string name="you">Anda</string>
+    <string name="add_friend">Tambahkan teman</string>
+    <string name="invite_friend">Undang teman</string>
+    <string name="add_friend_hint">Masukkan nama, email atau nomor telepon teman Anda di bagian pencarian.</string>
+    <string name="save">Menyimpan</string>
+    <string name="invite">Mengundang</string>
+    <string name="follow_more">Mengikuti Lebih Banyak</string>
+    <string name="friends_following_you">Teman yang mengikuti Anda:</string>
+    <string name="find">Temukan</string>
+    <string name="requests">Permintaan</string>
+    <string name="official_accounts">Akun Resmi</string>
+    <string name="no_results">Tak ada hasil</string>
+    <string name="user">Pengguna</string>
+    <string name="more">Lebih Banyak Lagi</string>
+    <string name="friend_you_and">Teman Anda dan</string>
+    <string name="have_in_common"> yang sama:</string>
+
+    <!--Chat-->
+    <string name="members">Anggota</string>
+    <string name="leave">Tinggalkan Obrolan</string>
+    <string name="are_you_sure">Anda yakin?</string>
+    <string name="chat_confirm_leave">Tinggalkan obrolan ini?</string>
+    <string name="chat_confirm_delete">Ini akan menghapus obrolan secara permanen; Anda yakin?</string>
+    <string name="photo_or_video">Ambil foto atau rekam video?</string>
+    <string name="chat_image">Gambar</string>
+    <string name="from_gallery">Pilih dari perpustakaan</string>
+    <string name="from_camera">Gunakan Kamera</string>
+    <string name="record_video">Merekam video</string>
+    <string name="chat_hold">Tahan untuk merekam</string>
+    <string name="chat_recording_stop">Perekaman berhenti</string>
+    <string name="no_message_text">Belum ada seorangpun memulai obrolan! Mengapa tidak jadi yang pertama?</string>
+    <string name="chat_public">Obrolan ini UMUM</string>
+    <string name="chat_private">Obrolan ini PRIBADI</string>
+    <string name="chat_create">Buat Obrolan Baru</string>
+    <string name="chat_join">Gabung Obrolan</string>
+    <string name="single_user_is_typing">%1$s! sedang mengetik…</string>
+    <string name="multiple_users_are_typing">Beberapa pengguna mengetik…</string>
+    <string name="alerts_on">Pemberitahuan obrolan AKTIF</string>
+    <string name="alerts_off">Pemberitahuan obrolan TIDAK AKTIF</string>
+    <string name="chat_with_friends_login">Ngobrol dengan teman.</string>
+    <string name="friends_in_chat">Teman di Chat</string>
+    <string name="friend_in_chat">1 Teman di Chat</string>
+    <string name="chats">Obrolan</string>
+    <string name="chats_public">Obrolan Umum</string>
+    <string name="search">Cari obrolan umum</string>
+    <string name="message_hint">Masukkan pesan Anda di sini…</string>
+    <string name="chat_friends_add">Tambahkan teman ke %s</string>
+    <string name="chat_name">Nama obrolan</string>
+    <string name="chat_give_name">Beri Nama Obrolan Anda</string>
+    <string name="chat_rename">Ubah nama obrolan Anda</string>
+    <string name="add_friends_to_chat">Tambahkan teman ke obrolan</string>
+    <string name="friend_chats">Obrolan Umum teman Anda masuk</string>
+    <string name="is_in"> ada di: </string>
+
+    <!--Video chat-->
+    <string name="video_chat_promo_1">Menangkan pertandingan dengan teman Anda</string>
+    <string name="video_chat_promo_2">Obrolan video memungkinkan Anda memanggil 3 teman untuk obrolan video grup, sehingga Anda dapat merasakan tindakan tersebut dengan orang-orang yang Anda cintai di manapun Anda berada!</string>
+    <string name="call_start">Mulai Memanggil</string>
+    <string name="call_starting">Memulai Panggilan Baru</string>
+    <string name="call_add_member">Tambahkan Panggilan</string>
+    <string name="accept_call">Terima panggilan?</string>
+    <string name="call_receive">Menerima panggilan dari</string>
+    <string name="video_chat_max">Maaf Anda hanya bisa melakukan obrolan video maksimal dengan 3 teman, dan panggilan ini sudah penuh!</string>
+    <string name="video_chats">Obrolan Video</string>
+    <string name="friends_in_video_chat">Teman di Video Chat</string>
+    <string name="friend_in_video_chat">1 Teman di Video Chat</string>
+    <string name="no_users_selected">Belum ada pengguna yang dipilih!</string>
+    <string name="no_users_selected_message">Anda belum memilih siapapun untuk dipanggil!</string>
+    <string name="select_friends_to_call">Pilih teman untuk dipanggil</string>
+
+    <!--Next match-->
+    <string name="match_next">Pertandingan Berikutnya</string>
+    <string name="vs">Melawan</string>
+    <string name="day">%1$d Hari</string>
+    <string name="days">%1$d Hari</string>
+    <string name="hour">%1$d Jam</string>
+    <string name="hours">%1$d Jam</string>
+    <string name="min">%1$d Menit</string>
+    <string name="mins">%1$d Menit</string>
+    <string name="sec">%1$d Detik</string>
+    <string name="secs">%1$d Detik</string>
+    <string name="live">Langsung</string>
+
+    <!--Posts & News-->
+    <string name="post_create">Buat Pos Baru</string>
+    <string name="post_title_hint">Klik di sini untuk memasukkan judul post \'s Anda</string>
+    <string name="post_body_hint">Klik di sini untuk mulai menulis posting Anda…</string>
+    <string name="post_create_tip_header">Untuk membuat posting baru:</string>
+    <string name="post_create_tip_body"><![CDATA[<b>1.</b> Pilih gambar dari pustaka media Anda atau ambil gambar baru dengan memilih salah satu dari dua ikon di area gambar di bagian atas (opsional) <br/> <b>2.</b> Buat judul dengan memilih judul dan ketikan. <br/> <b>3.</b> Buat konten dengan memilih teks konten dan mengetik.]]></string>
+    <string name="pin_title">Kirimkan ini ke dinding Anda?</string>
+    <string name="pin_confirm">Apakah Anda ingin mengirimkan ini ke dinding Anda?</string>
+    <string name="pin_message_hint">Masukkan pesan dengan pos bersama Anda…</string>
+    <string name="comment_hint">Masukkan komentar anda disini…</string>
+    <string name="read_more">Baca selengkapnya &gt;</string>
+    <string name="read_less">Baca kurang &lt;</string>
+    <string name="edit">Sunting</string>
+    <string name="delete">Menghapus</string>
+    <string name="translate">Menterjemahkan</string>
+    <string name="share">Berbagi</string>
+    <string name="post">Pos</string>
+    <string name="back">Kembali</string>
+    <string name="translated">Diterjemahkan</string>
+    <string name="translated_from">Diterjemahkan dari</string>
+
+    <!--Purchases-->
+    <string name="rewards_received">Hadiah dan barang yang diterima dari Tas Gym</string>
+    <string name="bonus_gym_bag">+ Bonus tas olahraga</string>
+    <string name="bundles">Bundel</string>
+    <string name="wallet">Dompet</string>
+    <string name="stash">Kotak rahasia anda</string>
+    <string name="your_statement">Pernyataan Anda</string>
+    <string name="search_for_friends">Cari teman</string>
+    <string name="add_attachment">Tambahkan sisipan</string>
+    <string name="take_photo">Memotret</string>
+    <string name="record_audio">Suara rekaman</string>
+    <string name="chat_edit">Edit Obrolan</string>
+    <string name="authorize_description">Anda harus masuk\nuntuk menggunakan semua fitur\naplikasi</string>
+    <string name="fixtures">Perlengkapan</string>
+    <string name="results">Hasil</string>
+    <string name="tables">Tabel</string>
+    <string name="name">Nama</string>
+    <string name="all_times_in_local_time">Semua waktu dalam Waktu lokal</string>
+    <string name="terms_n_privacy">Syarat &amp; Pribadi</string>
+    <string name="unnamed_chat">\'Obrolan Tanpa Nama\'</string>
+    <string name="search_public_chats">Cari obrolan publik</string>
+    <string name="create">Membuat</string>
+    <string name="alert_on">Alert-ON</string>
+    <string name="last_chat">Obrolan terakhir</string>
+    <string name="join_group">Bergabung dengan grup</string>
+    <string name="you_will_join_chat">Apakah Anda ingin bergabung dengan obrolan ini?</string>
+    <string name="you_are_already_in_grp">Anda sudah berada di grup</string>
+    <string name="select_users">Anda harus memilih setidaknya satu orang untuk membuat/mengedit obrolan</string>
+    <string name="no_user_added">Tidak ada pengguna yang ditambahkan ke obrolan</string>
+    <string name="select_chat_img">Pilih Gambar Obrolan</string>
+    <string name="select_image">Anda harus memilih gambar obrolan untuk membuat/mengedit obrolan</string>
+    <string name="pick_photo">Pilih foto</string>
+    <string name="pick_video">Pilih video</string>
+    <string name="cant_play">Tidak dapat memutar file ini</string>
+    <string name="cant_play_video">Tidak dapat memutar video ini</string>
+    <string name="you_will_leave_chat">Möchten Sie diesen Chat wirklich verlassen?</string>
+    <string name="you_will_delete_chat">Anda yakin ingin menghapus obrolan ini?</string>
+    <string name="a_stats_post">Postingan Statistik</string>
+    <string name="failed_to_create_directory">gagal membuat direktori</string>
+    <string name="blank_first_name">Anda harus memasukkan nama depan Anda!</string>
+    <string name="blank_last_name">Anda harus memasukkan nama belakang Anda!</string>
+    <string name="blank_nick_name">Anda harus memasukkan nama panggilan Anda!</string>
+    <string name="blank_email">Anda harus memasukkan email Anda!</string>
+    <string name="blank_phone">Anda harus memasukkan ponsel Anda!</string>
+    <string name="blank_password">Anda harus memasukkan kata sandi Anda!</string>
+    <string name="blank_firstname">Anda harus memasukkan nama depan Anda!</string>
+    <string name="blank_lastname">Anda harus memasukkan nama belakang Anda!</string>
+    <string name="invalid_first_name">Harap masukkan nama depan yang valid!</string>
+    <string name="invalid_last_name">Harap masukkan nama belakang yang valid!</string>
+    <string name="invalid_nick_name">Harap masukkan nama panggilan yang valid!</string>
+    <string name="invalid_email">Tolong masukkan email yang benar!</string>
+    <string name="invalid_phone">Mohon masukan nomor telepon yang belaku. Panjangnya harus 8 hingga 15 digit!</string>
+    <string name="invalid_password">Tolong masukkan sandi dengan benar. Panjangnya harus minimal 6 karakter!</string>
+    <string name="new_friend_request">Permintaan Pertemanan Baru</string>
+    <string name="accepted_friend_request">Diterima Permintaan Pertemanan</string>
+    <string name="new_follower">Pengikut Baru</string>
+    <string name="unfollowed">Tidak Diikuti</string>
+    <string name="unfriended">Hapus Teman</string>
+
+    <string name="mine_friend">Teman saya</string>
+    <string name="register">Daftar</string>
+    <string name="login_space">Gabung</string>
+    <string name="login">Gabung</string>
+    <string name="sign_up">Daftar</string>
+    <string name="sign_up_with_facebook">Daftar dengan Facebook</string>
+    <string name="login_facebook_b">Masuk dengan Facebook</string>
+    <string name="Cancel">Membatalkan</string>
+    <string name="Okay">Oke</string>
+    <string name="butn_done">Selesai</string>
+    <string name="failed_to_crop_image">Gagal memotong gambar</string>
+    <string name="this_file_no_longer_exist">File ini sudah tidak ada</string>
+    <string name="camera_permission_is_needed_to_take_pictures">Izin kamera diperlukan untuk mengambil gambar</string>
+    <string name="see_all">Alles sehen</string>
+    <string name="watch_now">Menonton sekarang</string>
+    <string name="socials">Sosial</string>
+    <string name="streaming">Mengalir</string>
+    <string name="cancel_post">Anda ingin membatalkan postingan ini?</string>
+    <string name="no_videos_found">Video tidak ditemukan</string>
+    <string name="trimming_progress">Memangkas video Anda…</string>
+    <string name="short_seconds">detik</string>
+    <string name="no_feed_post_available">Tidak ada pos umpan yang tersedia</string>
+    <string name="no_data">Tidak ada data ditemukan</string>
+    <string name="old_password">password lama</string>
+    <string name="new_password">kata sandi baru</string>
+    <string name="title_posts">Postingan</string>
+    <string name="enter_chat_name">Masukkan nama obrolan</string>
+    <string name="you_need_to_enter_chat_name">Anda harus memasukkan nama obrolan</string>
+    <string name="club_tv">Fernsehclub</string>
+    <string name="you_want_to_remove_this_user">Anda yakin ingin menghapus teman?</string>
+    <string name="you_want_to_send_friend_request">Apakah Anda yakin ingin mengirim permintaan pertemanan?</string>
+    <string name="you_want_to_accept_friend_request">Apakah Anda yakin ingin menerima permintaan pertemanan?</string>
+    <string name="you_want_to_decline_friend_request">Apakah Anda yakin ingin menolak permintaan pertemanan?</string>
+    <string name="yes">Ya</string>
+    <string name="no">Tidak</string>
+    <string name="decline_friend_request">Tolak permintaan pertemanan</string>
+    <string name="remove_user">Hapus Pengguna</string>
+    <string name="delete_chat">Hapus Obrolan</string>
+    <string name="leave_chat">Tinggalkan Obrolan</string>
+    <string name="report_user">Laporan pengguna</string>
+    <string name="you_want_to_report_user">Apakah Anda yakin ingin melaporkan pengguna ini?</string>
+    <string name="delete_post">Hapus postingan</string>
+    <string name="reported_post">Beitrag erfolgreich gemeldet</string>
+    <string name="undo_translate">Urungkan Terjemahan</string>
+    <string name="enter_title">Silakan masukkan judul</string>
+    <string name="enter_report_message">Silakan masukkan pesan laporan</string>
+    <string name="report_message">Laporkan pesan</string>
+
+    <string name="report_post">Laporkan Posting</string>
+    <string name="write_complaint">Silakan tulis keluhan Anda</string>
+    <string name="wrong_email_or_password_please_try_again">Email atau password salah. Silakan coba lagi</string>
+    <string name="notifications">Pemberitahuan</string>
+    <string name="try_to_upload_file_again">Coba unggah file lagi</string>
+    <string name="failed_to_upload">Gagal mengunggah file</string>
+    <string name="access_full_mtn">Bergabunglah dengan kami sekarang untuk mengakses acara VIP dan akses eksklusif juga…</string>
+    <string name="no_friends">Belum ada teman</string>
+    <string name="audio">Audio</string>
+    <string name="calendar">Kalender</string>
+    <string name="points">Poin X FC</string>
+    <string name="post_no_longer_available">Pos ini tidak lagi tersedia.</string>
+    <string name="no_notifications">Belum ada notifikasi</string>
+    <string name="no_friend_request">Anda tidak memiliki permintaan pertemanan yang tertunda</string>
+    <string name="login_cancelled">Masuk Dibatalkan</string>
+    <string name="other_services">Layanan lainnya</string>
+    <string name="facebook">Facebook</string>
+    <string name="share_using">Bagikan menggunakan…</string>
+    <string name="post_not_found">Pos tidak lagi tersedia.</string>
+    <string name="compressing_video">Mengompresi video Anda…</string>
+    <string name="title_like_post">Suka Diterima</string>
+    <string name="desc_like_post">%s telah Menyukai kiriman Anda</string>
+    <string name="title_post_created">Teman Diposting</string>
+    <string name="desc_post_created">%s telah membuat Postingan baru</string>
+    <string name="title_post_updated">Postingan yang diedit teman</string>
+    <string name="desc_post_updated">%s telah mengedit Posting</string>
+    <string name="title_new_comment">Komentar Diterima</string>
+    <string name="desc_new_comment">%s telah mengomentari kiriman Anda</string>
+    <string name="title_comment_updated">Komentar Diedit</string>
+    <string name="desc_comment_updated">%s telah mengedit komentar di postingan Anda</string>
+    <string name="accept_friend_request">Permintaan Pertemanan Diterima</string>
+    <string name="received_friend_request">Permintaan Pertemanan Baru</string>
+    <string name="message_received">Pesan diterima</string>
+    <string name="new_msg_msg">%s mengirim pesan</string>
+    <string name="new_media_msg_msg">%s hat ein Medium gesendet</string>
+    <string name="friend_request_msg">%s telah mengirimi Anda permintaan pertemanan</string>
+    <string name="friend_request_accepted_msg">%s telah menerima permintaan pertemananmu</string>
+    <string name="notification_muted">%s berhasil dibisukan.</string>
+    <string name="notification_unmuted">%s berhasil disuarakan.</string>
+    <string name="title_club_post_created">Pos baru di %s</string>
+    <string name="desc_club_post_created">%s telah menambahkan Postingan baru: %s</string>
+    <string name="title_club_post_updated">Postingan diedit di %s</string>
+    <string name="desc_club_post_updated">%s telah mengedit Postingan: %s</string>
+    <string name="title_new_club_comment">Teman mengomentari kiriman %s</string>
+    <string name="desc_new_club_comment">%s telah meninggalkan komentar di: %s</string>
+    <string name="title_club_comment_updated">Teman mengedit komentar pada postingan %s</string>
+    <string name="desc_club_comment_updated">%s telah mengedit komentar pada: %s</string>
+    <string name="title_like_club_post">Teman telah Menyukai kiriman %s</string>
+    <string name="desc_like_club_post">%s telah Menyukai: %s</string>
+    <string name="accept">Menerima</string>
+    <string name="desc_like_post_owner">%s menyukai postingan mereka</string>
+    <string name="desc_comment_updated_owner">%s telah mengedit komentar di postingan mereka</string>
+    <string name="desc_new_comment_owner">%s telah mengomentari kiriman mereka</string>
+    <string name="desc_like_post_friend">%s telah mengomentari kiriman temanmu</string>
+    <string name="desc_comment_updated_friend">%s telah mengedit komentar pada kiriman teman Anda</string>
+    <string name="desc_new_comment_friend">%s telah mengomentari kiriman temanmu</string>
+
+</resources>

@@ -1,0 +1,499 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/top_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/profile"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/back"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="@dimen/standard_button_height"
+            android:layout_height="@dimen/standard_button_height"
+            android:layout_centerVertical="true"
+            android:rotationY="@integer/view_rotation"
+            android:src="@drawable/ic_keyboard_arrow_left_white_24dp"
+            app:tint="@color/colorPrimary" />
+
+        <!--
+                <ImageButton
+                    android:id="@+id/back"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_width="@dimen/standard_button_height"
+                    android:layout_height="@dimen/standard_button_height"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="4dp"
+                    android:adjustViewBounds="true"
+                    android:padding="8dp"
+                    android:rotationY="@integer/view_rotation"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/ic_keyboard_arrow_left_white_24dp"
+                    app:tint="@color/colorPrimary" />
+        -->
+    </RelativeLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/top_toolbar"
+        android:scrollbarStyle="insideOverlay"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <!-- Header -->
+            <RelativeLayout
+                android:id="@+id/content_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_20"
+                android:layout_marginBottom="@dimen/margin_20">
+
+                <!-- VIEW IN MIDDLE TO SPLIT EASIER -->
+                <View
+                    android:id="@+id/center_split_line"
+                    android:layout_width="@dimen/width_1"
+                    android:layout_height="@dimen/height_1"
+                    android:layout_centerHorizontal="true" />
+
+                <!-- PROFILE CONTAINER - IMAGE -->
+                <RelativeLayout
+                    android:id="@+id/profile_container"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true">
+
+                    <RelativeLayout
+                        android:id="@+id/profile_image_container"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true">
+
+                        <ProgressBar
+                            android:id="@+id/progressBar"
+                            style="?android:attr/progressBarStyleHorizontal"
+                            android:layout_width="@dimen/popup_friend_profil_progress_bar_size"
+                            android:layout_height="@dimen/popup_friend_profil_progress_bar_size"
+                            android:layout_centerHorizontal="true"
+                            android:background="@drawable/circle_shape"
+                            android:indeterminate="false"
+                            android:max="100"
+                            android:progressDrawable="@drawable/circular_progress_bar"
+                            tools:progress="60" />
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/avatar"
+                            android:layout_width="@dimen/popup_friend_profil_profile_image_size"
+                            android:layout_height="@dimen/popup_friend_profil_profile_image_size"
+                            android:layout_centerInParent="true"
+                            android:foreground="?selectableItemBackground"
+                            tools:src="@drawable/avatar_placeholder" />
+                    </RelativeLayout>
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/capLvlTextView"
+                        android:layout_width="@dimen/_22sdp"
+                        android:layout_height="@dimen/_22sdp"
+                        android:layout_below="@id/profile_image_container"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="-20dp"
+                        android:background="@drawable/next_level_marker"
+                        android:paddingTop="@dimen/_2sdp"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        tools:text="10" />
+
+                    <TextView
+                        android:id="@+id/name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/capLvlTextView"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:fontFamily="@font/titillium_semibold"
+                        android:gravity="center"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_11sdp"
+                        tools:text="Test User" />
+
+                    <TextView
+                        android:id="@+id/points"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/name"
+                        android:layout_centerHorizontal="true"
+                        android:text="@string/points"
+                        android:textSize="@dimen/_8sdp" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <!-- Body -->
+            <LinearLayout
+                android:id="@+id/info_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_1"
+                    android:background="#14000000" />
+
+                <RelativeLayout
+                    android:id="@+id/profile_data_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="@dimen/margin_16"
+                    android:orientation="horizontal"
+                    android:paddingHorizontal="@dimen/margin_20">
+
+                    <TextView
+                        android:id="@+id/contact_info_caption"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:fontFamily="@font/titillium_semibold"
+                        android:text="@string/contact_info"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_10sdp" />
+
+                    <TextView
+                        android:id="@+id/email"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/contact_info_caption"
+                        android:layout_alignParentStart="true"
+                        android:layout_toStartOf="@id/location"
+                        android:ellipsize="end"
+                        android:paddingEnd="16dp"
+                        android:singleLine="true"
+                        android:textColor="#686868"
+                        android:textSize="@dimen/_9sdp"
+                        tools:text="test.very.long.address@test.com" />
+
+                    <TextView
+                        android:id="@+id/phone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/email"
+                        android:layout_alignParentStart="true"
+                        android:textColor="#686868"
+                        android:textSize="@dimen/_9sdp"
+                        tools:text="+1234567890" />
+
+                    <TextView
+                        android:id="@+id/subscribed_since_caption"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:fontFamily="@font/titillium_semibold"
+                        android:text="@string/subscribed_since"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_10sdp" />
+
+                    <TextView
+                        android:id="@+id/regDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/subscribed_since_caption"
+                        android:layout_alignStart="@+id/subscribed_since_caption"
+                        android:textColor="#686868"
+                        android:textSize="@dimen/_9sdp"
+                        tools:text="1 Dec, 2018" />
+
+                    <TextView
+                        android:id="@+id/location_caption"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignStart="@id/password_caption"
+                        android:fontFamily="@font/titillium_semibold"
+                        android:text="@string/location"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_10sdp" />
+
+                    <TextView
+                        android:id="@+id/location"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/location_caption"
+                        android:layout_alignStart="@+id/location_caption"
+                        android:layout_centerHorizontal="true"
+                        android:layout_toStartOf="@id/regDate"
+                        android:ellipsize="end"
+                        android:paddingEnd="5dp"
+                        android:singleLine="true"
+                        android:textColor="#686868"
+                        android:textSize="@dimen/_9sdp"
+                        tools:text="Example, Loc" />
+
+                    <TextView
+                        android:id="@+id/password_caption"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/chosen_language_caption"
+                        android:layout_centerHorizontal="true"
+                        android:fontFamily="@font/titillium_semibold"
+                        android:text="@string/password"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_10sdp" />
+
+                    <TextView
+                        android:id="@+id/password_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/password_caption"
+                        android:layout_alignStart="@+id/password_caption"
+                        android:layout_alignTop="@+id/languages"
+                        android:includeFontPadding="false"
+                        android:text="***********"
+                        android:textColor="#686868"
+                        android:textSize="@dimen/_10sdp"
+                        tools:ignore="HardcodedText" />
+
+                    <TextView
+                        android:id="@+id/chosen_language_caption"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/phone"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginTop="@dimen/margin_10"
+                        android:fontFamily="@font/titillium_semibold"
+                        android:text="@string/chosen_language"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_10sdp" />
+
+                    <ImageButton
+                        android:id="@+id/languages"
+                        style="@style/Widget.AppCompat.Button.Borderless"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_below="@id/chosen_language_caption"
+                        android:layout_marginStart="-3dp"
+                        android:layout_marginTop="@dimen/_1sdp"
+                        android:padding="0dp"
+                        android:scaleType="centerInside"
+                        tools:src="@drawable/english" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/editProfile"
+                        style="@style/Widget.Material3.Button.Icon"
+                        android:layout_width="@dimen/_46sdp"
+                        android:layout_height="@dimen/_30sdp"
+                        android:layout_below="@id/regDate"
+                        android:layout_alignTop="@id/password_caption"
+                        android:layout_alignEnd="@+id/subscribed_since_caption"
+                        android:layout_marginTop="-2dp"
+                        android:gravity="center"
+                        app:backgroundTint="@color/colorPrimary"
+                        app:cornerRadius="@dimen/_15sdp"
+                        app:icon="@drawable/ic_pencil"
+                        app:iconGravity="textEnd"
+                        app:iconTint="@color/white" />
+
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/infoDivider"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_1"
+                    android:background="#14000000" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/padding_12"
+                    android:layout_marginVertical="@dimen/margin_16"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.switchmaterial.SwitchMaterial
+                        android:id="@+id/switchAutoTranslate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:minHeight="@dimen/_10sdp"
+                        app:switchMinWidth="56dp"
+                        app:thumbTint="@color/selector_switch"
+                        app:trackTint="@color/white_translucent" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@id/switchAutoTranslate"
+                        android:layout_alignBottom="@+id/switchAutoTranslate"
+                        android:layout_marginStart="8dp"
+                        android:layout_toEndOf="@+id/switchAutoTranslate"
+                        android:gravity="center_vertical"
+                        android:includeFontPadding="false"
+                        android:text="@string/auto_translation"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_10sdp" />
+
+                    <com.google.android.material.switchmaterial.SwitchMaterial
+                        android:id="@+id/switchWallNoti"
+                        android:layout_width="56dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/switchAutoTranslate"
+                        android:layout_marginBottom="8dp"
+                        android:minHeight="@dimen/_10sdp"
+                        app:switchMinWidth="56dp"
+                        app:thumbTint="@color/selector_switch"
+                        app:trackTint="@color/white_translucent" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@id/switchWallNoti"
+                        android:layout_alignBottom="@+id/switchWallNoti"
+                        android:layout_marginStart="8dp"
+                        android:layout_toEndOf="@+id/switchWallNoti"
+                        android:gravity="center_vertical"
+                        android:includeFontPadding="false"
+                        android:text="@string/notify_wall"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_10sdp" />
+
+                    <com.google.android.material.switchmaterial.SwitchMaterial
+                        android:id="@+id/switchNewsNoti"
+                        android:layout_width="56dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/switchWallNoti"
+                        android:layout_marginBottom="8dp"
+                        android:minHeight="@dimen/_10sdp"
+                        app:switchMinWidth="56dp"
+                        app:thumbTint="@color/selector_switch"
+                        app:trackTint="@color/white_translucent" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@id/switchNewsNoti"
+                        android:layout_alignBottom="@+id/switchNewsNoti"
+                        android:layout_marginStart="8dp"
+                        android:layout_toEndOf="@+id/switchNewsNoti"
+                        android:gravity="center_vertical"
+                        android:includeFontPadding="false"
+                        android:text="@string/notify_news"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_10sdp" />
+
+                    <com.google.android.material.switchmaterial.SwitchMaterial
+                        android:id="@+id/switchRumorNoti"
+                        android:layout_width="56dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/switchNewsNoti"
+                        android:layout_marginBottom="8dp"
+                        android:minHeight="@dimen/_10sdp"
+                        android:visibility="gone"
+                        app:switchMinWidth="56dp"
+                        app:thumbTint="@color/selector_switch"
+                        app:trackTint="@color/white_translucent" />
+
+                    <TextView
+                        android:id="@+id/tvRumorNotiLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@id/switchRumorNoti"
+                        android:layout_alignBottom="@+id/switchRumorNoti"
+                        android:layout_marginStart="8dp"
+                        android:layout_toEndOf="@+id/switchRumorNoti"
+                        android:gravity="center_vertical"
+                        android:includeFontPadding="false"
+                        android:text="@string/notify_rumours"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_10sdp"
+                        android:visibility="gone" />
+
+                    <com.google.android.material.switchmaterial.SwitchMaterial
+                        android:id="@+id/switchSocialNoti"
+                        android:layout_width="56dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/switchRumorNoti"
+                        android:minHeight="@dimen/_10sdp"
+                        app:switchMinWidth="56dp"
+                        app:thumbTint="@color/selector_switch"
+                        app:trackTint="@color/white_translucent" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@id/switchSocialNoti"
+                        android:layout_alignBottom="@+id/switchSocialNoti"
+                        android:layout_marginStart="8dp"
+                        android:layout_toEndOf="@+id/switchSocialNoti"
+                        android:gravity="center_vertical"
+                        android:includeFontPadding="false"
+                        android:text="@string/notify_social"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_10sdp" />
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_1"
+                android:background="#14000000" />
+
+            <include
+                android:id="@+id/profileStats"
+                layout="@layout/section_profile_stats" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_1"
+                android:background="#14000000" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/pushToken"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_10sdp"
+                android:textSize="@dimen/_9sdp"
+                android:visibility="gone"
+                tools:text="FansChat" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/logout"
+                style="@style/Widget.Material3.Button.Icon"
+                android:layout_width="@dimen/_60sdp"
+                android:layout_height="@dimen/_36sdp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="56dp"
+                android:gravity="center"
+                app:backgroundTint="@color/colorPrimary"
+                app:cornerRadius="@dimen/_15sdp"
+                app:icon="@drawable/ic_logout"
+                app:iconGravity="textEnd"
+                app:iconSize="@dimen/_18sdp"
+                app:iconTint="@color/white" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_1"
+                android:background="#14000000" />
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</RelativeLayout>

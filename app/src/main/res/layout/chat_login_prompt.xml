@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="@layout/fragment_chat">
+
+    <ImageView
+        android:id="@+id/background"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@drawable/background" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_30"
+        android:layout_marginEnd="@dimen/margin_30"
+        android:layout_marginBottom="300dp"
+        android:gravity="center"
+        android:text="@string/chat_with_friends_login"
+        android:textColor="@color/white"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:lineSpacingMultiplier="0.9"
+        android:text="@string/login_slider_chat"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@id/title"
+        app:layout_constraintStart_toStartOf="@id/title"
+        app:layout_constraintTop_toBottomOf="@id/title" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/register"
+        style="@style/Widget.Material3.Button.ElevatedButton"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/standard_button_height_regular"
+        android:layout_marginTop="64dp"
+        android:fontFamily="@font/titillium_semibold"
+        android:text="@string/join"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_14sdp"
+        app:backgroundTint="@color/join"
+        app:layout_constraintEnd_toEndOf="@id/description"
+        app:layout_constraintStart_toStartOf="@id/description"
+        app:layout_constraintTop_toBottomOf="@id/description" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/login"
+        style="@style/Widget.Material3.Button.ElevatedButton"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/standard_button_height_regular"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:fontFamily="@font/titillium_semibold"
+        android:text="@string/sign_in"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_14sdp"
+        app:backgroundTint="@color/black"
+        app:layout_constraintEnd_toEndOf="@id/register"
+        app:layout_constraintStart_toStartOf="@id/register"
+        app:layout_constraintTop_toBottomOf="@id/register" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/loginPrompt"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:clickable="true"
+        android:visibility="gone"
+        app:constraint_referenced_ids="background,title,description,register,login" />
+
+</merge>

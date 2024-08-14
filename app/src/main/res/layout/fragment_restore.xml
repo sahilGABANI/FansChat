@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_dark_green"
+    tools:ignore="MissingPrefix">
+
+    <View
+        android:id="@+id/top_split_line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_1"
+        android:layout_below="@id/top_buttons_container"
+        android:background="@color/colorPrimary" />
+
+    <!--Forgot password container-->
+    <RelativeLayout
+        android:id="@+id/container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/top_buttons_container">
+
+        <ImageView
+            android:id="@+id/background"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/background" />
+
+        <RelativeLayout
+            android:id="@+id/forgotPasswordContainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:clickable="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="@dimen/margin_40"
+                android:clickable="true"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/email"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/standard_button_height"
+                    android:layout_marginStart="@dimen/margin_30"
+                    android:layout_marginEnd="@dimen/margin_30"
+                    android:background="@drawable/text_login_background_border"
+                    android:hint="@string/email"
+                    android:inputType="textEmailAddress"
+                    android:padding="@dimen/padding_8"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textColorHint="#A6FFFFFF"
+                    android:textSize="16sp"
+                    android:textStyle="normal" />
+
+                <FrameLayout
+                    android:id="@+id/bottom_buttons_container_sign_up"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_30"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="@dimen/margin_30">
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/restore"
+                        style="@style/Widget.Material3.Button.ElevatedButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/standard_button_height_regular"
+                        android:fontFamily="@font/titillium_semibold"
+                        android:text="@string/password_reset"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:textStyle="normal"
+                        app:backgroundTint="@color/btnColor" />
+
+                    <ProgressBar
+                        android:id="@+id/resetProgressBar"
+                        android:layout_width="@dimen/progress_bar"
+                        android:layout_height="@dimen/progress_bar"
+                        android:layout_gravity="center"
+                        android:elevation="@dimen/elevation_8"
+                        android:visibility="gone" />
+
+                </FrameLayout>
+
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/top_buttons_container"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/standard_button_height"
+        android:background="@color/colorToolbarAlt"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/back"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="@dimen/standard_button_height"
+            android:layout_height="@dimen/standard_button_height"
+            android:layout_alignParentBottom="true"
+            android:alpha="0.75"
+            android:rotationY="@integer/view_rotation"
+            android:src="@drawable/ic_keyboard_arrow_left_white_24dp"
+            app:tint="@color/bread_arrow" />
+
+        <TextView
+            android:id="@+id/titleTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_marginEnd="1dp"
+            android:gravity="center_vertical"
+            android:text="@string/password_reset"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_size_16"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/loadingOverlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#c2000000"
+        android:visibility="gone">
+
+        <ProgressBar
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
+
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/logoImageView"
+        android:layout_width="52dp"
+        android:layout_height="52dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/logo_fanschat" />
+
+</RelativeLayout>

@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:layout_gravity="end"
+    tools:layout_width="200dp"
+    tools:paddingTop="0dp">
+
+    <RelativeLayout
+        android:id="@+id/profile"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_107sdp"
+        android:background="@color/colorPrimary"
+        android:clickable="true"
+        android:focusable="true"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/_12sdp">
+
+        <!--        <ImageView-->
+        <!--            android:id="@+id/avatar"-->
+        <!--            android:layout_width="@dimen/_56sdp"-->
+        <!--            android:layout_height="@dimen/_56sdp"-->
+        <!--            android:layout_centerHorizontal="true"-->
+        <!--            android:src="@drawable/avatar_placeholder" />-->
+
+        <RelativeLayout
+            android:id="@+id/profile_image_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true">
+
+            <ProgressBar
+                android:id="@+id/progressBarAvatar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="@dimen/_60sdp"
+                android:layout_height="@dimen/_60sdp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/circle_shape"
+                android:indeterminate="false"
+                android:max="100"
+                android:progressDrawable="@drawable/circular_progress_bar"
+                tools:progress="60" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/avatars"
+                android:layout_width="@dimen/_48sdp"
+                android:layout_height="@dimen/_48sdp"
+                android:layout_centerInParent="true"
+                android:foreground="?selectableItemBackground"
+                tools:src="@drawable/avatar_placeholder" />
+
+        </RelativeLayout>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/capLvlTextView"
+            android:layout_width="@dimen/_22sdp"
+            android:layout_height="@dimen/_22sdp"
+            android:layout_below="@id/profile_image_container"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="-20dp"
+            android:background="@drawable/next_level_marker"
+            android:paddingTop="@dimen/_2sdp"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            tools:text="10" />
+
+        <TextView
+            android:id="@+id/pointsTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/capLvlTextView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_1sdp"
+            android:text="@string/points"
+            android:textColor="@color/white"
+            android:textSize="10sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:paddingBottom="@dimen/_4sdp"
+            android:text="@string/go_to_profile"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_9sdp" />
+
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvSideMenu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+        app:spanCount="2"
+        tools:itemCount="10"
+        tools:listitem="@layout/item_side_menu" />
+
+    <!--<LinearLayout style="@style/SideMenuRow">
+
+        <FrameLayout
+            style="@style/SideMenuButtonContainer"
+            android:background="@drawable/toolbar_background">
+
+            <base.views.CustomCheckableImageButton
+                android:id="@+id/menuFeed"
+                style="@style/SideMenuButton"
+                android:layout_width="59dp"
+                android:layout_height="49dp"
+                android:layout_gravity="center"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/logo_fanschat"
+                android:tint="@color/selector_menu" />
+
+            <TextView
+                style="@style/SideMenuButtonLabelMtn"
+                android:text="@string/wall"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            style="@style/SideMenuButtonContainer"
+            android:background="@drawable/toolbar_background">
+
+            <base.views.CustomCheckableImageButton
+                android:id="@+id/menuChat"
+                style="@style/SideMenuButton"
+                android:src="@drawable/icon_menu_chat_big"
+                android:tint="@color/colorPrimary" />
+
+            <TextView
+                style="@style/SideMenuButtonLabelMtn"
+                android:text="@string/chat"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold" />
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <LinearLayout style="@style/SideMenuRow">
+
+        <FrameLayout
+            style="@style/SideMenuButtonContainer"
+            android:background="@drawable/toolbar_background">
+
+            <base.views.CustomCheckableImageButton
+                android:id="@+id/menuNews"
+                style="@style/SideMenuButton"
+                android:src="@drawable/icon_menu_news_big"
+                android:tint="@color/colorPrimary" />
+
+            <TextView
+                style="@style/SideMenuButtonLabelMtn"
+                android:text="@string/news"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            style="@style/SideMenuButtonContainer"
+            android:background="@drawable/toolbar_background">
+
+            <base.views.CustomCheckableImageButton
+                android:id="@+id/menuSocial"
+                style="@style/SideMenuButton"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_gravity="center"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_social"
+                android:tint="@color/colorPrimary" />
+
+            <TextView
+                style="@style/SideMenuButtonLabelMtn"
+                android:text="@string/social"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold" />
+
+        </FrameLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout style="@style/SideMenuRow">
+
+        <FrameLayout
+            style="@style/SideMenuButtonContainer"
+            android:background="@drawable/toolbar_background">
+
+            <base.views.CustomCheckableImageButton
+                android:id="@+id/rumours"
+                style="@style/SideMenuButton"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/rum"
+                android:tint="@color/colorPrimary" />
+
+            <TextView
+                style="@style/SideMenuButtonLabelMtn"
+                android:text="@string/rumours"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            style="@style/SideMenuButtonContainer"
+            android:background="@drawable/toolbar_background">
+
+            <base.views.CustomCheckableImageButton
+                android:id="@+id/tv"
+                style="@style/SideMenuButton"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:padding="12dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/tv"
+                android:tint="@color/colorPrimary" />
+
+            <TextView
+                style="@style/SideMenuButtonLabelMtn"
+                android:text="@string/tv"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold" />
+
+
+        </FrameLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout style="@style/SideMenuRow">
+
+        <FrameLayout
+            style="@style/SideMenuButtonContainer"
+            android:background="@drawable/toolbar_background"
+            android:visibility="gone">
+
+            <base.views.CustomCheckableImageButton
+                android:id="@+id/stats"
+                style="@style/SideMenuButton"
+                android:src="@drawable/icon_menu_stats_big"
+                android:tint="@color/colorPrimary" />
+
+            <TextView
+                style="@style/SideMenuButtonLabelMtn"
+                android:text="@string/stats"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#d2d4d7">
+
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="16dp"
+                android:src="@drawable/logo_fanschat"
+                app:tint="#bdbec1" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            style="@style/SideMenuButtonContainer"
+            android:background="@drawable/toolbar_background"
+            android:visibility="gone">
+
+            <base.views.CustomCheckableImageButton
+                android:id="@+id/store"
+                style="@style/SideMenuButton"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_gravity="center"
+                android:adjustViewBounds="true"
+                android:padding="16dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/store"
+                android:tint="@color/colorPrimary" />
+
+            <TextView
+                style="@style/SideMenuButtonLabelMtn"
+                android:text="@string/store"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold" />
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/SideMenuRow"
+        android:visibility="gone">
+
+        <FrameLayout
+            style="@style/SideMenuButtonContainer"
+            android:background="@drawable/toolbar_background">
+
+            <base.views.CustomCheckableImageButton
+                android:id="@+id/tickets"
+                style="@style/SideMenuButton"
+                android:src="@drawable/icon_menu_tickets_big"
+                android:tint="@color/colorPrimary" />
+
+            <TextView
+                style="@style/SideMenuButtonLabelMtn"
+                android:text="@string/tickets"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            style="@style/SideMenuButtonContainer"
+            android:background="@drawable/toolbar_background">
+
+            <base.views.CustomCheckableImageButton
+                android:id="@+id/calendar"
+                style="@style/SideMenuButton"
+                android:src="@drawable/icon_menu_calendar_big"
+                android:tint="@color/colorPrimary" />
+
+            <TextView
+                style="@style/SideMenuButtonLabelMtn"
+                android:text="@string/calendar"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold" />
+
+        </FrameLayout>
+
+
+    </LinearLayout>-->
+
+
+</LinearLayout>

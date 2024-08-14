@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/feed">
+
+    <fragment
+        android:id="@+id/feed"
+        android:name="base.ui.fragment.wall.WallFragment"
+        android:label="@string/wall"
+        tools:layout="@layout/fragment_wall">
+        <action
+            android:id="@+id/createPost"
+            app:destination="@id/createPost" />
+        <action
+            android:id="@+id/login"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/register"
+            app:destination="@id/registerFragment" />
+        <action
+            android:id="@+id/authorize"
+            app:destination="@id/authDecideFragment" />
+        <action
+            android:id="@+id/details"
+            app:destination="@+id/detailFragment" />
+        <action
+            android:id="@+id/showFriends"
+            app:destination="@+id/showFriends" />
+    </fragment>
+    <fragment
+        android:id="@+id/notification"
+        android:name="base.ui.fragment.notifications.NotificationFragment"
+        tools:layout="@layout/fragment_notification">
+        <action
+            android:id="@+id/authorize"
+            app:destination="@id/authDecideFragment" />
+        <action
+            android:id="@+id/details"
+            app:destination="@+id/detailFragment" />
+        <action
+            android:id="@+id/showFriends"
+            app:destination="@+id/showFriends" />
+        <action
+            android:id="@+id/chat"
+            app:destination="@+id/chat" />
+    </fragment>
+    <fragment
+        android:id="@+id/chat"
+        android:name="base.ui.fragment.main.ChatFragment"
+        android:label="@string/chat"
+        tools:layout="@layout/fragment_chat">
+
+        <action
+            android:id="@+id/login"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/register"
+            app:destination="@id/registerFragment" />
+        <action
+            android:id="@+id/chatCreate"
+            app:destination="@id/createJoinChat">
+            <argument
+                android:name="fromCreate"
+                android:defaultValue="true"
+                app:argType="boolean" />
+        </action>
+        <action
+            android:id="@+id/chatEdit"
+            app:destination="@id/createJoinChat">
+            <argument
+                android:name="fromEdit"
+                android:defaultValue="true"
+                app:argType="boolean" />
+            <argument
+                android:name="chatToEdit"
+                app:argType="base.data.model.chat.Chat" />
+        </action>
+        <action
+            android:id="@+id/chatSearch"
+            app:destination="@id/createJoinChat">
+            <argument
+                android:name="fromCreate"
+                android:defaultValue="false"
+                app:argType="boolean" />
+        </action>
+        <action
+            android:id="@+id/details"
+            app:destination="@+id/detailFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/news"
+        android:name="base.ui.fragment.main.NewsFragment"
+        android:label="@string/news"
+        tools:layout="@layout/fragment_news">
+        <action
+            android:id="@+id/details"
+            app:destination="@+id/detailFragment" />
+
+        <action
+            android:id="@+id/authorize"
+            app:destination="@id/authDecideFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/rumours"
+        android:name="base.ui.fragment.menu.RumoursFragment"
+        android:label="@string/rumours"
+        tools:layout="@layout/fragment_web">
+        <action
+            android:id="@+id/details"
+            app:destination="@+id/detailFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/fantasy"
+        android:name="base.ui.fragment.menu.FantasyFragment"
+        android:label="@string/fantasy"
+        tools:layout="@layout/fragment_web" />
+
+    <fragment
+        android:id="@+id/social"
+        android:name="base.ui.fragment.main.SocialFragment"
+        android:label="@string/social"
+        tools:layout="@layout/fragment_news">
+        <action
+            android:id="@+id/details"
+            app:destination="@+id/detailFragment" />
+
+        <action
+            android:id="@+id/authorize"
+            app:destination="@id/authDecideFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/createPost"
+        android:name="base.ui.fragment.PostCreateFragment"
+        android:label="PostCreateFragment" />
+
+    <fragment
+        android:id="@+id/registerFragment"
+        android:name="base.ui.fragment.login.RegisterFragment"
+        tools:layout="@layout/fragment_register" />
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="base.ui.fragment.login.LoginFragment"
+        tools:layout="@layout/fragment_login">
+        <action
+            android:id="@id/restore"
+            app:destination="@id/restoreFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/termsNPrivacyFragment"
+        android:name="base.ui.fragment.main.TermsNPrivacyFragment"
+        tools:layout="@layout/fragment_terms_n_privacy" />
+
+    <fragment
+        android:id="@+id/restoreFragment"
+        android:name="base.ui.fragment.login.RestoreFragment"
+        tools:layout="@layout/fragment_restore" />
+
+    <fragment
+        android:id="@+id/detailFragment"
+        android:name="base.ui.fragment.details.DetailFragment"
+        tools:layout="@layout/fragment_detail">
+        <action
+            android:id="@id/authorize"
+            app:destination="@id/authDecideFragment" />
+
+        <action
+            android:id="@+id/repost"
+            app:destination="@id/pinDialog" />
+        <action
+            android:id="@+id/details"
+            app:destination="@+id/detailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/stats"
+        android:name="base.ui.fragment.menu.stats.StatsContainerFragment"
+        tools:layout="@layout/fragment_web">
+        <action
+            android:id="@+id/webStats"
+            app:destination="@id/webStatsFragment" />
+        <action
+            android:id="@+id/authorize"
+            app:destination="@id/authDecideFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/calendar"
+        android:name="base.ui.fragment.menu.CalendarFragment"
+        tools:layout="@layout/fragment_web">
+        <action
+            android:id="@+id/authorize"
+            app:destination="@id/authDecideFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/tickets"
+        android:name="base.ui.fragment.menu.TicketsFragment"
+        tools:layout="@layout/fragment_web">
+        <action
+            android:id="@+id/authorize"
+            app:destination="@id/authDecideFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/store"
+        android:name="base.ui.fragment.menu.StoreFragment"
+        tools:layout="@layout/fragment_web">
+        <action
+            android:id="@+id/authorize"
+            app:destination="@id/authDecideFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/tv"
+        android:name="base.ui.fragment.menu.ClubTvFragment"
+        tools:layout="@layout/fragment_videos">
+
+        <action
+            android:id="@+id/details"
+            app:destination="@+id/detailFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/showFriends"
+        android:name="base.ui.fragment.other.friends.FriendsContainerFragment"
+        tools:layout="@layout/fragment_friends_container" />
+
+    <fragment
+        android:id="@+id/match"
+        android:name="base.ui.fragment.other.MatchFragment"
+        tools:layout="@layout/page_next_matches">
+        <action
+            android:id="@+id/tickets"
+            app:destination="@id/tickets" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/profile"
+        android:name="base.ui.fragment.other.profile.ProfileFragment"
+        tools:layout="@layout/fragment_profile">
+        <action
+            android:id="@id/login"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/languages"
+            app:destination="@id/languagesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/createJoinChat"
+        android:name="base.ui.fragment.other.chat.CreateJoinChatContainerFragment"
+        tools:layout="@layout/fragment_create_join_chat" />
+
+    <fragment
+        android:id="@+id/editProfile"
+        android:name="base.ui.fragment.other.profile.ProfileEditFragment"
+        tools:layout="@layout/fragment_profile_edit" />
+
+    <fragment
+        android:id="@+id/languagesFragment"
+        android:name="base.ui.fragment.other.profile.LanguagesFragment"
+        tools:layout="@layout/fragment_languages" />
+
+    <fragment
+        android:id="@+id/friendDetails"
+        android:name="base.ui.fragment.other.friends.my.FriendDetailFragment"
+        tools:layout="@layout/fragment_friend_detail" />
+
+
+    <fragment
+        android:id="@+id/authDecideFragment"
+        android:name="base.ui.fragment.login.AuthDecideFragment"
+        tools:layout="@layout/fragment_auth_decide">
+
+        <action
+            android:id="@+id/login"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/register"
+            app:destination="@id/registerFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/webStatsFragment"
+        android:name="base.ui.fragment.menu.stats.WebStatsFragment"
+        tools:layout="@layout/fragment_web" />
+
+    <dialog
+        android:id="@+id/pinDialog"
+        android:name="base.ui.fragment.dialog.PinDialog"
+        tools:layout="@layout/pin_dialog">
+
+        <argument
+            android:name="detailfragment"
+            android:defaultValue="@null"
+            app:argType="base.data.model.feed.FeedItem"
+            app:nullable="true" />
+
+        <action
+            android:id="@+id/authorize"
+            app:destination="@id/authDecideFragment" />
+    </dialog>
+</navigation>

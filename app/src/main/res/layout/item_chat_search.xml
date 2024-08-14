@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:animateLayoutChanges="true"
+    android:background="?selectableItemBackground"
+    android:clickable="true"
+    android:focusable="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/linTop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/gray"
+        android:gravity="center_vertical"
+        android:padding="@dimen/_5sdp">
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:background="@drawable/background_chat_head_selector"
+            android:padding="2dp"
+            android:src="@drawable/avatar_placeholder" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_7sdp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:lineSpacingMultiplier="0.8"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:text="Example Chat Name"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_size_14" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_1sdp"
+                android:gravity="center_vertical">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:background="@drawable/background_chat_head_selector"
+                        android:padding="2dp"
+                        android:src="@drawable/menu_social_normal"
+                        app:tint="@color/colorPrimary" />
+
+                    <TextView
+                        android:id="@+id/tvFrndMemberCount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_2sdp"
+                        android:gravity="center"
+                        android:lineSpacingMultiplier="0.8"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:text="5 Friends 6 Members"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/font_size_12" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linDateTime"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="end|center_vertical"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:lineSpacingMultiplier="0.8"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:text="@string/last_chat"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/font_size_12" />
+
+                    <TextView
+                        android:id="@+id/tvDateTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_3sdp"
+                        android:gravity="center"
+                        android:lineSpacingMultiplier="0.8"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:text="5 days ago"
+                        android:textSize="@dimen/font_size_12" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linBottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvFrndList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:listitem="@layout/item_user" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnJoinChat"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:backgroundTint="@color/yellow1"
+            android:foreground="?selectableItemBackground"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:text="@string/join_group"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_size_14"
+            android:textStyle="normal"
+            app:cornerRadius="0dp" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/black" />
+</LinearLayout>

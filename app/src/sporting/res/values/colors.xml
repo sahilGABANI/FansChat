@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">@color/green</color>
+    <color name="colorAccent">@color/green</color>
+    <color name="colorToolbar">@color/colorPrimary</color>
+    <color name="colorLink">#3366BB</color>
+    <color name="join_now_text_color">@color/black</color>
+    <color name="color_ebebeb">#EBEBEB</color>
+    <color name="color_b8b8b8">#B8B8B8</color>
+    <color name="bg_ticker">#029357</color>
+    <color name="toolBarTint">#ffffff</color>
+    <color name="btnColor">#B7FF0A</color>
+    <color name="edit_text_background">#B7FF0A</color>
+    <color name="colorToolbarAlt">@color/green</color>
+    <color name="join">#FFCC00</color>
+
+</resources>

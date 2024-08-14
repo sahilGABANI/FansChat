@@ -1,0 +1,242 @@
+plugins {
+    id 'com.android.application'
+    id 'kotlin-android'
+    id 'kotlin-kapt'
+    id 'kotlin-android-extensions'
+    id 'com.google.gms.google-services'
+    id 'com.google.firebase.crashlytics'
+}
+//    id 'kotlin-android-extensions'
+android {
+    compileSdkVersion 31
+    defaultConfig {
+        minSdkVersion 21
+        //noinspection ExpiredTargetSdkVersion
+        targetSdkVersion 29
+        multiDexEnabled true
+        //Janak: added Runner for run Espresso Test cases
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        //testInstrumentationRunnerArguments clearPackageData: 'true'
+    }
+    flavorDimensions "main"
+    productFlavors {
+        sporting {
+            def domain = 'scp-dev.fanschat.uk'
+            // BaseURL to define API BaseUrl, socket url and browsable domain
+            applicationId "com.fanschat.sporting"
+            versionCode 74
+            versionName "1.0.74"
+
+            buildConfigField("String", "BASE_URL", "\"https://$domain/api/\"")
+            buildConfigField("String", "SOCKET_BASE_URL", "\"https://$domain\"")
+            manifestPlaceholders = [host: domain]
+
+        }
+        mtn {
+            def domain = 'mtn-dev.fanschat.uk'
+            applicationId "com.fanschat.mtn"
+            versionCode 74
+            versionName "1.0.74"
+
+            buildConfigField("String", "BASE_URL", "\"https://$domain/api/\"")
+            buildConfigField("String", "SOCKET_BASE_URL", "\"https://$domain\"")
+            manifestPlaceholders = [host: domain]
+
+        }
+        sokkaa {
+            def domain = 'mtn-dev.fanschat.uk'
+            applicationId "com.fanschat.sokkaa"
+            versionCode 74
+            versionName "1.0.74"
+
+            buildConfigField("String", "BASE_URL", "\"https://$domain/api/\"")
+            buildConfigField("String", "SOCKET_BASE_URL", "\"https://$domain\"")
+            manifestPlaceholders = [host: domain]
+
+        }
+        bal {
+            def domain = 'scp-dev.fanschat.uk'
+            applicationId "com.fanschat.bal"
+            versionCode 76
+            versionName "1.0.76"
+
+            buildConfigField("String", "BASE_URL", "\"https://$domain/api/\"")
+            buildConfigField("String", "SOCKET_BASE_URL", "\"https://$domain\"")
+            manifestPlaceholders = [host: domain]
+
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+//            proguardFiles getDefaultProguardFile(
+//                    'proguard-android.txt'),
+//                    'proguard-rules.pro'
+        }
+    }
+    packagingOptions {
+        resources {
+            excludes += ['META-INF/DEPENDENCIES', 'META-INF/proguard/androidx-annotations.pro']
+        }
+    }
+
+    compileOptions {
+        coreLibraryDesugaringEnabled true
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    configurations.all {
+        resolutionStrategy.dependencySubstitution {
+            substitute module('org.hamcrest:hamcrest-core:1.1') with module('junit:junit:4.10')
+        }
+    }
+    buildFeatures {
+        viewBinding true
+    }
+
+    testOptions {
+        unitTests {
+            includeAndroidResources = true
+        }
+    }
+    lint {
+        abortOnError false
+    }
+    /*testOptions {
+        execution 'ANDROIDX_TEST_ORCHESTRATOR'
+    }*/
+}
+
+dependencies {
+
+    //==============Core==============
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+//    implementation 'org.jetbrains.anko:anko:0.10.8'
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.1'
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.1'
+
+    implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0'
+    implementation "androidx.appcompat:appcompat:1.4.2"
+    implementation 'androidx.multidex:multidex:2.0.1'
+
+    //==============UI==============
+    implementation 'com.google.android.material:material:1.6.1'
+    implementation 'com.github.bumptech.glide:glide:4.13.1'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.12.0'
+    implementation 'com.github.chrisbanes:PhotoView:2.2.0'
+    implementation 'com.jaredrummler:material-spinner:1.3.0'
+
+    //==============Architecture==============
+    implementation 'androidx.navigation:navigation-fragment-ktx:2.4.2'
+    implementation 'androidx.navigation:navigation-ui-ktx:2.4.2'
+
+    //==============Storage==============
+    implementation 'androidx.room:room-runtime:2.4.2'
+    implementation 'androidx.room:room-rxjava2:2.4.2'
+    kapt 'androidx.room:room-compiler:2.4.2'
+    implementation 'com.github.miguelbcr:RxPaparazzo:0.6.0-2.x'
+    implementation 'com.github.VictorAlbertos:RxActivityResult:0.4.5-2.x'
+    implementation 'com.github.adrielcafe:AndroidAudioRecorder:0.3.0'
+
+    //==============Facebook==============
+    implementation 'com.facebook.android:facebook-login:latest.release'
+    implementation 'com.facebook.android:audience-network-sdk:4.99.3'
+
+    //==============Firebase==============
+    implementation 'com.google.firebase:firebase-core:21.0.0'
+    implementation 'com.google.firebase:firebase-messaging:23.0.5'
+    implementation 'com.google.firebase:firebase-invites:17.0.0'
+    implementation 'com.google.firebase:firebase-crashlytics:18.2.11'
+    implementation 'com.google.firebase:firebase-analytics:21.0.0'
+
+    implementation 'com.intuit.sdp:sdp-android:1.0.6'
+    implementation 'com.google.guava:listenablefuture:9999.0-empty-to-avoid-conflict-with-guava'
+
+    //==============Testing dependencies==============
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'com.android.support:support-annotations:28.0.0'
+    androidTestImplementation 'com.android.support.test:rules:1.0.2'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    androidTestImplementation "org.jetbrains.kotlin:kotlin-test-junit:1.6.21"
+    implementation 'androidx.test.ext:junit-ktx:1.1.3'
+    kaptAndroidTest 'com.google.dagger:dagger-compiler:2.42'
+    androidTestImplementation('com.android.support.test.espresso:espresso-contrib:3.0.2') {
+        exclude group: 'com.android.support', module: 'appcompat'
+        exclude module: 'recyclerview-v7'
+        exclude module: 'appcompat-v7'
+    }
+
+    //==============Amplify==============
+    implementation 'com.amplifyframework:core:1.28.0'
+    coreLibraryDesugaring 'com.android.tools:desugar_jdk_libs:1.1.5'
+    implementation 'com.amplifyframework:aws-storage-s3:1.28.0'
+    implementation 'com.amplifyframework:aws-auth-cognito:1.28.0'
+
+    implementation 'com.amplifyframework:rxbindings:1.3.0'
+
+    //==============RxJava==============
+    implementation 'io.reactivex.rxjava2:rxjava:2.2.20'
+    implementation 'io.reactivex.rxjava2:rxkotlin:2.2.0'
+    implementation 'io.reactivex.rxjava2:rxandroid:2.1.1'
+
+    //==============RxViewBinding==============
+    implementation "com.jakewharton.rxbinding3:rxbinding:3.1.0"
+
+    //==============Retrofit==============
+    implementation("com.squareup.retrofit2:retrofit:2.9.0") {
+        // exclude Retrofit’s OkHttp peer-dependency module and define your own module import
+        exclude module: 'okhttp'
+    }
+    implementation "com.squareup.retrofit2:adapter-rxjava2:2.9.0"
+    implementation "com.squareup.retrofit2:converter-gson:2.9.0"
+
+    //==============OkHttp==============
+    implementation "com.squareup.okhttp3:okhttp:4.9.0"
+    implementation "com.squareup.okhttp3:logging-interceptor:4.9.0"
+    implementation 'org.conscrypt:conscrypt-android:2.5.0'
+
+    //==============Backend==============
+    String jackson_version = "2.11.1"
+    implementation "com.fasterxml.jackson.core:jackson-core:$jackson_version"
+    implementation "com.fasterxml.jackson.core:jackson-annotations:$jackson_version"
+    implementation "com.fasterxml.jackson.module:jackson-module-kotlin:$jackson_version"
+
+    //==============Logging==============
+    implementation 'com.jakewharton.timber:timber:5.0.0'
+
+    //==============Dagger==============
+    implementation "com.google.dagger:dagger:2.42"
+    kapt "com.google.dagger:dagger-compiler:2.42"
+    kapt "com.google.dagger:dagger-android-processor:2.28.3"
+
+    implementation 'com.google.code.gson:gson:2.9.0'
+
+    //==============Socket.io============== https://socket.io/blog/native-socket-io-and-android/
+    implementation('io.socket:socket.io-client:2.0.1') {
+        exclude group: 'org.json', module: 'json'
+    }
+
+    //==============ExoPlayer==============
+    implementation 'com.google.android.exoplayer:exoplayer-core:2.18.0'
+    implementation 'com.google.android.exoplayer:exoplayer-ui:2.18.0'
+    implementation 'com.google.android.exoplayer:exoplayer-dash:2.18.0'
+
+    //==============Video Compressor/Trimmer==============
+    implementation('com.googlecode.mp4parser:isoparser:1.0.6') {
+        force = true
+        exclude group: 'org.aspectj', module: 'aspectjrt'
+    }
+
+    //==============Location==============
+    implementation "com.google.android.gms:play-services-location:20.0.0"
+    implementation 'com.github.getActivity:XXPermissions:13.2'
+    implementation 'com.github.prabhat1707:EasyWayLocation:2.4'
+
+    //==============Compressor==============
+    implementation 'com.iceteck.silicompressorr:silicompressor:2.2.4'
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+}
+

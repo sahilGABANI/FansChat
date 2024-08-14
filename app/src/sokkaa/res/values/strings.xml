@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name" translatable="false">SOKKAA</string>
+    <string name="stripe">For the fans</string>
+
+    <string name="facebook_app_id" translatable="false">416181875585995</string>
+    <string name="fb_login_protocol_scheme" translatable="false">fb416181875585995</string>
+    <string name="facebook_client_token" translatable="false">dae83b0c052cd2efbc7545254d291684</string>
+
+    <string name="youtube_url" translatable="false">https://www.youtube.com/channel/UCnJj6L93JX3Jrhzv81ayywA/videos</string>
+    <string name="url_stats" translatable="false">http://www.sporting.pt/pt/futebol/equipa-principal/plantel</string>
+    <string name="url_rumours" translatable="false">https://sokkaa.com/category/transfersandrumours/</string>
+    <string name="youtube_channel" translatable="false">UCdRkVZGDJwV4zMlrqi2JucA</string>
+    <string name="url_calendar" translatable="false">https://www.sporting.pt/pt/agenda/calendario?d=%d-%d</string>
+    <string name="url_fantasy" translatable="false">http://wc.sokkaastars.com/app</string>
+    <string name="url_store" translatable="false" />
+    <string name="url_tickets" translatable="false" />
+    <string name="share_host_name" translatable="false">ssk-sharing-development.herokuapp.com</string>
+
+    <string name="club_name" translatable="false">SOKKAA</string>
+
+</resources>

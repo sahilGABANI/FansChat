@@ -1,0 +1,103 @@
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/rlMain"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_60"
+        android:clickable="true">
+
+        <RelativeLayout
+            android:id="@+id/image_holder"
+            android:layout_width="@dimen/height_38"
+            android:layout_height="@dimen/height_38"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="@dimen/padding_12">
+
+            <ImageView
+                android:id="@+id/avatar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/avatar_placeholder"
+                tools:src="@drawable/avatar_placeholder" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@+id/declineButton"
+            android:layout_toEndOf="@+id/image_holder">
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lineSpacingMultiplier="0.8"
+                android:textColor="@color/black"
+                android:textSize="@dimen/font_size_14"
+                tools:text="Test Sender" />
+
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/name"
+                android:layout_marginTop="-2dp"
+                android:text="@string/requested_on"
+                android:textSize="@dimen/font_size_12"
+                android:visibility="invisible" />
+
+            <!--
+                    <TextView
+                        android:id="@+id/date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@id/date_prefix"
+                        android:layout_marginStart="4dp"
+                        android:layout_marginTop="-2dp"
+                        android:layout_toEndOf="@+id/date_prefix"
+                        android:textSize="@dimen/font_size_12"
+                        tools:text="Dec 1" />
+            -->
+
+        </RelativeLayout>
+
+        <ImageButton
+            android:id="@+id/acceptButton"
+            android:layout_width="65dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:background="?selectableItemBackgroundBorderless"
+            android:paddingTop="@dimen/margin_16"
+            android:paddingBottom="@dimen/margin_16"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/friend_request_accept" />
+
+        <ImageButton
+            android:id="@+id/declineButton"
+            android:layout_width="65dp"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@+id/acceptButton"
+            android:background="?selectableItemBackgroundBorderless"
+            android:paddingTop="@dimen/margin_16"
+            android:paddingBottom="@dimen/margin_16"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/friend_request_clear" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_1"
+            android:layout_alignParentBottom="true"
+            android:background="#19000000" />
+
+
+    </RelativeLayout>
+</merge>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#466DA0</color>
+    <color name="colorAccent">@color/yellow</color>
+    <color name="colorToolbar">@color/white</color>
+    <color name="colorToolbarAlt">@color/black</color>
+    <color name="join">#fbb912</color>
+    <color name="colorLink">#8c830c</color>
+    <color name="bread_arrow">#78FBE4</color>
+    <color name="fb_button">@color/black</color>
+    <color name="join_now_text_color">@color/white</color>
+    <color name="bg_ticker">#395881</color>
+    <color name="toolBarTint">#395881</color>
+    <color name="login_text_black">#ffffff</color>
+
+</resources>

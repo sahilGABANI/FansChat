@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:clickable="true"
+        android:focusable="false"
+        android:orientation="vertical">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/top_buttons_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/standard_button_height"
+                android:orientation="horizontal"
+                android:visibility="visible">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="@string/post_create"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <ImageButton
+                    android:id="@+id/back"
+                    android:layout_width="@dimen/standard_button_height"
+                    android:layout_height="@dimen/standard_button_height"
+                    android:layout_alignParentStart="true"
+                    android:adjustViewBounds="true"
+                    android:foreground="?selectableItemBackgroundBorderless"
+                    android:rotationY="@integer/view_rotation"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/ic_keyboard_arrow_left_white_24dp"
+                    app:tint="@color/colorPrimary" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnPost"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentEnd="true"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:foreground="?selectableItemBackground"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:insetTop="0dp"
+                    android:insetBottom="0dp"
+                    android:paddingStart="@dimen/margin_20"
+                    android:paddingEnd="@dimen/margin_20"
+                    android:text="@string/post"
+                    android:textAllCaps="false"
+                    android:textSize="@dimen/font_size_18"
+                    app:cornerRadius="0dp" />
+            </RelativeLayout>
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            android:fitsSystemWindows="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/image"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:background="@drawable/placeholder_flex"
+                        android:minHeight="@dimen/_170sdp"
+                        android:scaleType="fitCenter" />
+
+                    <TextView
+                        android:id="@+id/removeButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/image"
+                        android:layout_alignParentEnd="true"
+                        android:padding="@dimen/padding_10"
+                        android:text="@string/delete"
+                        android:visibility="gone" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignTop="@+id/image"
+                        android:layout_alignBottom="@+id/image"
+                        android:foregroundGravity="center"
+                        android:gravity="center">
+
+                        <ImageButton
+                            android:id="@+id/imageButton"
+                            style="@style/Widget.AppCompat.Button.Borderless"
+                            android:layout_width="@dimen/width_60"
+                            android:layout_height="@dimen/width_60"
+                            android:layout_marginEnd="16dp"
+                            android:background="@drawable/black_circle"
+                            android:foreground="?selectableItemBackgroundBorderless"
+                            android:padding="0dp"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/chat_button_image"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toStartOf="@+id/progressBar"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:tint="@color/white" />
+
+                        <ImageButton
+                            android:id="@+id/videoButton"
+                            style="@style/Widget.AppCompat.Button.Borderless"
+                            android:layout_width="@dimen/width_60"
+                            android:layout_height="@dimen/width_60"
+                            android:layout_marginStart="16dp"
+                            android:background="@drawable/black_circle"
+                            android:foreground="?selectableItemBackgroundBorderless"
+                            android:padding="14dp"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/ic_video"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toEndOf="@+id/progressBar"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:tint="@color/white" />
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/avatar"
+                        android:layout_width="@dimen/width_30"
+                        android:layout_height="@dimen/width_30"
+                        android:layout_below="@id/image"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginStart="@dimen/margin_15"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:visibility="visible"
+                        tools:src="@drawable/avatar_placeholder" />
+
+                    <TextView
+                        android:id="@+id/name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_below="@id/image"
+                        android:layout_alignTop="@+id/avatar"
+                        android:layout_alignBottom="@+id/avatar"
+                        android:layout_marginStart="@dimen/_8sdp"
+                        android:layout_toEndOf="@+id/avatar"
+                        android:ellipsize="end"
+                        android:fontFamily="@font/titillium_semibold"
+                        android:gravity="center_vertical"
+                        android:textSize="@dimen/_10sdp"
+                        tools:text="Test User" />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_15"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:layout_marginEnd="@dimen/margin_15"
+                    android:layout_marginBottom="@dimen/_15sdp"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:hint="@string/post_title_hint"
+                        android:inputType="textCapSentences"
+                        android:paddingStart="0dp"
+                        android:paddingTop="0dp"
+                        android:paddingEnd="0dp"
+                        android:paddingBottom="0dp"
+                        android:textColor="@color/colorPrimary"
+                        android:textColorHint="@color/colorPrimary"
+                        android:textSize="@dimen/_14sdp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/body"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_3sdp"
+                        android:animateLayoutChanges="true"
+                        android:background="@null"
+                        android:hint="@string/post_body_hint"
+                        android:inputType="textCapSentences|textMultiLine"
+                        android:paddingStart="0dp"
+                        android:paddingTop="0dp"
+                        android:paddingEnd="0dp"
+                        android:paddingBottom="0dp"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_12sdp" />
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        app:cardCornerRadius="2dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/tutorial_create_post"
+                            android:orientation="vertical"
+                            android:paddingTop="@dimen/_10sdp">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/post_create_tip_header"
+                                android:textAllCaps="true"
+                                android:textColor="#4d4e4c"
+                                android:textStyle="bold"
+                                tools:textStyle="bold" />
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/tutorialBody"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/post_create_tip_body" />
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/loadingOverlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#c2000000"
+        android:visibility="gone">
+
+        <ProgressBar
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
+
+    </FrameLayout>
+
+</FrameLayout>

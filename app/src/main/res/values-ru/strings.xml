@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--Screen titles-->
+    <string name="wall">Стена</string>
+    <string name="news">Новости</string>
+    <string name="rumours">Слухи</string>
+    <string name="social">Соц. сети</string>
+    <string name="stats">Статистика</string>
+    <string name="shop">Магазин</string>
+    <string name="chat">Чат</string>
+    <string name="video_chat">Видеочат</string>
+    <string name="radio">Клубное радио</string>
+    <string name="tv">Клубное ТВ</string>
+    <string name="tickets">Билеты</string>
+    <string name="store">Магазин</string>
+    <string name="quiz">Тест</string>
+    <string name="fantasy">Фантастика</string>
+
+    <string-array name="menu_navigation">
+        <item>@string/wall</item>
+        <item>@string/chat</item>
+        <item>@string/news</item>
+        <item>@string/social</item>
+        <item>@string/stats</item>
+        <item>@string/rumours</item>
+        <item>@string/radio</item>
+        <item>@string/tickets</item>
+        <item>@string/shop</item>
+        <item>@string/tv</item>
+        <item>@string/video_chat</item>
+        <item>@string/calendar</item>
+    </string-array>
+
+    <!-- Login & Register -->
+    <string name="slogan">Здесь встречаются болельщики</string>
+    <string name="access_full">Для доступа к полным функциям…</string>
+    <string name="join_sign_in">Вступить / Войти</string>
+    <string name="sign_in">Войти</string>
+    <string name="join">Вступить</string>
+    <string name="login_facebook">Войти через Facebook</string>
+    <string name="or">или</string>
+    <string name="email">Эл. почта</string>
+    <string name="password">Пароль</string>
+    <string name="first_name">Имя</string>
+    <string name="last_name">Фамилия</string>
+    <string name="nickname">Псевдоним</string>
+    <string name="phone">Телефон</string>
+    <string name="error">Ошибка</string>
+    <string name="login_failed">Не удалось войти!</string>
+    <string name="registration_failed">Ошибка регистрации</string>
+    <string name="forgot_your_password">Забыли пароль?</string>
+    <string name="password_reset">Сбросить пароль</string>
+    <string name="reset_check_email">Проверьте почту, там должно быть письмо с вариантами сброса пароля.</string>
+    <string name="email_enter_valid">Введите верный адрес эл. почты.</string>
+    <string name="policy_prompt"><![CDATA[Регистрируясь, вы принимаете <br/><font color="#FFFFFF">Условия использования</font> и <font color="#FFFFFF">Политику конфиденциальности FansChat.</font>]]></string>
+    <string name="required_email">Укажите адрес эл. почты!</string>
+    <string name="required_password">Нужно ввести пароль</string>
+    <string name="required_first_name">Укажите свое имя!</string>
+    <string name="required_last_name">Укажите свою фамилию!</string>
+    <string name="required_nickname">Укажите свой псевдоним!</string>
+    <string name="required_phone">Введите свой номер телефона!</string>
+    <string name="required_credentials">Не хватает информации</string>
+    <string name="password_try_again">Введите пароль заново и попробуйте еще раз.</string>
+    <string name="login_slider_chat">Вы можете общаться с друзьями, создавать группы и даже общаться с любимыми игроками!</string>
+    <string name="logout_from_app">Действительно выйти из приложения?</string>
+    <string name="reset_app">Это действие перезагрузит приложение.</string>
+    <string name="error_username_taken">Ошибка регистрации - имя пользователя уже занято, выберите другое имя пользователя.</string>
+    <string name="facebook_error">Не удалось получить ваш общий профиль. Попробуйте еще раз!</string>
+
+    <!--Dialogs-->
+    <string name="ok">Ок</string>
+    <string name="allow">Разрешить</string>
+    <string name="deny">Запретить</string>
+    <string name="warning">Предупреждение</string>
+    <string name="uploading">Загрузка…</string>
+    <string name="no_connection">Нет подключения</string>
+    <string name="internet_needed">Для этого нужно подключения к Интернету</string>
+    <string name="waiting_for_internet">Ожидание активного интернет-соединения…</string>
+
+    <!--Profile-->
+    <string name="go_to_profile">Перейти в профиль ></string>
+    <string name="profile">Ваш профиль</string>
+    <string name="contact_info">Контакты</string>
+    <string name="choose_your_language">Выберите язык</string>
+    <string name="chosen_language">Выбранный язык</string>
+    <string name="location">Место</string>
+    <string name="subscribed_since">Подписка с</string>
+    <string name="auto_translation">Автоматический перевод</string>
+    <string name="notify_wall">Уведомления (стена)</string>
+    <string name="notify_news">Включить новостные уведомления</string>
+    <string name="notify_rumours">Включить уведомления о слухах</string>
+    <string name="notify_social">Включить соц. уведомления</string>
+    <string name="edit_profile">Редактируйте профиль</string>
+    <string name="edit_photo">Изменить фото</string>
+    <string name="done">Готово</string>
+    <string name="caps_level">Уровень Caps</string>
+    <string name="days_using">Дней с SSK</string>
+    <string name="wall_posts">Посты на стене</string>
+    <string name="videos_watched">Видео просмотрено</string>
+    <string name="matches_home">Посещено игр дома</string>
+    <string name="matches_away">Посещено игр на выезде</string>
+    <string name="likes_received">Получено лайков</string>
+    <string name="comments_made">Комментариев</string>
+    <string name="language">Язык</string>
+    <string name="you_have">У вас есть:</string>
+    <string name="caps">Caps</string>
+    <string name="language_current">Русский</string>
+
+    <!--Friends-->
+    <string name="friend_profile">Информация о друге</string>
+    <string name="friend_requests">Запросы о дружбе</string>
+    <string name="follows_you">Подписан(а) на вас</string>
+    <string name="user_profile">Профиль пользователя</string>
+    <string name="friends_title">Ваши друзья</string>
+    <string name="friends_search">Искать друзей</string>
+    <string name="offline">Не в сети</string>
+    <string name="friend_request_pending">Послан запрос на дружбу</string>
+    <string name="enter_friend_name_invite">Чтобы пригласить друзей, укажите их адреса эл. почты.</string>
+    <string name="remove_friend">Удалить из друзей</string>
+    <string name="friend_request_send">Отправить запрос на дружбу?</string>
+    <string name="friend_unfollow">Убрать из друзей</string>
+    <string name="friend_follow">Подписаться на друга</string>
+    <string name="posts">Закрепленные</string>
+    <string name="comments">Комментарии</string>
+    <string name="friends">Друзья</string>
+    <string name="following">Подписки</string>
+    <string name="followers">Подписчики</string>
+    <string name="report">Сообщ. о наруш.</string>
+    <string name="cancel">Отмена</string>
+    <string name="member_info">Информация об участнике</string>
+    <string name="requested_on">Запрошено на</string>
+    <string name="you">Вы</string>
+    <string name="add_friend">Добавить друга</string>
+    <string name="invite_friend">Пригласить друга</string>
+    <string name="add_friend_hint">Введите имя, адрес эл. почты или номер телефона друга в поле поиска.</string>
+    <string name="save">Сохранить</string>
+    <string name="invite">Пригласить</string>
+    <string name="follow_more">Подписаться еще</string>
+    <string name="friends_following_you">Друзья в подписчиках:</string>
+    <string name="find">Найти</string>
+    <string name="requests">Запросы</string>
+    <string name="official_accounts">Офиц. аккаунты</string>
+    <string name="no_results">Нет результатов</string>
+    <string name="user">Пользователь</string>
+    <string name="more">Еще</string>
+    <string name="friend_you_and">Общие друзья </string>
+    <string name="have_in_common"> у вас и :</string>
+
+    <!--Chat-->
+    <string name="members">Члены</string>
+    <string name="leave">Выйти из чата</string>
+    <string name="are_you_sure">Вы уверены?</string>
+    <string name="chat_confirm_leave">Выйти из чата?</string>
+    <string name="chat_confirm_delete">Это навсегда удалит чат; вы уверены?</string>
+    <string name="photo_or_video">Сделать фото или записать видео?</string>
+    <string name="chat_image">Фото</string>
+    <string name="from_gallery">Выбрать из библиотеки</string>
+    <string name="from_camera">Использовать камеру</string>
+    <string name="record_video">Запись видео</string>
+    <string name="chat_hold">Удерживайте для записи</string>
+    <string name="chat_recording_stop">Запись остановлена</string>
+    <string name="no_message_text">Пока еще никто не начал чат! Почему бы не начать вам?</string>
+    <string name="chat_public">Это ОТКРЫТЫЙ чат</string>
+    <string name="chat_private">Это ЗАКРЫТЫЙ чат</string>
+    <string name="chat_create">Создать чат</string>
+    <string name="chat_join">Вступить в чат</string>
+    <string name="single_user_is_typing">%1$s! печатает…</string>
+    <string name="multiple_users_are_typing">Несколько пользователей печатают…</string>
+    <string name="alerts_on">Уведомления чата: ВКЛ</string>
+    <string name="alerts_off">Уведомления чата: ВЫКЛ</string>
+    <string name="chat_with_friends_login">Общайтесь с друзьями</string>
+    <string name="friends_in_chat">Друзья в чате</string>
+    <string name="friend_in_chat">1 Друг в чате</string>
+    <string name="chats">Чаты</string>
+    <string name="chats_public">Открытые чаты</string>
+    <string name="search">Искать открытые чаты</string>
+    <string name="message_hint">Введите сообщение здесь…</string>
+    <string name="chat_friends_add">Добавить друзей в %s</string>
+    <string name="chat_name">Имя чата</string>
+    <string name="chat_give_name">Назовите чат</string>
+    <string name="chat_rename">Переименуйте свой чат</string>
+    <string name="add_friends_to_chat">Добавить друзей в чат</string>
+    <string name="friend_chats">Публичные чаты, в которых ваши друзья</string>
+    <string name="is_in">: </string>
+
+    <!--Video chat-->
+    <string name="video_chat_promo_1">Выиграйте матч с друзьями</string>
+    <string name="video_chat_promo_2">Видеочат позволяет вам звонить до 3 человек, чтобы вы могли испытать действие с людьми, которых вы любите, где бы вы ни находились!</string>
+    <string name="call_start">Начать звонок</string>
+    <string name="call_starting">Начинаем новый звонок</string>
+    <string name="call_add_member">Добавить в звонок</string>
+    <string name="accept_call">Принять звонок?</string>
+    <string name="call_receive">Входящий звонок от</string>
+    <string name="video_chat_max">Увы, в видеозвонке может быть до 4 собеседников, и этот уже заполнен!</string>
+    <string name="video_chats">Видеочаты</string>
+    <string name="friends_in_video_chat">Друзья в видеочате</string>
+    <string name="friend_in_video_chat">1 Друг в видеочате</string>
+    <string name="no_users_selected">Пользователи не выбраны!</string>
+    <string name="no_users_selected_message">Вы не выбрали, кому позвонить!</string>
+    <string name="select_friends_to_call">Выбрать друзей для звонка</string>
+
+    <!--Next match-->
+    <string name="match_next">След. матч</string>
+    <string name="vs">vs</string>
+    <string name="day">%1$d День</string>
+    <string name="days">%1$d Дн.</string>
+    <string name="hour">%1$d Час</string>
+    <string name="hours">%1$d Ч.</string>
+    <string name="min">%1$d Мин.</string>
+    <string name="mins">%1$d Мин.</string>
+    <string name="sec">%1$d Сек.</string>
+    <string name="secs">%1$d Сек.</string>
+    <string name="live">Прям. эфир</string>
+
+    <!--Posts & News-->
+    <string name="post_create">Создать новую запись</string>
+    <string name="post_title_hint">Нажмите здесь, чтобы ввести название вашего поста</string>
+    <string name="post_body_hint">Нажмите здесь, чтобы начать писать свой пост…</string>
+    <string name="post_create_tip_header">Чтобы создать новый пост:</string>
+    <string name="post_create_tip_body"><![CDATA[<b>1.</b> Выберите изображение из галереи или сделайте новое изображение, выбрав один из двух значков в области изображения вверху (необязательно) <br/> <b>2.</b> Создайте заголовок, вписав заголовок. <br/> <b>3.</b> Напишите заметку во второе поле ввода.]]></string>
+    <string name="pin_title">Опубликовать на вашей стене?</string>
+    <string name="pin_confirm">Хотите опубликовать это на своей стене?</string>
+    <string name="pin_message_hint">Введите сообщение к прикрепленному посту…</string>
+    <string name="comment_hint">Введите свой комментарий здесь…</string>
+    <string name="read_more">Подробнее &gt;</string>
+    <string name="read_less">Скрыть &lt;</string>
+    <string name="edit">Редакт.</string>
+    <string name="delete">Удалить</string>
+    <string name="translate">Перевести</string>
+    <string name="share">Опубликовать</string>
+    <string name="post">Опубликовать</string>
+    <string name="back">Назад</string>
+    <string name="translated">Переведено</string>
+    <string name="translated_from">Переведено с:</string>
+
+    <!--Purchases-->
+    <string name="rewards_received">Награды и предметы из спортивных сумок</string>
+    <string name="bonus_gym_bag">+ Бонусная спортивная сумка</string>
+    <string name="bundles">Наборы</string>
+    <string name="wallet">Кошелек</string>
+    <string name="stash">Кладовка</string>
+    <string name="your_statement">Ваша выписка</string>
+    <string name="search_for_friends">Поиск друзей</string>
+    <string name="add_attachment">Добавить приложение</string>
+    <string name="take_photo">Сфотографировать</string>
+    <string name="record_audio">Запись аудио</string>
+    <string name="chat_edit">Редактировать чат</string>
+    <string name="authorize_description">Вам необходимо войти в систему\n, чтобы использовать все функции\nприложения</string>
+    <string name="fixtures">Светильники</string>
+    <string name="results">Результаты</string>
+    <string name="tables">Столы</string>
+    <string name="name">Имя</string>
+    <string name="all_times_in_local_time">Все время по местному времени</string>
+    <string name="terms_n_privacy">Условия и конфиденциальность</string>
+    <string name="unnamed_chat">«Безымянный чат»</string>
+    <string name="search_public_chats">Поиск в общедоступных чатах</string>
+    <string name="create">Создавать</string>
+    <string name="alert_on">Оповещение включено</string>
+    <string name="last_chat">Последний чат</string>
+    <string name="join_group">Присоединиться к группе</string>
+    <string name="you_will_join_chat">Вы хотите присоединиться к этому чату?</string>
+    <string name="you_are_already_in_grp">ya estas en el grupo</string>
+    <string name="select_users">Вам нужно выбрать хотя бы одного человека для создания/редактирования чата</string>
+    <string name="no_user_added">В чат не добавлены пользователи</string>
+    <string name="select_chat_img">Выберите изображение чата</string>
+    <string name="select_image">Вам нужно выбрать изображение чата, чтобы создать/отредактировать чат</string>
+    <string name="pick_photo">Выбрать фото</string>
+    <string name="pick_video">Выбрать видео</string>
+    <string name="cant_play">Не могу воспроизвести этот файл</string>
+    <string name="cant_play_video">Не могу воспроизвести это видео</string>
+    <string name="you_will_leave_chat">Вы уверены, что хотите покинуть этот чат?</string>
+    <string name="you_will_delete_chat">Вы уверены, что хотите удалить этот чат?</string>
+    <string name="a_stats_post">Статистический пост</string>
+    <string name="failed_to_create_directory">не удалось создать каталог</string>
+    <string name="blank_first_name">Вы должны ввести свое имя!</string>
+    <string name="blank_last_name">Вы должны ввести свою фамилию!</string>
+    <string name="blank_nick_name">Вы должны ввести свой никнейм!</string>
+    <string name="blank_email">Вы должны ввести свой адрес электронной почты!</string>
+    <string name="blank_phone">Вы должны ввести свой телефон!</string>
+    <string name="blank_password">Вы должны ввести свой пароль!</string>
+    <string name="blank_firstname">Вы должны ввести свое имя!</string>
+    <string name="blank_lastname">Вы должны ввести свою фамилию!</string>
+    <string name="invalid_first_name">Пожалуйста, введите правильное имя!</string>
+    <string name="invalid_last_name">Пожалуйста, введите действительную фамилию!</string>
+    <string name="invalid_nick_name">Пожалуйста, введите действительный псевдоним!</string>
+    <string name="invalid_email">Пожалуйста, введите действительный адрес электронной почты!</string>
+    <string name="invalid_phone">Пожалуйста, введите действительный телефон. Он должен содержать от 8 до 15 цифр!</string>
+    <string name="invalid_password">Пожалуйста, введите правильный пароль. Длина должна быть не менее 6 символов!</string>
+    <string name="new_friend_request">Новый запрос на добавление в друзья</string>
+    <string name="accepted_friend_request">Принят запрос на добавление в друзья</string>
+    <string name="new_follower">Новый подписчик</string>
+    <string name="unfollowed">Отписался</string>
+    <string name="unfriended">Удалить из друзей</string>
+
+    <string name="mine_friend">Мой друг</string>
+    <string name="register">регистр</string>
+    <string name="login_space">Авторизоваться</string>
+    <string name="login">Авторизоваться</string>
+    <string name="sign_up">регистр</string>
+    <string name="sign_up_with_facebook">Зарегистрируйтесь через Facebook</string>
+    <string name="login_facebook_b">Войти с Facebook</string>
+    <string name="Cancel">Отмена</string>
+    <string name="Okay">Хорошо</string>
+    <string name="butn_done">Сделанный</string>
+    <string name="failed_to_crop_image">Не удалось обрезать изображение</string>
+    <string name="this_file_no_longer_exist">Этот файл больше не существует</string>
+    <string name="camera_permission_is_needed_to_take_pictures">Для съемки требуется разрешение камеры</string>
+    <string name="see_all">Увидеть все</string>
+    <string name="watch_now">Смотри</string>
+    <string name="socials">Социальное</string>
+    <string name="streaming">Потоковое</string>
+    <string name="cancel_post">Вы хотите отменить этот пост?</string>
+    <string name="no_videos_found">Видео не найдено</string>
+    <string name="trimming_progress">Обрезка видео…</string>
+    <string name="short_seconds">секенд</string>
+    <string name="no_feed_post_available">Публикация в ленте недоступна</string>
+    <string name="no_data">Данные не найдены</string>
+    <string name="old_password">Прежний пароль</string>
+    <string name="new_password">новый пароль</string>
+    <string name="title_posts">Сообщения</string>
+    <string name="enter_chat_name">Введите название чата</string>
+    <string name="you_need_to_enter_chat_name">Вам нужно ввести имя чата</string>
+    <string name="club_tv">ТВ-клуб</string>
+    <string name="you_want_to_remove_this_user">Вы уверены, что хотите удалить друга?</string>
+    <string name="you_want_to_send_friend_request">Вы уверены, что хотите отправить запрос на добавление в друзья?</string>
+    <string name="you_want_to_accept_friend_request">Вы уверены, что хотите принять запрос на добавление в друзья?</string>
+    <string name="you_want_to_decline_friend_request">Вы уверены, что хотите отклонить запрос на добавление в друзья?</string>
+    <string name="yes">да</string>
+    <string name="no">Нет</string>
+    <string name="decline_friend_request">Отклонить запрос на добавление в друзья</string>
+    <string name="remove_user">Удалить пользователя</string>
+    <string name="delete_chat">Удалить чат</string>
+    <string name="leave_chat">Выйти из чата</string>
+    <string name="report_user">Пожаловаться на пользователя</string>
+    <string name="you_want_to_report_user">Вы уверены, что хотите пожаловаться на этого пользователя?</string>
+    <string name="delete_post">Удалить сообщение</string>
+    <string name="reported_post">Опубликовать сообщение успешно</string>
+    <string name="undo_translate">Отменить перевод</string>
+    <string name="enter_title">Пожалуйста, введите название</string>
+    <string name="enter_report_message">Пожалуйста, введите сообщение отчета</string>
+    <string name="report_message">Сообщить о сообщении</string>
+    <string name="report_post">Сообщить о сообщении</string>
+    <string name="write_complaint">Пожалуйста, напишите свою жалобу</string>
+    <string name="wrong_email_or_password_please_try_again">Неправильный адрес электронной почты или пароль. Пожалуйста, попробуйте еще раз</string>
+    <string name="notifications">Уведомления</string>
+    <string name="try_to_upload_file_again">Попробуйте загрузить файл еще раз</string>
+    <string name="failed_to_upload">Не удалось загрузить файл</string>
+
+    <string name="access_full_mtn">Присоединяйтесь к нам сейчас, чтобы получить доступ к VIP-мероприятиям и эксклюзивному доступу…</string>
+    <string name="audio">🔊 Аудио</string>
+    <string name="no_friends">друзей пока нет</string>
+    <string name="calendar">Календарь</string>
+    <string name="points">X очков ФК</string>
+    <string name="post_no_longer_available">Этот пост больше не доступен.</string>
+    <string name="no_notifications">Уведомлений пока нет</string>
+    <string name="no_friend_request">У вас нет ожидающих запросов на добавление в друзья</string>
+    <string name="login_cancelled">Вход отменен</string>
+    <string name="other_services">Другие услуги</string>
+    <string name="facebook">Фейсбук</string>
+    <string name="share_using">Поделиться с помощью…</string>
+    <string name="post_not_found">Пост больше не доступен.</string>
+    <string name="compressing_video">Сжатие видео…</string>
+    <string name="title_like_post">Нравится получено</string>
+    <string name="desc_like_post">%s понравился ваш пост</string>
+    <string name="title_post_created">Опубликовано другом</string>
+    <string name="desc_post_created">%s создал новую запись</string>
+    <string name="title_post_updated">Друг отредактировал сообщение</string>
+    <string name="desc_post_updated">%s отредактировал сообщение</string>
+    <string name="title_new_comment">Комментарий получен</string>
+    <string name="desc_new_comment">%s прокомментировал ваше сообщение</string>
+    <string name="title_comment_updated">Комментарий отредактирован</string>
+    <string name="desc_comment_updated">%s отредактировал комментарий к вашему сообщению</string>
+    <string name="accept_friend_request">Запрос на добавление в друзья принят</string>
+    <string name="received_friend_request">Новый запрос на добавление в друзья</string>
+    <string name="message_received">Сообщение доставлено</string>
+    <string name="new_msg_msg">%s отправил сообщение</string>
+    <string name="new_media_msg_msg">%s отправил медиа</string>
+    <string name="friend_request_accepted_msg">%s принял ваш запрос на добавление в друзья</string>
+    <string name="friend_request_msg">%s отправил вам запрос на добавление в друзья</string>
+    <string name="notification_muted">%s успешно отключен.</string>
+    <string name="notification_unmuted">%s успешно включен.</string>
+    <string name="accept">Принимать</string>
+    <string name="desc_like_club_post">%s понравилось: %s</string>
+    <string name="title_like_club_post">Другу понравился пост %s</string>
+    <string name="desc_club_comment_updated">%s отредактировал комментарий к: %s</string>
+    <string name="title_club_comment_updated">Друг отредактировал комментарий к сообщению %s</string>
+    <string name="desc_new_club_comment">%s оставил комментарий к: %s</string>
+    <string name="title_new_club_comment">Друг прокомментировал запись %s</string>
+    <string name="desc_club_post_updated">%s отредактировал сообщение: %s</string>
+    <string name="title_club_post_updated">Сообщение отредактировано в %s</string>
+    <string name="desc_club_post_created">%s добавил новое сообщение: %s</string>
+    <string name="title_club_post_created">Новый пост в %s</string>
+    <string name="desc_like_post_owner">%s понравился их пост</string>
+    <string name="desc_comment_updated_owner">%s отредактировал комментарий к своему сообщению</string>
+    <string name="desc_new_comment_owner">%s прокомментировал свой пост</string>
+    <string name="desc_new_comment_friend">%s прокомментировал запись вашего друга</string>
+    <string name="desc_comment_updated_friend">%s отредактировал комментарий к сообщению вашего друга</string>
+    <string name="desc_like_post_friend">%s понравился пост вашего друга</string>
+
+</resources>

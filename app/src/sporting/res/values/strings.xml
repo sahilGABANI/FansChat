@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name" translatable="false">fansChat</string>
+    <string name="stripe" translatable="false">No upcoming</string>
+
+    <string name="facebook_app_id" translatable="false">368654144728235</string>
+    <string name="facebook_client_token" translatable="false">dae83b0c052cd2efbc7545254d291684</string>
+    <string name="fb_login_protocol_scheme" translatable="false">fb368654144728235</string>
+
+    <string name="url_store" translatable="false">https://lojaverde.sporting.pt</string>
+    <string name="url_stats" translatable="false">https://www.sporting.pt/pt/futebol/equipa-principal/plantel</string>
+    <string name="url_tickets" translatable="false">https://www.sporting.pt/tickets-and-gamebox/tickets</string>
+    <string name="youtube_url" translatable="false">https://www.youtube.com/channel/UCnJj6L93JX3Jrhzv81ayywA/videos</string>
+    <string name="youtube_channel" translatable="false">UCnJj6L93JX3Jrhzv81ayywA</string>
+    <string name="url_calendar" translatable="false">https://www.sporting.pt/pt/agenda/calendario?d=%d-%d</string>
+    <string name="url_fantasy" translatable="false">https://s3-eu-west-1.amazonaws.com/sskirbucket/graphics/fantasy.png</string>
+    <string name="share_host_name" translatable="false">ssk-sharing-dev.herokuapp.com</string>
+    <string name="notification_channel_id" translatable="false">default</string>
+
+    <string name="club_name" translatable="false">SCP</string>
+
+</resources>

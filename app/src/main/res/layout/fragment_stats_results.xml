@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f4f4f4"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/mainContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:visibility="visible"
+            tools:visibility="visible">
+
+            <com.jaredrummler.materialspinner.MaterialSpinner
+                android:id="@+id/leagueSelector"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                tools:entries="@array/leagues" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#ddd" />
+
+            <LinearLayout
+                android:id="@+id/headersContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#f4f4f4"
+                android:clipToPadding="false"
+                android:orientation="vertical"
+                android:paddingBottom="48dp" />
+
+        </LinearLayout>
+
+        <include layout="@layout/section_stats_detail" />
+
+    </LinearLayout>
+
+</ScrollView>

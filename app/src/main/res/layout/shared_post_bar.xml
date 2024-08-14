@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/sharedPostBar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:visibility="gone"
+    tools:showIn="@layout/fragment_detail"
+    tools:visibility="visible">
+
+    <ImageButton
+        android:id="@+id/back"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="48dp"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:rotationY="@integer/view_rotation"
+        android:src="@drawable/ic_keyboard_arrow_left_white_24dp"
+        app:tint="@color/colorPrimary" />
+
+    <ImageView
+        android:id="@+id/sharedMessageAvatar"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginEnd="4dp"
+        tools:src="@drawable/avatar_placeholder" />
+
+    <EditText
+        android:id="@+id/sharedMessage"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_weight="1"
+        android:background="@null"
+        android:ellipsize="end"
+        android:enabled="false"
+        android:gravity="top"
+        android:imeOptions="actionSend"
+        android:inputType="textCapSentences"
+        android:maxLines="2"
+        android:paddingTop="14dp"
+        android:paddingEnd="8dp"
+        android:paddingBottom="15dp"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        tools:text="Check out this awesome article! I guarantee you are going to like it"
+        tools:textStyle="bold" />
+
+    <View
+        android:id="@+id/sharedMessageDivider"
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        android:background="@color/colorPrimary" />
+
+    <ImageButton
+        android:id="@+id/sharedMessageMoreButton"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="60dp"
+        android:layout_height="match_parent"
+        android:src="@drawable/ic_more_horiz_black_24dp"
+        app:tint="@color/colorPrimary" />
+
+</LinearLayout>
+
+    

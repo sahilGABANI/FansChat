@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name" translatable="false">BAL</string>
+    <string name="stripe" translatable="false">Next season shirts available in the club store...</string>
+
+    <string name="facebook_app_id" translatable="false">102782376855276</string>
+    <string name="facebook_client_token" translatable="false">dae83b0c052cd2efbc7545254d291684</string>
+    <string name="fb_login_protocol_scheme" translatable="false">fb102782376855276</string>
+
+    <string name="url_store" translatable="false">http://balfanschat.dctest.com.au/wp-content/uploads/2021/04/shop-mock-image-scaled.jpg</string>
+    <string name="url_stats" translatable="false">http://www.fiba.basketball/africaleague/2019/playerstats</string>
+    <string name="url_tickets" translatable="false">http://www.fiba.basketball/afrobasket/2021/qualifiers/news/three-tickets-still-available-for-afrobasket-2021</string>
+    <string name="youtube_url" translatable="false">https://www.youtube.com/channel/UCSpFKCdUyrn45S5k1Mz7TNA/videos</string>
+    <string name="youtube_channel" translatable="false">UCSpFKCdUyrn45S5k1Mz7TNA/videos</string>
+    <string name="url_calendar" translatable="false">http://www.fiba.basketball/africaleague/2019/games</string>
+    <string name="url_fantasy" translatable="false">https://s3-eu-west-1.amazonaws.com/sskirbucket/graphics/fantasy.png</string>
+    <string name="url_policy" translatable="false">http://balfanschat.dctest.com.au/app-privacy-page/</string>
+    <string name="share_host_name" translatable="false">ssk-sharing-development.herokuapp.com</string>
+
+    <string name="club_name" translatable="false">BAL</string>
+
+</resources>
